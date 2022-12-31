@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_pen_or_eraser">2dp</dimen>
+    <dimen name="secondary_tab_textsize">10dp</dimen>
+    <dimen name="text_pen_or_eraser_size">8dp</dimen>
+</resources>

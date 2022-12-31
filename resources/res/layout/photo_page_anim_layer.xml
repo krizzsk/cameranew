@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/photo_page_layer_bg" android:scaleType="fitXY"/>
+    <TextView android:textSize="20dp" android:textColor="@android:color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:text="@string/photo_page_guide_tips" android:layout_centerHorizontal="true"/>
+    <ImageView android:id="@+id/anim_circle" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginTop="140dp" android:src="@drawable/photo_page_layer_finger_point" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="20dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/cancel_guide" android:padding="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

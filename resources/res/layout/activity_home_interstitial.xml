@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/center_ad_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_centerInParent="true">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_center_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/blur_default" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+        <ImageView android:id="@+id/iv_center_close" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="60dp" android:src="@drawable/home_interstitial_center_close"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/fullscreen_ad_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/iv_fullscreen" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/iv_fullscreen_close" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginTop="50dp" android:layout_marginRight="40dp" android:src="@drawable/home_interstitial_fullscreen_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

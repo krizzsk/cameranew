@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/top_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar_res_0x7f09078f" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_scrollFlags="0x5" app:theme="@style/NoActionBarMDTheme" app:titleTextColor="@color/light_main_title_text"/>
+        <com.google.android.material.tabs.TabLayout android:id="@+id/tabLayout" android:background="?attr/colorPrimary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layoutDirection="ltr" app:tabSelectedTextColor="@color/light_main_title_text" app:tabTextColor="@color/light_title_secondary_text"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_container">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/login_view_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include layout="@layout/app_bar_shadow_view"/>
+    </FrameLayout>
+</RelativeLayout>

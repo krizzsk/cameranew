@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.pili.pldroid.player.widget.PLVideoTextureView android:id="@+id/dialog_video" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/dialog_video_progress" android:visibility="visible" android:layout_width="@dimen/inspire_progress_size" android:layout_height="@dimen/inspire_progress_size" android:layout_centerInParent="true" app:matProg_barColor="@color/progress_color" app:matProg_progressIndeterminate="true"/>
+    <ImageView android:id="@+id/dialog_video_voice_silent" android:padding="8dp" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp" android:src="@drawable/voice_silent_false" android:layout_alignParentRight="true"/>
+</RelativeLayout>

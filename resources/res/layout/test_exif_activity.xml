@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:id="@+id/filePathEditText" android:layout_width="0dp" android:layout_height="wrap_content" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toLeftOf="@+id/changeDirBtn"/>
+    <Button android:id="@+id/changeDirBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="切换目录" app:layout_constraintRight_toRightOf="0"/>
+    <Button android:id="@+id/hideImageBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:text="隐藏/显示图片" app:layout_constraintRight_toRightOf="0" app:layout_constraintTop_toBottomOf="@+id/changeDirBtn"/>
+    <TextView android:textSize="15sp" android:textColor="@color/black" android:id="@+id/fileNameText" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBottom_toBottomOf="@+id/hideImageBtn" app:layout_constraintTop_toTopOf="@+id/hideImageBtn"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black" android:id="@+id/fileLastModifiedText" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@+id/fileNameText"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="8dp" android:fillViewport="true" app:layout_constraintBottom_toTopOf="@+id/currentImage" app:layout_constraintTop_toBottomOf="@+id/fileLastModifiedText">
+        <TextView android:textSize="12sp" android:textColor="@color/black" android:id="@+id/infoText" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+    <ImageView android:id="@+id/currentImage" android:layout_width="120dp" android:layout_height="120dp" android:src="@android:drawable/ic_dialog_alert" android:scaleType="fitCenter" app:layout_constraintBottom_toTopOf="@+id/indexIndicatorText" app:layout_constraintLeft_toLeftOf="0" app:layout_constraintRight_toRightOf="0"/>
+    <TextView android:id="@+id/indexIndicatorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="[0/0]" android:shadowColor="@color/white" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toRightOf="@+id/prevBtn" app:layout_constraintRight_toLeftOf="@+id/nextBtn"/>
+    <Button android:id="@+id/prevBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="上一张" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintLeft_toLeftOf="0"/>
+    <Button android:id="@+id/nextBtn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="下一张" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintRight_toRightOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

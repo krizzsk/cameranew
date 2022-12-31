@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/publish_guide_grid_size" android:layout_height="@dimen/publish_guide_grid_size">
+    <us.pinguo.ui.uilview.PhotoNsImageView android:id="@+id/publish_guide_item_img" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <ImageView android:layout_gravity="top|right" android:id="@+id/publish_guide_item_check" android:paddingLeft="16dp" android:paddingTop="0dp" android:paddingRight="0dp" android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_guide_unselected"/>
+    <FrameLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/publish_guide_item_video_layout" android:background="#66000000" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="18dp">
+        <TextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:id="@+id/publish_guide_item_video_txt" android:layout_width="match_parent" android:layout_height="match_parent" android:text="00:00"/>
+    </FrameLayout>
+</FrameLayout>

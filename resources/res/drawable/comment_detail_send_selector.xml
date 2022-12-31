@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <corners android:radius="2dp"/>
+            <solid android:color="#c6c8cc"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/attention_btn_click_selector_res_0x7d050004"/>
+</selector>

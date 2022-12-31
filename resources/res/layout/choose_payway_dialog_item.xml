@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" style="@style/choosepayway_item_lineary_style">
+    <ImageView android:id="@+id/paywayIcon" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" style="@style/choosepayway_item_image_style"/>
+    <TextView android:id="@+id/paywayName" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/paywayIcon" app:layout_constraintTop_toTopOf="0" style="@style/choosepayway_item_tv_style"/>
+    <View android:layout_gravity="bottom" android:background="#f2f2f2" android:layout_width="0dp" android:layout_height="1dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

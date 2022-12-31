@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.foundation.ui.RotateLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/share_rl" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/primary_white_color" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/share_item_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/call_camera_ll" android:background="@drawable/ripple_rect_background_selector" android:layout_width="match_parent" android:layout_height="@dimen/pick_photo_dialog_item_height">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/pick_photo_dialog_camera"/>
+                <TextView android:textSize="18dp" android:textColor="@color/primary_black_87" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/call_camera"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/call_gallery_ll" android:background="@drawable/ripple_rect_background_selector" android:layout_width="match_parent" android:layout_height="@dimen/pick_photo_dialog_item_height">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/pick_photo_dialog_gallery"/>
+                <TextView android:textSize="18dp" android:textColor="@color/primary_black_87" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/call_gallery"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/cancel_ll" android:background="@drawable/ripple_rect_background_selector" android:layout_width="match_parent" android:layout_height="@dimen/pick_photo_dialog_item_height">
+                <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:src="@drawable/cancel"/>
+                <TextView android:textSize="18dp" android:textColor="@color/primary_black_87" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:text="@string/cancel"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</us.pinguo.foundation.ui.RotateLayout>

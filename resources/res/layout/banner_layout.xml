@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<view xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/banner_view" android:layout_width="match_parent" android:layout_height="wrap_content" class="us.pinguo.ui.widget.banner.BannerView">
+    <us.pinguo.ui.widget.banner.ScrollGallery android:id="@+id/banner_gallery" android:layout_width="match_parent" android:layout_height="wrap_content" android:spacing="-1px"/>
+    <RelativeLayout android:id="@+id/banner_indicator_container" android:background="@drawable/bg_scroll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_alignBottom="@+id/banner_gallery" android:layout_centerHorizontal="true">
+        <us.pinguo.ui.widget.banner.DrawableIndicator android:layout_gravity="center" android:id="@+id/banner_indicator" android:paddingLeft="6dp" android:paddingRight="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</view>

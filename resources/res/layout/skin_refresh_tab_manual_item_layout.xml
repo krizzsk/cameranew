@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/selector_edit_sec_tab_text" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/mannual"/>
+    <ImageView android:id="@+id/tip" android:background="?android:attr/selectableItemBackgroundBorderless" android:paddingTop="1dp" android:layout_width="26dp" android:layout_height="32dp" android:src="@drawable/ic_function_tip_unselect" android:paddingStart="2dp" android:paddingEnd="8dp"/>
+</LinearLayout>

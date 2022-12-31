@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="4dp"/>
+    <us.pinguo.widet.PortraitImageView android:id="@+id/feeds_follow_title_avatar" android:layout_width="72dp" android:layout_height="72dp" android:layout_marginTop="32dp" android:src="@drawable/default_avatar"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_lower" android:gravity="center_horizontal" android:id="@+id/feeds_follow_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/feeds_follow_title_content" android:lineSpacingMultiplier="1.2"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_deeper" android:gravity="left" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feeds_margin" android:layout_marginTop="32dp" android:text="@string/feeds_follow_title_recommend"/>
+    <View android:background="@drawable/feeds_divider_shadow_bottom" android:layout_width="match_parent" android:layout_height="4dp"/>
+</LinearLayout>

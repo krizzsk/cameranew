@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:clipChildren="false" android:layout_width="80dp" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:clipChildren="false" android:layout_width="60dp" android:layout_height="match_parent">
+        <FrameLayout android:clipChildren="false" android:layout_width="60dp" android:layout_height="60dp">
+            <us.pinguo.ui.uilview.CircleImageView android:layout_gravity="center" android:id="@+id/video_edit_music" android:visibility="visible" android:layout_width="35dp" android:layout_height="35dp" android:src="@drawable/video_edit_music_ic" app:civ_border_color="#26ffffff" app:civ_border_width="1.5dp"/>
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/video_edit_music_lock" android:visibility="gone" android:layout_width="35dp" android:layout_height="35dp" app:civ_border_color="#26ffffff" app:civ_border_width="1.5dp" app:srcCompat="@drawable/ic_video_edit_music_lock"/>
+            <View android:layout_gravity="top|left" android:id="@+id/video_edit_music_anim" android:background="@drawable/video_edit_music_anim" android:layout_width="40dp" android:layout_height="45dp" android:layout_marginLeft="-12dp" android:layout_marginTop="-18dp" android:rotation="-10"/>
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/video_edit_volumn" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/ic_video_edit_volumn"/>
+            <us.pinguo.inspire.widget.text.ShadowTextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/video_edit_volumn"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/video_edit_revert" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/ic_video_edit_ori"/>
+            <us.pinguo.inspire.widget.text.ShadowTextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/video_edit_ori"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/video_edit_increase" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/ic_video_edit_k"/>
+            <us.pinguo.inspire.widget.text.ShadowTextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/video_edit_fast"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/video_edit_decrease" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/ic_video_edit_slow"/>
+            <us.pinguo.inspire.widget.text.ShadowTextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/video_edit_slow"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/video_edit_reverse" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:layout_width="35dp" android:layout_height="35dp" app:srcCompat="@drawable/ic_video_edit_reverse"/>
+            <us.pinguo.inspire.widget.text.ShadowTextView android:textSize="12dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/video_edit_reverse"/>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

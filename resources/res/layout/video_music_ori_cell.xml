@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/video_music_cell_layout" android:background="?android:attr/selectableItemBackground" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/video_music_icon_layout" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginEnd="10dp">
+        <ImageView android:id="@+id/video_music_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/video_music_ori"/>
+    </FrameLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/text_deeper" android:ellipsize="end" android:id="@+id/video_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/video_edit_volumn_ori" android:maxLines="1" android:layout_centerVertical="true" android:layout_toEndOf="@+id/video_music_icon_layout"/>
+</RelativeLayout>

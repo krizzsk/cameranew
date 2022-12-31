@@ -1,0 +1,116 @@
+{
+  "data": {
+    "locale": "zh_cn",
+    "interval": 43200,
+    "packages": [
+      {
+        "pid": "5f16805af40fcfca77e32349",
+        "sid": "",
+        "name": "默认线条",
+        "icon": "graffiti_default",
+        "type": 51,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "typeCountInfo": {
+          "st": 0,
+          "gif": 0
+        },
+        "position": 0,
+        "music_tag": 0,
+        "icon_tag": 0,
+        "icon_tag_pic": "",
+        "vip": 0,
+        "is_theme": 0,
+        "sort_type": 0,
+        "display_zip": "https://store-bsy.c360dn.com/5f1680730c0d5_display_5f16805af40fcfca77e32349.zip",
+        "down_url": "https://store-bsy.c360dn.com/5f1680728cf91_5f16805af40fcfca77e32349.zip",
+        "market_product_id": "",
+        "market_product_price": 0,
+        "sort_order": 1002
+      },
+      {
+        "pid": "5f168067fb27040150d689a5",
+        "sid": "",
+        "name": "线条2",
+        "icon": "graffiti_dotted_line",
+        "type": 51,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "typeCountInfo": {
+          "st": 0,
+          "gif": 0
+        },
+        "position": 0,
+        "music_tag": 0,
+        "icon_tag": 0,
+        "icon_tag_pic": "",
+        "vip": 0,
+        "is_theme": 0,
+        "sort_type": 0,
+        "display_zip": "https://store-bsy.c360dn.com/5f1680a40b6d0_display_5f168067fb27040150d689a5.zip",
+        "down_url": "https://store-bsy.c360dn.com/5f1680a39b73f_5f168067fb27040150d689a5.zip",
+        "market_product_id": "",
+        "market_product_price": 0,
+        "sort_order": 1001
+      },
+      {
+        "pid": "5f168071f40fcfe74ae32346",
+        "sid": "",
+        "name": "线条3",
+        "icon": "graffiti_highlighter",
+        "type": 51,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "typeCountInfo": {
+          "st": 0,
+          "gif": 0
+        },
+        "position": 0,
+        "music_tag": 0,
+        "icon_tag": 0,
+        "icon_tag_pic": "",
+        "vip": 0,
+        "is_theme": 0,
+        "sort_type": 0,
+        "display_zip": "https://store-bsy.c360dn.com/5f1680ae8b81e_display_5f168071f40fcfe74ae32346.zip",
+        "down_url": "https://store-bsy.c360dn.com/5f1680ae08b4b_5f168071f40fcfe74ae32346.zip",
+        "market_product_id": "",
+        "market_product_price": 0,
+        "sort_order": 1000
+      },
+      {
+        "pid": "5f16804fecf8c3bb5da73b57",
+        "sid": "",
+        "name": "蜡笔线条",
+        "icon": "graffiti_crayon",
+        "type": 51,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "typeCountInfo": {
+          "st": 0,
+          "gif": 0
+        },
+        "position": 0,
+        "music_tag": 0,
+        "icon_tag": 0,
+        "icon_tag_pic": "",
+        "vip": 0,
+        "is_theme": 0,
+        "sort_type": 0,
+        "display_zip": "https://store-bsy.c360dn.com/5f16806883313_display_5f16804fecf8c3bb5da73b57.zip",
+        "down_url": "https://store-bsy.c360dn.com/5f168067f147c_5f16804fecf8c3bb5da73b57.zip",
+        "market_product_id": "",
+        "market_product_price": 0,
+        "sort_order": 999
+      }
+    ],
+    "topics": []
+  },
+  "status": 200,
+  "message": "ok",
+  "serverTime": 1595747496.9764
+}

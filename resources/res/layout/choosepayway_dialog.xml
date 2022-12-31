@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/choosepayway_dialog_rootview" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/choosepayway_dialog_background_iv" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/choosepayway_dialog_parentview" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:id="@+id/choosepayway_title_btn" android:clickable="false" android:layout_width="match_parent" android:layout_height="@dimen/choosepayway_title_heigh_dim" android:layout_marginLeft="@dimen/choosepayway_left_dim" android:text="@string/paylib_choose_payway_str" style="@android:style/TextAppearance.DeviceDefault.Medium"/>
+        <View android:id="@+id/choosepayway_wx_line_view" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1sp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/choosepayway_wx_btn" style="@style/choosepayway_item_lineary_style">
+            <ImageView android:src="@drawable/icon_wx_logo" style="@style/choosepayway_item_image_style"/>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/paylib_choose_wxpay_str" style="@style/choosepayway_item_tv_style"/>
+        </LinearLayout>
+        <View android:id="@+id/choosepayway_ali_line_view" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1sp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/choosepayway_alipay_btn" style="@style/choosepayway_item_lineary_style">
+            <ImageView android:src="@drawable/icon_ali_logo" style="@style/choosepayway_item_image_style"/>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/paylib_choose_ailpay_str" style="@style/choosepayway_item_tv_style"/>
+        </LinearLayout>
+        <View android:id="@+id/choosepayway_huawei_line_view" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1sp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/choosepayway_huawei_btn" style="@style/choosepayway_item_lineary_style">
+            <ImageView android:src="@drawable/icon_hms_logo" style="@style/choosepayway_item_image_style"/>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/paylib_choose_huawei_str" style="@style/choosepayway_item_tv_style"/>
+        </LinearLayout>
+        <View android:id="@+id/choosepayway_googlewallet_line_view" android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1sp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/choosepayway_googlewallet_btn" style="@style/choosepayway_item_lineary_style">
+            <ImageView android:src="@drawable/icon_google_logo" style="@style/choosepayway_item_image_style"/>
+            <TextView android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/paylib_choose_google_str" style="@style/choosepayway_item_tv_style"/>
+        </LinearLayout>
+        <View android:background="#f2f2f2" android:layout_width="match_parent" android:layout_height="1sp"/>
+        <TextView android:textSize="18sp" android:textStyle="bold" android:textColor="#646464" android:gravity="center" android:id="@+id/choosepayway_cancel_btn" android:background="@drawable/paylibcenter_choose_btn_selector" android:layout_width="match_parent" android:layout_height="@dimen/choosepayway_title_heigh_dim" android:text="@string/paylib_choose_cancel_str"/>
+    </LinearLayout>
+</RelativeLayout>

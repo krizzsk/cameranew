@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/id_modify_nickname_root_view" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/pg_login_page_padding" android:layout_marginRight="@dimen/pg_login_page_padding">
+    <view android:theme="@style/LoginField" android:textSize="16dp" android:textColor="#676767" android:id="@+id/cloudLoginModifyInputNickname" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:minHeight="46dp" android:singleLine="true" android:maxLength="20" android:inputType="text" android:imeOptions="actionDone" class="com.pinguo.camera360.ui.view.EditTextWithFork"/>
+    <TextView android:gravity="right" android:id="@+id/id_tv_modify_nickname_tip" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="15dp" style="@style/error_tip_text"/>
+    <Button android:id="@+id/login_modify_nickname_btn" android:layout_marginTop="@dimen/pg_login_button_top" android:text="@string/modify" style="@style/LoginConfirmButton"/>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#fffce8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_loading_data" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="26dp" android:textColor="#228fdc" android:id="@+id/first_load_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_txt_1"/>
+        <TextView android:textSize="17dp" android:textColor="#228fdc" android:id="@+id/tv_guide_wait_some_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_txt_7"/>
+    </LinearLayout>
+    <TextView android:textSize="26dp" android:textColor="#228fdc" android:layout_gravity="center" android:id="@+id/tv_loading_wait" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_txt_1"/>
+    <FrameLayout android:id="@+id/intent_buffer_unity_fl" android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp"/>
+</FrameLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView_res_0x7f0905e7" android:paddingTop="50dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/pg_sdk_edit_tab_height" android:paddingStart="34dp" android:paddingEnd="34dp"/>
+    <us.pinguo.ui.widget.AlphaPressedConstraintLayout android:layout_gravity="bottom" android:id="@+id/tvClose" android:layout_width="match_parent" android:layout_height="@dimen/pg_sdk_edit_tab_height">
+        <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/white" android:gravity="center" android:tag="a" android:background="@color/edit_function_select" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/flash_close"/>
+    </us.pinguo.ui.widget.AlphaPressedConstraintLayout>
+</FrameLayout>

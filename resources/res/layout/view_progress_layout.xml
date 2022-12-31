@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="66dp">
+    <us.pinguo.edit2020.view.ProgressWheelView android:layout_gravity="bottom|center_horizontal" android:id="@+id/wheel_view" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="40dp" android:layout_marginRight="40dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="top|center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_wheel_view_popup" android:paddingLeft="3.5dp" android:paddingTop="1dp" android:paddingRight="3.5dp" android:paddingBottom="5dp" android:layout_width="70dp" android:layout_height="26dp">
+        <TextView android:textSize="10dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/text_view" android:layout_width="31dp" android:layout_height="24dp"/>
+        <View android:background="#fab615" android:layout_width="1dp" android:layout_height="11dp"/>
+        <ImageView android:id="@+id/iv_reset" android:layout_width="31dp" android:layout_height="24dp" android:src="@drawable/ic_wheel_view_popup_close" android:scaleType="center"/>
+    </LinearLayout>
+</merge>

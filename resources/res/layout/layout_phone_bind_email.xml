@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:editViewPrompt="http://schemas.android.com/apk/res-auto" android:id="@+id/title_bar_layout_res_0x7f090781" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/id_phone_bind_email_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:theme="@style/LoginField" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="@dimen/pg_login_page_padding" android:layout_marginTop="@dimen/pg_login_head_bottom" android:layout_marginRight="@dimen/pg_login_page_padding" android:layout_below="@+id/title_view_main_res_0x7f09078a">
+            <us.pinguo.user.ui.view.CheckEmailViewGroup android:id="@+id/id_phone_bind_email_input_parent" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <us.pinguo.user.ui.view.EditTextWithPrompt android:textSize="@dimen/pg_login_input_text_size" android:id="@+id/register_email_edittext" android:layout_width="match_parent" android:layout_height="@dimen/pg_login_button_height" android:hint="@string/id_pg_login_email_hint_text" android:singleLine="true" android:inputType="textEmailAddress" editViewPrompt:showPrompt="false"/>
+                <ImageView android:id="@+id/register_email_edittext_ic" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_loading" android:scaleType="center"/>
+            </us.pinguo.user.ui.view.CheckEmailViewGroup>
+            <TextView android:textSize="@dimen/pg_login_error_prompt_text_size" android:textColor="@color/color_pg_login_error_tip" android:gravity="right" android:id="@+id/id_phone_bind_email_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pg_login_error_prompt_text_top" android:singleLine="true"/>
+            <Button android:id="@+id/id_phone_bind_email_btn" android:layout_marginTop="@dimen/pg_login_button_top" android:text="@string/bind" style="@style/LoginConfirmButton"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

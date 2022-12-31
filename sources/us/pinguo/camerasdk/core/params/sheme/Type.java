@@ -1,0 +1,32 @@
+package us.pinguo.camerasdk.core.params.sheme;
+/* loaded from: classes4.dex */
+public enum Type {
+    SOUND,
+    FLASH,
+    WHTIE_BALANCE,
+    SAVE_ORG_PHOTO,
+    COMPOSITION,
+    FRAMING,
+    TOUCH_TAKING,
+    FOCUS_MODE,
+    ZOOM,
+    SHOOT_MODE,
+    RIGHTNESS,
+    CONTRANST,
+    EXPOSURE,
+    SATURTION,
+    SHARPNESS,
+    PIC_SIZE,
+    PIC_QUALITY,
+    ISO,
+    SAVE_PATH,
+    BUTTON_VIBRATE,
+    BRIGHTNESS,
+    GPS,
+    PREVIEW_SIZE,
+    METER,
+    TIMER_SAVE,
+    SOUND_KEY_SUPPORT,
+    GREEN_HAND,
+    SAVE_PHOTO_WHEN_SHARE
+}

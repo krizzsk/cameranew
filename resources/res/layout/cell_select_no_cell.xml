@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="54dp">
+    <TextView android:textSize="16dp" android:textColor="@color/text_blue_location" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hide_location" android:singleLine="true" android:layout_weight="1"/>
+    <ImageView android:id="@+id/iv_status_select_no_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:src="@drawable/poi_selected"/>
+</LinearLayout>

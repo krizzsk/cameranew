@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.camera2020.widget.AfterCaptureWatermarkLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="#ffffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.tabs.TabLayout android:id="@+id/tabWatermarkStyle" android:layout_width="match_parent" android:layout_height="@dimen/water_mark_select_tab_height" android:layout_marginTop="22dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:tabIndicatorColor="@null" app:tabIndicatorHeight="0dp" app:tabMode="0" app:tabPaddingEnd="5dp" app:tabPaddingStart="5dp"/>
+    <ImageView android:id="@+id/imgCollapse" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_close_watermark_selection" android:scaleType="centerInside" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0"/>
+</us.pinguo.camera2020.widget.AfterCaptureWatermarkLayout>

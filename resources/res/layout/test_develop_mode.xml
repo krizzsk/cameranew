@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/light_common_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="Hawkeye性能监控" style="@style/OptionsClassTitleStyle"/>
+        <TextView android:id="@+id/hawkeye_report" android:text="Hakeye报告" style="@style/TestOptionsItemText"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_hawkeye_fps" style="@style/OptionsItemClickable"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_hawkeye_gl_fps" style="@style/OptionsItemClickable"/>
+        <TextView android:id="@+id/hawkeye_debug_setting" android:text="调试配置" style="@style/TestOptionsItemText"/>
+        <TextView android:text="网络环境" style="@style/OptionsClassTitleStyle"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_debug_url" style="@style/OptionsItemClickable"/>
+        <TextView android:id="@+id/clear_cache_tv" android:text="请求网络，清理缓存" style="@style/TestOptionsItemText"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_jp_location" style="@style/OptionsItemClickable"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_google_vip_enable" style="@style/OptionsItemClickable"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_new_user" style="@style/OptionsItemClickable"/>
+        <TextView android:id="@+id/vip_unsubscribe" android:text="模拟取消Google订阅" style="@style/TestOptionsItemText"/>
+        <ImageView android:background="@color/light_common_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:text="设备信息" style="@style/OptionsClassTitleStyle"/>
+        <TextView android:id="@+id/btn_get_info" android:text="获取手机信息" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_get_camera_info" android:text="获取相机信息" style="@style/TestOptionsItemText"/>
+        <ImageView android:background="@color/light_common_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:text="其他" style="@style/OptionsClassTitleStyle"/>
+        <TextView android:id="@+id/txtGotoSkyChange" android:text="换天空" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_photo_info_page" android:text="查看Exif信息" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_widget_sample" android:text="查看标准 widget sample" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_edit_test" android:text="进入特效测试" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_filter_install" android:text="一键安装所有滤镜" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_clone_fliter_db" android:text="拷贝滤镜DB到Sdcard" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_push_test" android:text="进入推送测试" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_ab_test" android:text="AB" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_pay_wall_test" android:text="付费墙AB测试" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_unity_import" android:text="素材导入" style="@style/TestOptionsItemText"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_debug_export_beauty_param" style="@style/OptionsItemClickable"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_enable_pg_face_detector" style="@style/OptionsItemClickable"/>
+        <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_enable_bigdata_session" style="@style/OptionsItemClickable"/>
+        <TextView android:id="@+id/btn_logout_account" android:text="注销账号" style="@style/TestOptionsItemText"/>
+        <TextView android:id="@+id/btn_unbind_mobile" android:text="解绑手机号" style="@style/TestOptionsItemText"/>
+        <ImageView android:background="@color/light_common_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</ScrollView>

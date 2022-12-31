@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="100dp" android:layout_height="wrap_content">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivCover" android:background="?android:attr/selectableItemBackgroundBorderless" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="centerInside" app:placeholderImage="@drawable/ic_placeholder_logo" app:placeholderImageScaleType="6" app:roundedCornerRadius="0px"/>
+        <ImageView android:layout_gravity="start" android:id="@+id/ivVipImg" android:layout_width="36dp" android:layout_height="16dp" android:layout_marginLeft="4dp" android:layout_marginTop="4dp" android:src="@drawable/icon_store_global_vip"/>
+    </FrameLayout>
+    <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/primary_text_enable" android:ellipsize="end" android:id="@+id/tvName" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="1"/>
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/primary_gray_color" android:id="@+id/tvDesc" android:layout_width="100dp" android:layout_height="wrap_content" android:layout_marginTop="2dp"/>
+</LinearLayout>

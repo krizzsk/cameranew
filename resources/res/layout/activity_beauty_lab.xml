@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <GridLayout android:id="@+id/grid_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:rowCount="2" android:columnCount="2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/beauty_lab_splice" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="12dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp">
+            <FrameLayout android:id="@+id/lab_function_splice" android:layout_width="80dp" android:layout_height="80dp">
+                <ImageView android:layout_width="80dp" android:layout_height="80dp" android:foreground="@drawable/ripple_oval_background_selector" app:srcCompat="@drawable/icon_beautylab_pinjie"/>
+                <View android:layout_gravity="top|right" android:id="@+id/splice_red" android:background="@drawable/red_oval" android:visibility="gone" android:layout_width="6dp" android:layout_height="6dp" android:layout_marginTop="4dp" android:layout_marginRight="4dp"/>
+                <com.pinguo.camera360.sticker.view.CircleSelectorSelector android:layout_gravity="center" android:id="@+id/splice_progress" android:visibility="gone" android:layout_width="80dp" android:layout_height="80dp" android:src="@null"/>
+            </FrameLayout>
+            <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/lab_function_text_splice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/str_print_splice" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/beauty_lab_item_2" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="12dp" android:layout_marginRight="24dp" android:layout_marginBottom="12dp">
+            <ImageView android:id="@+id/lab_function_icon_2" android:layout_width="80dp" android:layout_height="80dp" android:foreground="@drawable/ripple_oval_background_selector" app:srcCompat="@drawable/icon_beautylab_pintu"/>
+            <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/lab_function_text_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/pintu_title" android:singleLine="true"/>
+        </LinearLayout>
+    </GridLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/grid_layout">
+        <TextView android:textSize="24dp" android:gravity="center" android:layout_gravity="center" android:id="@+id/beauty_lab_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/grid_layout">
+        <ImageView android:layout_gravity="center" android:id="@+id/beauty_lab_close_btn" android:background="@drawable/ripple_oval_background_selector" android:padding="8dp" android:clickable="true" android:layout_width="48dp" android:layout_height="48dp" android:scaleType="fitCenter" android:layout_centerHorizontal="true" app:srcCompat="@drawable/ic_beauty_lab_close"/>
+    </FrameLayout>
+</RelativeLayout>

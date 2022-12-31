@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content_res_0x7f0901de" android:background="@drawable/bg_dialog_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_centerHorizontal="true">
+        <FrameLayout android:layout_width="240dp" android:layout_height="120dp">
+            <us.pinguo.common.imageloader.widget.ImageLoaderView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/sticker_lock_default" android:scaleType="centerCrop"/>
+        </FrameLayout>
+        <View android:background="#dadada" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:id="@+id/share_wx_btn" android:background="@drawable/bg_dialog_click_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="14dp" android:textColor="#4c4c4c" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/share_wx_text" android:background="@drawable/bg_dialog_click_color" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/share_to_wx_friends" android:maxLines="1" android:drawableLeft="@drawable/ic_sticker_wechat" android:drawablePadding="12dp"/>
+        </FrameLayout>
+        <View android:id="@+id/share_weibo_divider" android:background="#dadada" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:id="@+id/share_weibo_btn" android:background="@drawable/bg_dialog_click_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="14dp" android:textColor="#4c4c4c" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/share_weibo_text" android:background="@drawable/bg_dialog_click_color" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/share_to_weibo" android:maxLines="1" android:drawableLeft="@drawable/ic_sticker_sina" android:drawablePadding="12dp"/>
+        </FrameLayout>
+        <View android:id="@+id/share_facebook_divider" android:background="#dadada" android:layout_width="match_parent" android:layout_height="1px"/>
+        <FrameLayout android:id="@+id/share_facebook_btn" android:background="@drawable/bg_dialog_click_color" android:clickable="true" android:layout_width="match_parent" android:layout_height="45dp">
+            <TextView android:textSize="14dp" android:textColor="#4c4c4c" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/share_facebook_text" android:background="@drawable/bg_dialog_click_color" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/share_to_facebook" android:maxLines="1" android:drawableLeft="@drawable/ic_sticker_facebook" android:drawablePadding="12dp"/>
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/image_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-15dp" android:layout_marginRight="-15dp" android:src="@drawable/ic_sticker_close" android:layout_alignTop="@+id/content_res_0x7f0901de" android:layout_alignRight="@+id/content_res_0x7f0901de"/>
+</RelativeLayout>

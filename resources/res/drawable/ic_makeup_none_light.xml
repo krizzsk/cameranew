@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners android:radius="32dp"/>
+            <solid android:color="@color/color_camera_theme_80_black"/>
+        </shape>
+    </item>
+    <item android:left="8dp" android:top="8dp" android:right="8dp" android:bottom="8dp">
+        <bitmap android:src="@drawable/ic_icon_camera_none" android:tint="@color/beauty_clear_color_dark"/>
+    </item>
+</layer-list>

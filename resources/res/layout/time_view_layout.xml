@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="100dp">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="#554c3d" android:id="@+id/time_view_hours" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="小时"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="#554c3d" android:id="@+id/time_view_minite" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="分钟"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="22dp" android:textColor="#554c3d" android:id="@+id/time_view_mils" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="秒"/>
+    </LinearLayout>
+</LinearLayout>

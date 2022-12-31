@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/light_colorPrimary" android:layout_width="match_parent" android:layout_height="100dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:layout_gravity="center_horizontal" android:id="@+id/ivCover" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="15dp" app:placeholderImage="@drawable/ic_placeholder_logo"/>
+    <ImageView android:layout_gravity="end" android:id="@+id/ivClose" android:background="@drawable/ripple_common_oval_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_close_with_circle" android:paddingStart="5dp" android:layout_marginEnd="5dp"/>
+    <TextView android:textSize="12dp" android:textColor="@color/primary_text_enable" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvName" android:paddingBottom="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="82dp" android:maxLines="1"/>
+</FrameLayout>

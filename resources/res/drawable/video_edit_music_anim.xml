@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="90" android:drawable="@drawable/yf_00005"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00006"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00007"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00008"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00009"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00010"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00011"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00012"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00013"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00014"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00015"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00016"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00017"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00018"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00019"/>
+    <item android:duration="90" android:drawable="@drawable/yf_00020"/>
+</animation-list>

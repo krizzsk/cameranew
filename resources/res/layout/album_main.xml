@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/content_res_0x7f0901de" android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/gl_root" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/album_gl_body"/>
+    <com.pinguo.camera360.gallery.ui.NativeRootLayout android:id="@+id/native_root" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.pinguo.camera360.gallery.ui.toolbar.PgToolBar android:id="@+id/id_toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="4dp" app:popupTheme="@style/ToolbarPopupTheme" app:titleTextAppearance="@style/ToolbarTitle">
+        <Spinner android:id="@+id/spinner_nav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dropDownWidth="133dp"/>
+        <RelativeLayout android:layout_gravity="end" android:id="@+id/ad_layout" android:visibility="gone" android:layout_width="70dp" android:layout_height="wrap_content">
+            <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ad_view_button_res_0x7f090081" android:layout_width="37dp" android:layout_height="37dp" android:scaleType="centerCrop" android:layout_marginEnd="14dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/operationLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="4dp">
+            <ImageView android:id="@+id/favorite" android:background="@drawable/ripple_common_oval_bg" android:padding="12dp" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp"/>
+            <ImageView android:id="@+id/picInfo" android:background="@drawable/ripple_common_oval_bg" android:padding="12dp" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/ic_album_pic_info"/>
+        </LinearLayout>
+    </com.pinguo.camera360.gallery.ui.toolbar.PgToolBar>
+    <LinearLayout android:orientation="vertical" android:id="@+id/below_toolbar_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/id_toolbar">
+        <com.pinguo.camera360.gallery.ui.toolbar.PgShadowTabLayout android:id="@+id/rooter_bar_action" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/album_rooter_bar_height" app:tabBackground="@android:color/white" app:tabIndicatorColor="@color/gallery_dialog_color" app:tabMode="1" app:tabTextColor="@color/gallery_bottom_tab_text_color"/>
+        <View android:id="@+id/toolbar_shadow" android:background="@drawable/tool_bar_shape" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_progress_bar" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true">
+        <ProgressBar android:id="@+id/progress" android:layout_width="30dp" android:layout_height="30dp" android:indeterminate="false" android:indeterminateDrawable="@drawable/custom_progress_dialog_dark" android:indeterminateBehavior="repeat" android:animationResolution="10"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/ripple_style">
+    <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:gravity="center" android:layout_gravity="center" android:id="@+id/master_list_tab_title" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.balysv.materialripple.MaterialRippleLayout>

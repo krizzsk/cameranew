@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:src="@drawable/id_photo_back_to_camera"/>
+        <TextView android:textSize="15dp" android:textColor="@color/album_empty_view_text_major" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/empty_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/empty_album_tips" android:singleLine="true"/>
+        <TextView android:textSize="15dp" android:textColor="@color/gallery_dialog_color" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/empty_sub_title" android:background="@drawable/ripple_common_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:singleLine="true"/>
+    </LinearLayout>
+</RelativeLayout>

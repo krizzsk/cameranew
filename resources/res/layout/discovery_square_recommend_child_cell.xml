@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="2dp" app:cardElevation="0dp">
+    <com.zhy.android.percent.support.PercentFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="0dp" app:layout_heightPercent="37.3%sw" app:layout_widthPercent="62.7%sw">
+            <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_recommend_cell" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="@drawable/bg_topic_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/piv_recommend_cell" android:layout_alignBottom="@+id/piv_recommend_cell"/>
+            <TextView android:textSize="17dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_desc_recommend_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="16dp" android:maxLines="2" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </com.zhy.android.percent.support.PercentFrameLayout>
+</androidx.cardview.widget.CardView>

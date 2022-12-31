@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/title_bar_layout_res_0x7f090781" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clWatermarkToggle" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="16dp">
+            <TextView android:textSize="16dp" android:textColor="#ff333333" android:gravity="center" android:id="@+id/txtWatermark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/options_watermark" android:maxLines="1" android:singleLine="true" android:layout_marginStart="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+            <androidx.appcompat.widget.SwitchCompat android:id="@+id/switchWatermark" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintTop_toTopOf="0" app:theme="@style/PreviewSettingOptionsItemClickable"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView android:textSize="13dp" android:textColor="#6d6d72" android:id="@+id/txt_watermark_style" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="20dp" android:layout_marginBottom="16dp" android:text="@string/water_mark_style" android:maxLines="1" android:singleLine="true"/>
+        <com.pinguo.camera360.lib.ui.InterceptTouchEventMaskView android:id="@+id/fl_water_content" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="15dp">
+            <ScrollView android:id="@+id/sv_watermark_content" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="12dp">
+                        <ImageView android:id="@+id/img_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/icon_watermark_content" android:scaleType="fitCenter" android:adjustViewBounds="true"/>
+                        <ImageView android:layout_gravity="start|bottom" android:id="@+id/imgWaterMarkHorizontal" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginBottom="16dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginStart="16dp"/>
+                        <ImageView android:layout_gravity="start|bottom" android:id="@+id/imgWatermarkVertical" android:visibility="gone" android:layout_width="36dp" android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_marginStart="16dp"/>
+                    </FrameLayout>
+                    <com.google.android.material.tabs.TabLayout android:id="@+id/tab_watermark_style" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp" app:tabIndicatorColor="@null" app:tabIndicatorHeight="0dp" app:tabMode="0" app:tabPaddingEnd="5dp" app:tabPaddingStart="5dp"/>
+                </LinearLayout>
+            </ScrollView>
+            <View android:id="@+id/mask_view" android:background="#ccffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </com.pinguo.camera360.lib.ui.InterceptTouchEventMaskView>
+    </LinearLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

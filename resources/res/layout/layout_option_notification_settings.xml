@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar_layout_res_0x7f090781" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/light_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:background="@color/light_common_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_item_comment" style="@style/OptionsItemClickable"/>
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_item_praise" style="@style/OptionsItemClickable"/>
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_item_aitme" style="@style/OptionsItemClickable"/>
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:id="@+id/option_item_new_fans" style="@style/OptionsItemClickable"/>
+                <ImageView android:background="@color/light_common_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:textSize="@dimen/pg_phone_bind_prompt_text_size" android:id="@+id/id_personal_prompt_user_bind" android:paddingLeft="@dimen/pg_personal_prompt_user_bind_padding_left" android:paddingRight="@dimen/pg_personal_nickname_text_padding_right" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/pg_personal_prompt_user_bind_top" android:text="@string/notification_settings_close_introduce" android:lineSpacingExtra="@dimen/pg_phone_bind_prompt_text_gap"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

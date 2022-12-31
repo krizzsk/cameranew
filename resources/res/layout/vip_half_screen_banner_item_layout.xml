@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@null" android:layout_width="86dp" android:layout_height="86dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/imgContent" android:layout_width="86dp" android:layout_height="86dp" app:actualImageScaleType="6" app:roundedCornerRadius="5dp"/>
+    <us.pinguo.ui.widget.AutofitTextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/white" android:layout_gravity="start|bottom" android:id="@+id/txtDescription" android:layout_width="match_parent" android:layout_height="15dp" android:layout_marginBottom="7dp" android:maxLines="1" android:layout_marginStart="7dp" android:layout_marginEnd="4dp" app:minTextSize="8dp"/>
+</FrameLayout>

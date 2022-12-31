@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/header_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/profile_work_user_info_new"/>
+    <us.pinguo.inspire.module.profile.view.ProfileHeaderTabView android:id="@+id/profile_head_tab_view" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="64dp"/>
+    <include android:id="@+id/profile_item_recommend" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/feeds_interested_layout"/>
+    <ImageView android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:gravity="center_vertical" android:id="@+id/profile_switch_bar" android:background="?android:attr/selectableItemBackgroundBorderless" android:paddingLeft="15dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="50dp" android:drawableRight="@drawable/profile_switch_grid" android:drawablePadding="10dp"/>
+</LinearLayout>

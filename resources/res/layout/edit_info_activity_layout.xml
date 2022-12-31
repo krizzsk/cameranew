@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:civ="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/edit_info_custom" android:background="@color/color_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize">
+        <TextView android:textSize="18dp" android:textColor="#ff333333" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:text="@string/edit_info_title" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_alignParentStart="true"/>
+        <TextView android:textSize="16dp" android:textColor="#ff4e84e7" android:id="@+id/tv_complete" android:background="@drawable/ripple_common_oval_bg" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/complete" android:layout_centerVertical="true" android:layout_marginEnd="6dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/edt_cover_layout" android:layout_width="match_parent" android:layout_height="244dp">
+                <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/edt_header_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile_header_default_bg" android:scaleType="centerCrop"/>
+                <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/profile_header_bg_moban" android:scaleType="centerCrop"/>
+                <us.pinguo.ui.widget.AlphaPressedRelativeLayout android:id="@+id/rl_edt_avatar" android:layout_width="80dp" android:layout_height="80dp" android:layout_centerInParent="true">
+                    <us.pinguo.ui.uilview.CircleImageView android:id="@+id/edt_avatar" android:tag="a" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_avatar" civ:civ_border_width="1dp"/>
+                    <ImageView android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/change_head_img" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+                </us.pinguo.ui.widget.AlphaPressedRelativeLayout>
+                <TextView android:textColor="#ffffff" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/click_change_bg" android:layout_below="@+id/rl_edt_avatar"/>
+            </RelativeLayout>
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/edt_nickname_layout" android:layout_width="match_parent" android:layout_height="56dp">
+                    <TextView android:textSize="15dp" android:textColor="#000000" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/edit_nick_name" android:layout_weight="1" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+                    <TextView android:textSize="15dp" android:textColor="#333333" android:ellipsize="end" android:gravity="right" android:id="@+id/edt_info_nickname" android:background="@null" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="@string/edit_nickname_hint" android:singleLine="true" android:maxLength="20" android:imeOptions="actionDone" android:paddingStart="10dp" android:paddingEnd="16dp"/>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <View android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <RelativeLayout android:id="@+id/edt_info_gender_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <TextView android:textSize="15dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_gender" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true">
+                    <us.pinguo.ui.widget.CheckableTextView android:textSize="12dp" android:textColor="@color/profile_edit_text_selector" android:gravity="center" android:id="@+id/ctv_male" android:background="@drawable/profile_edit_left_shape" android:layout_width="71dp" android:layout_height="29dp" android:text="@string/profile_sex_male"/>
+                    <us.pinguo.ui.widget.CheckableTextView android:textSize="12dp" android:textColor="@color/profile_edit_text_selector" android:gravity="center" android:id="@+id/ctv_female" android:background="@drawable/profile_edit_right_shape" android:layout_width="71dp" android:layout_height="29dp" android:text="@string/profile_sex_female"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/edt_info_location_layout" android:layout_width="match_parent" android:layout_height="56dp">
+                    <TextView android:textSize="15dp" android:textColor="#000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_area" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+                    <TextView android:textSize="13dp" android:textColor="#666666" android:id="@+id/edt_info_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+                </RelativeLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+            <View android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@+id/edt_info_introduce_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="15dp" android:textColor="#000000" android:gravity="center" android:layout_width="wrap_content" android:layout_height="56dp" android:text="@string/edit_introduce" android:layout_marginStart="16dp"/>
+                    <TextView android:textSize="15dp" android:textColor="#666666" android:id="@+id/edt_info_introduce" android:layout_width="match_parent" android:layout_height="56dp" android:layout_marginStart="16dp"/>
+                </LinearLayout>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

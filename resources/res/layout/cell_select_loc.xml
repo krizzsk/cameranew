@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/inspire_common_divider"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="54dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_poi_select_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天府软件园E3" android:singleLine="true" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/text_primary" android:id="@+id/tv_address_select_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="四川省武侯区" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/iv_status_select_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:src="@drawable/poi_selected"/>
+    </LinearLayout>
+</LinearLayout>

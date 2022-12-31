@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/arc_container" android:background="@color/black_70" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:splitMotionEvents="false">
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/advanceText" android:paddingTop="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:textAlignment="center" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/contrastRatio" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/saturability" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/camera_adv_white_balance" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/camera_adv_focus_mode" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/camera_adv_sharpness" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/camera_adv_iso" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+        <us.pinguo.camera2020.widget.bubbleSeekbar.BubbleSeekBar2 android:id="@+id/camera_adv_exposure" android:layout_width="match_parent" android:layout_height="65dp" android:paddingStart="24dp" android:paddingEnd="32dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/camera_adv_tip_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20dp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/camera_adv_tips_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="#88000000" android:shadowDx="0" android:shadowDy="3" android:shadowRadius="10"/>
+        <TextView android:textSize="20dp" android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/camera_adv_tips_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:shadowColor="#88000000" android:shadowDx="0" android:shadowDy="3" android:shadowRadius="10" android:layout_marginStart="30dp"/>
+    </LinearLayout>
+</RelativeLayout>

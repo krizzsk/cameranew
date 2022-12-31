@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="110dp" android:foreground="?attr/selectableItemBackground">
+    <RelativeLayout android:id="@+id/store_manager_item" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/store_manager_pic_lay" android:layout_width="80dp" android:layout_height="85dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <us.pinguo.common.imageloader.widget.ImageLoaderView android:id="@+id/store_manager_item_img" android:layout_width="60dp" android:layout_height="70dp" android:scaleType="centerCrop" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+            <ImageView android:id="@+id/store_manager_item_close" android:background="@drawable/ic_store_filter_close" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:scaleType="centerCrop" android:layout_alignParentTop="true" android:layout_marginStart="3dp" android:layout_marginEnd="3dp" android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="12dp" android:textColor="#333333" android:id="@+id/store_manager_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_below="@+id/store_manager_pic_lay" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:id="@+id/store_manager_downloading_flag" android:background="@drawable/sticker_item_circle_bg" android:visibility="invisible" android:layout_width="40dp" android:layout_height="40dp" android:layout_centerInParent="true">
+            <ProgressBar android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="false" android:indeterminateDrawable="@anim/sticker_download_progress_anim_res_0x7f010033" android:indeterminateBehavior="repeat"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <View android:id="@+id/mask_res_0x7f0904a5" android:background="#80ffffff" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="110dp"/>
+</FrameLayout>

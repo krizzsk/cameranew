@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/rlLayout" android:layout_width="match_parent" android:layout_height="254dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="254dp" android:layout_marginTop="-80dp" android:src="@drawable/bg_dialog_light" android:scaleType="centerCrop" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center_horizontal" android:id="@+id/bgImg" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <us.pinguo.ui.widget.AutofitTextView android:textSize="15dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/tvSaveOnce" android:background="@drawable/shape_subscribe_common_big_bg" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="32dp" android:text="@string/str_save_pic" android:layout_centerInParent="true" android:layout_marginStart="85dp" android:layout_marginEnd="85dp" app:minTextSize="8dp" app:precision="1"/>
+</LinearLayout>

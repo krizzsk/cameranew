@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DevInfor>
+<SinaWeibo AppKey="3555837032" AppSecret="0b0bb9a659cd6fbdccd17024e3007e54" Enable="true" Id="4" ShareByAppClient="true" SortId="4" RedirectUrl="http://dispatcher.camera360.us/camera360" />
+<TencentWeibo Enable="false" />
+<Douban Enable="false" />
+<QZone AppId="100303003" AppKey="7a32c51df7e23c98cb789cba8f42d21d" Id="6" SortId="6" />
+<Renren Enable="false" />
+<KaiXin Enable="false" />
+<Facebook ConsumerKey="109356832549275" ConsumerSecret="3e6c53b85ba7d7e935c55f84c55ffcf6" RedirectUrl="https://wshare.camera360.com/login_callback.json" />
+<Twitter ConsumerKey="LRBM0H75rWrU9gNHvlEAA2aOy" ConsumerSecret="gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G" />
+<Evernote Enable="false" />
+<FourSquare Enable="false" />
+<GooglePlus Enable="false" />
+<Instagram ClientId="ff68e3216b4f4f989121aa1c2962d058" ClientSecret="1b2e82f110264869b3505c3fe34e31a1" RedirectUri="http://sharesdk.cn" />
+<LinkedIn Enable="false" />
+<Tumblr Enable="false" />
+<Email Enable="false" />
+<ShortMessage Enable="false" />
+<Wechat AppId="wx9eb0c14967cc1036" AppSecret="2a9b1510924ee1216641afb61e0b80c0" BypassApproval="false" Enable="true" Id="1" SortId="1" />
+<WechatMoments AppId="wx9eb0c14967cc1036" AppSecret="2a9b1510924ee1216641afb61e0b80c0" BypassApproval="false" Enable="true" Id="2" SortId="2" />
+<QQ AppId="100303003" AppKey="7a32c51df7e23c98cb789cba8f42d21d" Enable="true" Id="5" ShareByAppClient="true" SortId="5" />
+<Instapaper Enable="false" />
+<Pocket Enable="false" />
+<YouDao Enable="false" />
+<Pinterest Enable="false" />
+<Flickr Enable="false" />
+<Dropbox Enable="false" />
+<VKontakte Enable="false" />
+<WechatFavorite Enable="false" />
+<Yixin Enable="false" />
+<YixinMoments Enable="false" />
+<Mingdao Enable="false" />
+<Line Enable="false" />
+<WhatsApp Enable="false" />
+<KakaoTalk Enable="false" />
+<KakaoStory Enable="false" />
+<FacebookMessenger Enable="false" />
+<Alipay Enable="false" />
+<AlipayMoments Enable="false" />
+<Dingding Enable="false" />
+<Youtube Enable="false" />
+<Meipai Enable="false" />
+<Telegram Enable="false" />
+<Cmcc Enable="false" />
+<Reddit Enable="false" />
+<Telecom Enable="false" />
+<Accountkit Enable="false" />
+<Douyin AppKey="aw23xsebq2saoo8z" AppSecret="1a87f2e53290b6f6d0df5e6211d6641f" BypassApproval="false" Enable="true" Id="3" SortId="3" />
+<Wework Enable="false" />
+<HWAccount Enable="false" />
+<Oasis Enable="false" />
+<XMAccount Enable="false" />
+<SnapChat Enable="false" />
+<Kuaishou Enable="false" />
+<Littleredbook Enable="false" />
+<Watermelonvideo Enable="false" />
+<Tiktok Enable="false" />
+</DevInfor>

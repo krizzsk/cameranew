@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingBottom="@dimen/feeds_lower_part_padding" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:padding="@dimen/feeds_margin" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <us.pinguo.widet.PortraitImageView android:id="@+id/feeds_task_avatar" android:layout_width="@dimen/feeds_avatar_size" android:layout_height="@dimen/feeds_avatar_size" android:src="@drawable/default_avatar" android:layout_centerVertical="true" app:civ_border_width="0dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avatar_name_margin" android:layout_marginRight="@dimen/feeds_margin" android:layout_toLeftOf="@+id/feeds_task_enter" android:layout_toRightOf="@+id/feeds_task_avatar" android:layout_centerVertical="true">
+            <TextView android:id="@+id/feeds_task_name" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/FeedsName"/>
+            <TextView android:id="@+id/feeds_task_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" style="@style/FeedsDesc"/>
+        </LinearLayout>
+        <TextView android:gravity="center" android:id="@+id/feeds_task_enter" android:text="@string/inspire_participate_short" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/AttentionMDButton"/>
+    </RelativeLayout>
+    <us.pinguo.inspire.widget.SystemErrorTextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/feeds_task_content" android:paddingLeft="@dimen/feeds_margin" android:paddingRight="@dimen/feeds_margin" android:paddingBottom="@dimen/feeds_upper_part_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feeds_photo_chanllenge" android:lineSpacingMultiplier="1.2"/>
+    <us.pinguo.inspire.module.feeds.view.FeedsPhotoCommentView android:id="@+id/feeds_task_photo" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <us.pinguo.inspire.widget.videocell.InspireVideoView android:id="@+id/feeds_task_video" android:visibility="gone" android:layout_width="match_parent" android:layout_height="200dp"/>
+    <LinearLayout android:orientation="horizontal" android:background="#ff438cff" android:padding="@dimen/feeds_margin" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="-50dp">
+        <ImageView android:id="@+id/photo_game_award_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feeds_award_large" android:layout_centerVertical="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/text_white" android:ellipsize="end" android:id="@+id/feeds_cover_game_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/feeds_photo_chanllenge" android:singleLine="true" android:layout_weight="1" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="end|center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feeds_margin" android:layout_marginRight="@dimen/feeds_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/feeds_task_count_img" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/feeds_task_participate_icon"/>
+            <TextView android:textSize="12dp" android:textColor="@color/text_white" android:id="@+id/feeds_task_count_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+            <ImageView android:id="@+id/feeds_task_browse_img" android:padding="5dp" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:src="@drawable/feeds_task_browse_icon"/>
+            <TextView android:textSize="12dp" android:textColor="@color/text_white" android:id="@+id/feeds_task_browse_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

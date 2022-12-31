@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/content_res_0x7f0901de" android:background="#ffe8e8e8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/gl_root" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/album_gl_body"/>
+    <com.pinguo.camera360.gallery.ui.NativeRootLayout android:id="@+id/native_root" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.pinguo.camera360.gallery.ui.toolbar.PgToolBar android:id="@+id/id_toolbar" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="4dp">
+        <Spinner android:id="@+id/spinner_nav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dropDownWidth="100dp"/>
+    </com.pinguo.camera360.gallery.ui.toolbar.PgToolBar>
+    <View android:id="@+id/toolbar_shadow" android:background="@drawable/tool_bar_shape" android:layout_width="match_parent" android:layout_height="5dp" android:layout_below="@+id/id_toolbar"/>
+    <com.pinguo.camera360.gallery.ui.AlbumCoverInfoView android:id="@+id/album_cover_info" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_alignParentBottom="true"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/album_progress_bar" android:visibility="gone" android:layout_width="60dp" android:layout_height="60dp" android:layout_centerInParent="true">
+        <ProgressBar android:id="@+id/progress" android:layout_width="30dp" android:layout_height="30dp" android:indeterminate="false" android:indeterminateDrawable="@drawable/custom_progress_dialog_dark" android:indeterminateBehavior="repeat" android:animationResolution="10"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@+id/ly_album_selected_photos" android:background="@color/album_common_title_bg" android:layout_width="match_parent" android:layout_height="@dimen/select_page_bottom_bar_height" android:layout_alignParentBottom="true">
+        <com.pinguo.camera360.ui.view.HorizontalListView android:id="@+id/gv_album_photo_choice" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ly_album_photo_select_puzzle" android:background="@drawable/album_photo_choice_ok_btn" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginLeft="4dp" android:layout_marginRight="2dp">
+            <TextView android:enabled="false" android:textSize="20dp" android:textStyle="bold" android:textColor="@color/album_photo_choice_btn_color" android:id="@+id/tv_album_photo_select_count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:enabled="false" android:textSize="12.5dp" android:textColor="@color/album_photo_choice_btn_color" android:id="@+id/tv_album_photo_select_start" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/album_begin_puzzle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

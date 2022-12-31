@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:tag="task_detail_header" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <us.pinguo.inspire.widget.fresco.PhotoDraweeView android:id="@+id/task_detail_title_bg" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <TextView android:textColor="@color/text_primary" android:gravity="center" android:id="@+id/task_detail_title_desc" android:paddingLeft="22dp" android:paddingTop="28dp" android:paddingRight="22dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="94dp" android:maxLines="5" android:layout_below="@+id/task_detail_title_bg" android:lineSpacingMultiplier="1.2"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/task_detail_header_bottom_shadow" android:paddingTop="8dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignBottom="@+id/task_detail_title_bg">
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:src="@drawable/challenge_join_num_ic"/>
+        <TextView android:textSize="11dp" android:textColor="@color/text_white" android:id="@+id/mission_detail_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp"/>
+    </LinearLayout>
+    <us.pinguo.ui.uilview.CircleImageView android:id="@+id/task_detail_title_avatar" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginBottom="-25dp" android:src="@drawable/challenge_default_avatar" android:layout_above="@+id/task_detail_title_desc" android:layout_centerHorizontal="true" app:civ_border_width="1dp"/>
+</RelativeLayout>

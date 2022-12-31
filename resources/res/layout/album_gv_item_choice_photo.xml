@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="82dp" android:layout_height="82dp" android:layout_marginTop="6dp">
+        <ImageView android:id="@+id/iv_album_gv_item_choice_photo" android:layout_width="68dp" android:layout_height="68dp" android:scaleType="centerCrop" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/iv_album_gv_item_choice_photo_del" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/album_disselect_icon" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</RelativeLayout>

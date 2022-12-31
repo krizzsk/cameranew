@@ -1,0 +1,1201 @@
+DexClassLoader matches:
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java: import dalvik.system.DexClassLoader;
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java: import dalvik.system.InMemoryDexClassLoader;
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new InMemoryDexClassLoader(ByteBuffer.wrap(byteArrayOutputStream.toByteArray()), DynamicLoaderFactory.class.getClassLoader());
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new DexClassLoader(str, file.getPath(), null, context.getClassLoader());
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     private static DexClassLoader makeLegacyAdsSdkClassLoader(Context context) throws Exception {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new DexClassLoader(str, context.getDir(OPTIMIZED_DEX_PATH, 0).getPath(), null, DynamicLoaderFactory.class.getClassLoader());
+com\facebook\soloader\SoLoader.java: import dalvik.system.BaseDexClassLoader;
+com\facebook\soloader\SoLoader.java:             if (classLoader != null && !(classLoader instanceof BaseDexClassLoader)) {
+com\facebook\soloader\SoLoader.java:                 throw new IllegalStateException("ClassLoader " + classLoader.getClass().getName() + " should be of type BaseDexClassLoader");
+com\facebook\soloader\SoLoader.java:                 return (String) BaseDexClassLoader.class.getMethod("getLdLibraryPath", new Class[0]).invoke((BaseDexClassLoader) classLoader, new Object[0]);
+com\google\android\gms\internal\ads\zzdvc.java: import dalvik.system.DexClassLoader;
+com\google\android\gms\internal\ads\zzdvc.java:                         Class loadClass = new DexClassLoader(zzdupVar.zzayl().getAbsolutePath(), zzaym.getAbsolutePath(), null, this.context.getClassLoader()).loadClass("com.google.ccc.abuse.droidguard.DroidGuard");
+com\google\android\gms\internal\ads\zzfc.java: import dalvik.system.DexClassLoader;
+com\google\android\gms\internal\ads\zzfc.java:     private DexClassLoader zzyz;
+com\google\android\gms\internal\ads\zzfc.java:                         zzfcVar.zzyz = new DexClassLoader(file.getAbsolutePath(), cacheDir.getAbsolutePath(), null, zzfcVar.context.getClassLoader());
+com\google\android\gms\internal\ads\zzfc.java:     public final DexClassLoader zzch() {
+PathClassLoader matches:
+com\google\android\gms\dynamite\f.java: import dalvik.system.PathClassLoader;
+com\google\android\gms\dynamite\f.java: final class f extends PathClassLoader {
+ClassLoader matches:
+android\support\v4\media\MediaBrowserCompat.java:             MediaSessionCompat.ensureClassLoader(data);
+android\support\v4\media\MediaBrowserCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaBrowserCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle2);
+android\support\v4\media\MediaBrowserCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle3);
+android\support\v4\media\MediaBrowserCompat.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaBrowserCompatApi26.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaBrowserCompatApi26.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaBrowserCompat.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaMetadataCompat.java:         MediaSessionCompat.ensureClassLoader(bundle2);
+android\support\v4\media\MediaMetadataCompat.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaMetadataCompat.java:         this.mBundle = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+android\support\v4\media\MediaDescriptionCompat.java:             android.support.v4.media.session.MediaSessionCompat.ensureClassLoader(r3)
+android\support\v4\media\session\MediaControllerCompat.java:                             MediaSessionCompat.ensureClassLoader(data);
+android\support\v4\media\session\MediaControllerCompat.java:                             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaControllerCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaControllerCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaDescriptionCompat.java:         ClassLoader classLoader = MediaDescriptionCompat.class.getClassLoader();
+android\support\v4\media\session\MediaSessionCompat.java:                 MediaSessionCompat.ensureClassLoader(bundle2);
+android\support\v4\media\session\MediaSessionCompatApi23.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi24.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi24.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\MediaSessionCompatApi24.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\MediaBrowserCompat.java:             MediaSessionCompat.ensureClassLoader(bundle);
+android\support\v4\media\session\PlaybackStateCompat.java:             this.mExtras = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+android\support\v4\media\session\PlaybackStateCompat.java:         this.mExtras = parcel.readBundle(MediaSessionCompat.class.getClassLoader());
+android\support\v4\media\session\MediaSessionCompat.java:                 MediaSessionCompat.ensureClassLoader(data);
+android\support\v4\media\session\MediaSessionCompat.java:                 MediaSessionCompat.ensureClassLoader(bundle);
+androidx\activity\ComponentActivity.java:                 if (createIntent.getExtras() != null && createIntent.getExtras().getClassLoader() == null) {
+androidx\activity\ComponentActivity.java:                     createIntent.setExtrasClassLoader(componentActivity.getClassLoader());
+android\support\v4\media\session\MediaSessionCompat.java:     public static void ensureClassLoader(@Nullable Bundle bundle) {
+android\support\v4\media\session\MediaSessionCompat.java:             bundle.setClassLoader(MediaSessionCompat.class.getClassLoader());
+androidx\activity\result\IntentSenderRequest.java:         this.mIntentSender = (IntentSender) parcel.readParcelable(IntentSender.class.getClassLoader());
+androidx\activity\result\IntentSenderRequest.java:         this.mFillInIntent = (Intent) parcel.readParcelable(Intent.class.getClassLoader());
+androidx\appcompat\app\AppCompatViewInflater.java:             constructor = Class.forName(str3, false, context.getClassLoader()).asSubclass(View.class).getConstructor(sConstructorSignature);
+androidx\appcompat\app\AppCompatDelegateImpl.java:             public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.appcompat.app.AppCompatDelegateImpl.PanelFeatureState.SavedState.1
+androidx\appcompat\app\AppCompatDelegateImpl.java:                 @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\appcompat\app\AppCompatDelegateImpl.java:                 public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\appcompat\app\AppCompatDelegateImpl.java:             static SavedState readFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\appcompat\app\AppCompatDelegateImpl.java:                     this.mAppCompatViewInflater = (AppCompatViewInflater) this.mContext.getClassLoader().loadClass(string).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+androidx\appcompat\view\SupportMenuInflater.java:                 Constructor<?> constructor = Class.forName(str, false, SupportMenuInflater.this.mContext.getClassLoader()).getConstructor(clsArr);
+androidx\appcompat\widget\ResourceManagerInternal.java:                     Drawable drawable = (Drawable) DrawableDelegate.class.getClassLoader().loadClass(classAttribute).asSubclass(Drawable.class).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+androidx\appcompat\widget\SearchView.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.appcompat.widget.SearchView.SavedState.1
+androidx\appcompat\widget\SearchView.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\appcompat\widget\SearchView.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\appcompat\widget\SearchView.java:         public SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\appcompat\widget\Toolbar.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.appcompat.widget.Toolbar.SavedState.1
+androidx\appcompat\widget\Toolbar.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\appcompat\widget\Toolbar.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\appcompat\widget\Toolbar.java:         public SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\core\app\CoreComponentFactory.java:     public Activity instantiateActivity(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:                 constructor = Class.forName(str, false, context.getClassLoader()).getConstructor(CONSTRUCTOR_PARAMS);
+androidx\core\content\pm\ShortcutManagerCompat.java:                             arrayList.add((ShortcutInfoChangeListener) Class.forName(string, false, ShortcutManagerCompat.class.getClassLoader()).getMethod("getInstance", Context.class).invoke(null, context));
+androidx\core\app\CoreComponentFactory.java:     public Application instantiateApplication(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\CoreComponentFactory.java:     public ContentProvider instantiateProvider(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\content\pm\ShortcutManagerCompat.java:                     sShortcutInfoCompatSaver = (ShortcutInfoCompatSaver) Class.forName("androidx.sharetarget.ShortcutInfoCompatSaverImpl", false, ShortcutManagerCompat.class.getClassLoader()).getMethod("getInstance", Context.class).invoke(null, context);
+androidx\core\app\CoreComponentFactory.java:     public BroadcastReceiver instantiateReceiver(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\CoreComponentFactory.java:     public Service instantiateService(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public final Activity instantiateActivity(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public Activity instantiateActivityCompat(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public final Application instantiateApplication(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public Application instantiateApplicationCompat(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public final ContentProvider instantiateProvider(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public ContentProvider instantiateProviderCompat(@NonNull ClassLoader classLoader, @NonNull String str) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public final BroadcastReceiver instantiateReceiver(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public BroadcastReceiver instantiateReceiverCompat(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public final Service instantiateService(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\core\app\AppComponentFactory.java:     public Service instantiateServiceCompat(@NonNull ClassLoader classLoader, @NonNull String str, @Nullable Intent intent) throws InstantiationException, IllegalAccessException, ClassNotFoundException {
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.coordinatorlayout.widget.CoordinatorLayout.SavedState.1
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:         public SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\core\app\JobIntentService.java:                     dequeueWork.getIntent().setExtrasClassLoader(this.mService.getClassLoader());
+androidx\core\os\ParcelableCompat.java:     static class ParcelableCompatCreatorHoneycombMR2<T> implements Parcelable.ClassLoaderCreator<T> {
+androidx\core\os\ParcelableCompat.java:         @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\core\os\ParcelableCompat.java:         public T createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\core\os\ParcelableCompatCreatorCallbacks.java:     T createFromParcel(Parcel parcel, ClassLoader classLoader);
+androidx\customview\view\AbsSavedState.java:     public static final Parcelable.Creator<AbsSavedState> CREATOR = new Parcelable.ClassLoaderCreator<AbsSavedState>() { // from class: androidx.customview.view.AbsSavedState.2
+androidx\customview\view\AbsSavedState.java:         @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\customview\view\AbsSavedState.java:         public AbsSavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\customview\view\AbsSavedState.java:             return createFromParcel(parcel, (ClassLoader) null);
+androidx\customview\view\AbsSavedState.java:     public AbsSavedState(@NonNull Parcel parcel, @Nullable ClassLoader classLoader) {
+androidx\databinding\ObservableParcelable.java:             return new ObservableParcelable(parcel.readParcelable(AnonymousClass1.class.getClassLoader()));
+androidx\drawerlayout\widget\DrawerLayout.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.drawerlayout.widget.DrawerLayout.SavedState.1
+androidx\drawerlayout\widget\DrawerLayout.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\drawerlayout\widget\DrawerLayout.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\drawerlayout\widget\DrawerLayout.java:         public SavedState(@NonNull Parcel parcel, @Nullable ClassLoader classLoader) {
+androidx\emoji2\viewsintegration\EmojiEditableFactory.java:             sWatcherClass = Class.forName("android.text.DynamicLayout$ChangeWatcher", false, getClass().getClassLoader());
+androidx\fragment\app\BackStackRecord.java:         super(fragmentManager.getFragmentFactory(), fragmentManager.getHost() != null ? fragmentManager.getHost().getContext().getClassLoader() : null);
+androidx\fragment\app\BackStackState.java:                     Fragment instantiate = savedState.instantiate(fragmentManager.getFragmentFactory(), fragmentManager.getHost().getContext().getClassLoader());
+androidx\fragment\app\FragmentFactory.java:     private static final SimpleArrayMap<ClassLoader, SimpleArrayMap<String, Class<?>>> sClassCacheMap = new SimpleArrayMap<>();
+androidx\fragment\app\FragmentFactory.java:     public static boolean isFragmentClass(@NonNull ClassLoader classLoader, @NonNull String str) {
+androidx\fragment\app\FragmentFactory.java:     private static Class<?> loadClass(@NonNull ClassLoader classLoader, @NonNull String str) throws ClassNotFoundException {
+androidx\fragment\app\FragmentFactory.java:         SimpleArrayMap<ClassLoader, SimpleArrayMap<String, Class<?>>> simpleArrayMap = sClassCacheMap;
+androidx\fragment\app\FragmentFactory.java:     public static Class<? extends Fragment> loadFragmentClass(@NonNull ClassLoader classLoader, @NonNull String str) {
+androidx\fragment\app\FragmentFactory.java:     public Fragment instantiate(@NonNull ClassLoader classLoader, @NonNull String str) {
+androidx\fragment\app\BackStackRecord.java:         super(backStackRecord.mManager.getFragmentFactory(), backStackRecord.mManager.getHost() != null ? backStackRecord.mManager.getHost().getContext().getClassLoader() : null, backStackRecord);
+androidx\fragment\app\FragmentContainerView.java:             Fragment instantiate = fm.getFragmentFactory().instantiate(context.getClassLoader(), classAttribute);
+androidx\fragment\app\FragmentLayoutInflaterFactory.java:             if (attributeValue == null || !FragmentFactory.isFragmentClass(context.getClassLoader(), attributeValue)) {
+androidx\fragment\app\FragmentLayoutInflaterFactory.java:                 findFragmentById = this.mFragmentManager.getFragmentFactory().instantiate(context.getClassLoader(), attributeValue);
+androidx\fragment\app\FragmentManager.java:         public Fragment instantiate(@NonNull ClassLoader classLoader, @NonNull String str) {
+androidx\fragment\app\FragmentPagerAdapter.java:     public void restoreState(@Nullable Parcelable parcelable, @Nullable ClassLoader classLoader) {
+androidx\fragment\app\FragmentStateManager.java:     public void restoreState(@NonNull ClassLoader classLoader) {
+androidx\fragment\app\FragmentStateManager.java:         bundle.setClassLoader(classLoader);
+androidx\fragment\app\FragmentStateManager.java:     public FragmentStateManager(@NonNull FragmentLifecycleCallbacksDispatcher fragmentLifecycleCallbacksDispatcher, @NonNull FragmentStore fragmentStore, @NonNull ClassLoader classLoader, @NonNull FragmentFactory fragmentFactory, @NonNull FragmentState fragmentState) {
+androidx\fragment\app\FragmentState.java:     public Fragment instantiate(@NonNull FragmentFactory fragmentFactory, @NonNull ClassLoader classLoader) {
+androidx\fragment\app\FragmentState.java:             bundle.setClassLoader(classLoader);
+androidx\fragment\app\FragmentTransaction.java:     private final ClassLoader mClassLoader;
+androidx\fragment\app\FragmentTabHost.java:                     Fragment instantiate = this.mFragmentManager.getFragmentFactory().instantiate(this.mContext.getClassLoader(), tabInfoForTag.clss.getName());
+androidx\fragment\app\FragmentTransaction.java:         this.mClassLoader = null;
+androidx\fragment\app\FragmentTransaction.java:             ClassLoader classLoader = this.mClassLoader;
+androidx\fragment\app\FragmentStatePagerAdapter.java:     public void restoreState(@Nullable Parcelable parcelable, @Nullable ClassLoader classLoader) {
+androidx\fragment\app\FragmentStatePagerAdapter.java:             bundle.setClassLoader(classLoader);
+androidx\fragment\app\FragmentTransaction.java:     public FragmentTransaction(@NonNull FragmentFactory fragmentFactory, @Nullable ClassLoader classLoader) {
+androidx\fragment\app\FragmentTransaction.java:         this.mClassLoader = classLoader;
+androidx\fragment\app\FragmentTransaction.java:     public FragmentTransaction(@NonNull FragmentFactory fragmentFactory, @Nullable ClassLoader classLoader, @NonNull FragmentTransaction fragmentTransaction) {
+androidx\fragment\app\Fragment.java:     @SuppressLint({"BanParcelableUsage, ParcelClassLoader"})
+androidx\fragment\app\Fragment.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.fragment.app.Fragment.SavedState.1
+androidx\fragment\app\Fragment.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\fragment\app\Fragment.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\fragment\app\FragmentManager.java:         fragmentStateManager2.restoreState(this.mHost.getContext().getClassLoader());
+androidx\fragment\app\Fragment.java:         SavedState(@NonNull Parcel parcel, @Nullable ClassLoader classLoader) {
+androidx\fragment\app\Fragment.java:             readBundle.setClassLoader(classLoader);
+androidx\fragment\app\Fragment.java:             Fragment newInstance = FragmentFactory.loadFragmentClass(context.getClassLoader(), str).getConstructor(new Class[0]).newInstance(new Object[0]);
+androidx\fragment\app\Fragment.java:                 bundle.setClassLoader(newInstance.getClass().getClassLoader());
+androidx\fragment\app\FragmentManager.java:                     fragmentStateManager = new FragmentStateManager(this.mLifecycleCallbacksDispatcher, this.mFragmentStore, this.mHost.getContext().getClassLoader(), getFragmentFactory(), savedState);
+androidx\fragment\app\FragmentManager.java:                 fragmentStateManager.restoreState(this.mHost.getContext().getClassLoader());
+androidx\fragment\app\FragmentManager.java:                 bundle.setClassLoader(this.mHost.getContext().getClassLoader());
+androidx\media\MediaBrowserServiceCompatApi21.java:             MediaSessionCompat.ensureClassLoader(bundle);
+androidx\media\MediaBrowserServiceCompatApi26.java:             MediaSessionCompat.ensureClassLoader(bundle);
+androidx\media\MediaBrowserServiceCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle);
+androidx\media\MediaBrowserServiceCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle2);
+androidx\media\MediaBrowserServiceCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle3);
+androidx\media\MediaBrowserServiceCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle4);
+androidx\media\MediaBrowserServiceCompat.java:                     MediaSessionCompat.ensureClassLoader(bundle5);
+androidx\media\MediaBrowserServiceCompat.java:             data.setClassLoader(MediaBrowserCompat.class.getClassLoader());
+androidx\recyclerview\widget\StaggeredGridLayoutManager.java:             this.mFullSpanItems = parcel.readArrayList(LazySpanLookup.FullSpanItem.class.getClassLoader());
+androidx\recyclerview\widget\RecyclerView.java:         ClassLoader classLoader;
+androidx\recyclerview\widget\RecyclerView.java:                     classLoader = getClass().getClassLoader();
+androidx\recyclerview\widget\RecyclerView.java:                     classLoader = context.getClassLoader();
+androidx\room\Room.java:             return (T) Class.forName(str2, true, cls.getClassLoader()).newInstance();
+androidx\savedstate\Recreator.java:                 Constructor declaredConstructor = Class.forName(str, false, Recreator.class.getClassLoader()).asSubclass(SavedStateRegistry.AutoRecreated.class).getDeclaredConstructor(new Class[0]);
+androidx\recyclerview\widget\RecyclerView.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.recyclerview.widget.RecyclerView.SavedState.1
+androidx\recyclerview\widget\RecyclerView.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\recyclerview\widget\RecyclerView.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\recyclerview\widget\RecyclerView.java:         SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\recyclerview\widget\RecyclerView.java:             this.mLayoutState = parcel.readParcelable(classLoader == null ? LayoutManager.class.getClassLoader() : classLoader);
+androidx\slidingpanelayout\widget\SlidingPaneLayout.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.slidingpanelayout.widget.SlidingPaneLayout.SavedState.1
+androidx\slidingpanelayout\widget\SlidingPaneLayout.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\slidingpanelayout\widget\SlidingPaneLayout.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\slidingpanelayout\widget\SlidingPaneLayout.java:         SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\transition\TransitionInflater.java:                     if (constructor == null && (asSubclass = Class.forName(attributeValue, false, this.mContext.getClassLoader()).asSubclass(cls)) != 0) {
+androidx\versionedparcelable\ParcelUtils.java:             bundle2.setClassLoader(ParcelUtils.class.getClassLoader());
+androidx\versionedparcelable\ParcelUtils.java:             bundle2.setClassLoader(ParcelUtils.class.getClassLoader());
+androidx\versionedparcelable\VersionedParcelParcel.java:         return this.mParcel.readBundle(getClass().getClassLoader());
+androidx\versionedparcelable\VersionedParcel.java:             Class<?> cls3 = Class.forName(String.format("%s.%sParcelizer", cls.getPackage().getName(), cls.getSimpleName()), false, cls.getClassLoader());
+androidx\versionedparcelable\VersionedParcel.java:             Method declaredMethod = Class.forName(str, true, VersionedParcel.class.getClassLoader()).getDeclaredMethod("read", VersionedParcel.class);
+androidx\versionedparcelable\VersionedParcelParcel.java:         return (T) this.mParcel.readParcelable(getClass().getClassLoader());
+androidx\versionedparcelable\VersionedParcel.java:                     Class<?> cls = Class.forName(objectStreamClass.getName(), false, getClass().getClassLoader());
+androidx\versionedparcelable\VersionedParcel.java:         if ((exc instanceof Parcelable) && exc.getClass().getClassLoader() == Parcelable.class.getClassLoader()) {
+androidx\viewpager\widget\PagerAdapter.java:     public void restoreState(@Nullable Parcelable parcelable, @Nullable ClassLoader classLoader) {
+androidx\viewpager\widget\ViewPager.java:     private ClassLoader mRestoredClassLoader;
+androidx\viewpager\widget\ViewPager.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.viewpager.widget.ViewPager.SavedState.1
+androidx\viewpager\widget\ViewPager.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\viewpager\widget\ViewPager.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\viewpager\widget\ViewPager.java:         ClassLoader loader;
+androidx\viewpager\widget\ViewPager.java:         SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\viewpager\widget\ViewPager.java:             classLoader = classLoader == null ? getClass().getClassLoader() : classLoader;
+androidx\viewpager\widget\ViewPager.java:         this.mRestoredClassLoader = null;
+androidx\viewpager2\adapter\FragmentStateAdapter.java:             if (bundle.getClassLoader() == null) {
+androidx\viewpager2\adapter\FragmentStateAdapter.java:                 bundle.setClassLoader(getClass().getClassLoader());
+androidx\viewpager\widget\ViewPager.java:         this.mRestoredClassLoader = savedState.loader;
+androidx\viewpager\widget\ViewPager.java:                 this.mAdapter.restoreState(this.mRestoredAdapterState, this.mRestoredClassLoader);
+androidx\viewpager\widget\ViewPager.java:                 this.mRestoredClassLoader = null;
+androidx\viewpager\widget\ViewPager.java:         this.mRestoredClassLoader = null;
+androidx\viewpager2\widget\ViewPager2.java:         public static final Parcelable.Creator<SavedState> CREATOR = new Parcelable.ClassLoaderCreator<SavedState>() { // from class: androidx.viewpager2.widget.ViewPager2.SavedState.1
+androidx\viewpager2\widget\ViewPager2.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+androidx\viewpager2\widget\ViewPager2.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+androidx\viewpager2\widget\ViewPager2.java:                 return createFromParcel(parcel, (ClassLoader) null);
+androidx\viewpager2\widget\ViewPager2.java:         SavedState(Parcel parcel, ClassLoader classLoader) {
+androidx\viewpager2\widget\ViewPager2.java:         private void readValues(Parcel parcel, ClassLoader classLoader) {
+bitter\jnibridge\JNIBridge.java:         return Proxy.newProxyInstance(JNIBridge.class.getClassLoader(), clsArr, new a(j2));
+butterknife\ButterKnife.java:                     ClassLoader classLoader = cls.getClassLoader();
+com\adjust\sdk\InstallReferrer.java:             return Proxy.newProxyInstance(cls.getClassLoader(), new Class[]{cls}, this);
+com\bytedance\sdk\a\b\a\g\c.java:             this.a.invoke(null, sSLSocket, Proxy.newProxyInstance(e.class.getClassLoader(), new Class[]{this.f1029d, this.f1030e}, new a(e.a(list))));
+com\bytedance\sdk\openadsdk\utils\ac.java:             Class<?> loadClass = context.getClassLoader().loadClass("com.huawei.android.util.HwNotchSizeUtil");
+com\bytedance\sdk\openadsdk\utils\ac.java:             Class<?> loadClass = context.getClassLoader().loadClass("android.util.FtFeature");
+com\bytedance\sdk\openadsdk\utils\ac.java:                 Class<?> loadClass = activity.getClassLoader().loadClass("android.os.SystemProperties");
+com\bytedance\sdk\openadsdk\utils\z.java:             o.a("TTClassLoader", "get method: " + str + ", " + str2, th);
+com\bytedance\sdk\openadsdk\utils\z.java:             return Class.forName(str, true, z.class.getClassLoader());
+com\bytedance\sdk\openadsdk\utils\z.java:     private static ClassLoader a() {
+com\bytedance\sdk\openadsdk\utils\z.java:         ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+com\bytedance\sdk\openadsdk\utils\z.java:         return contextClassLoader == null ? z.class.getClassLoader() : contextClassLoader;
+com\coremedia\iso\PropertyBoxParserImpl.java:                 ClassLoader contextClassLoader = Thread.currentThread().getContextClassLoader();
+com\coremedia\iso\PropertyBoxParserImpl.java:                 Enumeration<URL> resources = (contextClassLoader == null ? ClassLoader.getSystemClassLoader() : contextClassLoader).getResources("isoparser-custom.properties");
+com\facebook\GraphRequest.java:             this.resource = (RESOURCE) parcel.readParcelable(com.facebook.f.f().getClassLoader());
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:     public ClassLoader A02;
+com\facebook\ads\internal\androidx\support\v4\view\AbsSavedState.java:         CREATOR = new Parcelable.ClassLoaderCreator<AbsSavedState>() { // from class: com.facebook.ads.redexgen.X.2a
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:         CREATOR = new Parcelable.ClassLoaderCreator<ViewPager$SavedState>() { // from class: com.facebook.ads.redexgen.X.3D
+com\facebook\ads\internal\androidx\support\v4\view\AbsSavedState.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\facebook\ads\internal\androidx\support\v4\view\AbsSavedState.java:             public final AbsSavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:             public final ViewPager$SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:     public ViewPager$SavedState(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v4\view\AbsSavedState.java:     public AbsSavedState(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v4\view\ViewPager$SavedState.java:         classLoader = classLoader == null ? getClass().getClassLoader() : classLoader;
+com\facebook\ads\internal\androidx\support\v7\widget\RecyclerView$SavedState.java:     public static final Parcelable.Creator<RecyclerView$SavedState> CREATOR = new Parcelable.ClassLoaderCreator<RecyclerView$SavedState>() { // from class: com.facebook.ads.redexgen.X.4W
+com\facebook\ads\internal\androidx\support\v7\widget\RecyclerView$SavedState.java:         @Override // android.os.Parcelable.ClassLoaderCreator
+com\facebook\ads\internal\androidx\support\v7\widget\RecyclerView$SavedState.java:         public final RecyclerView$SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v7\widget\RecyclerView$SavedState.java:     public RecyclerView$SavedState(Parcel parcel, ClassLoader classLoader) {
+com\facebook\ads\internal\androidx\support\v7\widget\RecyclerView$SavedState.java:         this.A00 = parcel.readParcelable(classLoader == null ? C4M.class.getClassLoader() : classLoader);
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java: import dalvik.system.DexClassLoader;
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java: import dalvik.system.InMemoryDexClassLoader;
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     private static boolean sUseLegacyClassLoader = true;
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFallback.java:             return cls.cast(Proxy.newProxyInstance(DynamicLoaderFallback.class.getClassLoader(), new Class[]{cls}, this.mInvocationHandler));
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     private static ClassLoader createInMemoryClassLoader(Context context) throws IOException {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new InMemoryDexClassLoader(ByteBuffer.wrap(byteArrayOutputStream.toByteArray()), DynamicLoaderFactory.class.getClassLoader());
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 dynamicLoader = (DynamicLoader) makeAdsSdkClassLoader(context.getApplicationContext()).loadClass("com.facebook.ads.internal.dynamicloading.DynamicLoaderImpl").newInstance();
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFallback.java:         return (DynamicLoader) Proxy.newProxyInstance(DynamicLoaderFallback.class.getClassLoader(), new Class[]{DynamicLoader.class}, new InvocationHandler() { // from class: com.facebook.ads.internal.dynamicloading.DynamicLoaderFallback.1
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     private static ClassLoader makeAdsSdkClassLoader(Context context) throws Exception {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:             return createInMemoryClassLoader(context);
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:         if (sUseLegacyClassLoader) {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:             return makeLegacyAdsSdkClassLoader(context);
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFallback.java:                     Object newProxyInstance = method.getReturnType().equals(obj.getClass().getInterfaces()[0]) ? obj : Proxy.newProxyInstance(DynamicLoaderFallback.class.getClassLoader(), new Class[]{method.getReturnType()}, this);
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new DexClassLoader(str, file.getPath(), null, context.getClassLoader());
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     private static DexClassLoader makeLegacyAdsSdkClassLoader(Context context) throws Exception {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:                 return new DexClassLoader(str, context.getDir(OPTIMIZED_DEX_PATH, 0).getPath(), null, DynamicLoaderFactory.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\Format.java:         this.A0J = (ColorInfo) parcel.readParcelable(ColorInfo.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\Format.java:         this.A0H = (DrmInitData) parcel.readParcelable(DrmInitData.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\Format.java:         this.A0I = (Metadata) parcel.readParcelable(Metadata.class.getClassLoader());
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:     public static void setUseLegacyClassLoader(boolean z) {
+com\facebook\ads\internal\dynamicloading\DynamicLoaderFactory.java:         sUseLegacyClassLoader = z;
+com\facebook\ads\internal\exoplayer2\metadata\Metadata.java:                 entryArr[i2] = (Entry) parcel.readParcelable(Entry.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\metadata\id3\ChapterFrame.java:             this.A05[i2] = (Id3Frame) parcel.readParcelable(Id3Frame.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\metadata\id3\ChapterTocFrame.java:             this.A04[i2] = (Id3Frame) parcel.readParcelable(Id3Frame.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\source\TrackGroup.java:             this.A02[i2] = (Format) parcel.readParcelable(Format.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\source\TrackGroupArray.java:             this.A02[i2] = (TrackGroup) parcel.readParcelable(TrackGroup.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\trackselection\DefaultTrackSelector$Parameters.java:                 DefaultTrackSelector$SelectionOverride override = (DefaultTrackSelector$SelectionOverride) parcel.readParcelable(DefaultTrackSelector$SelectionOverride.class.getClassLoader());
+com\facebook\ads\internal\exoplayer2\trackselection\DefaultTrackSelector$Parameters.java:                 hashMap.put((TrackGroupArray) parcel.readParcelable(TrackGroupArray.class.getClassLoader()), override);
+com\facebook\ads\internal\util\parcelable\WrappedParcelable.java:     public Parcelable unwrap(ClassLoader classLoader) {
+com\facebook\ads\redexgen\X\AnonymousClass52.java:             Bundle adnwSavedStateBundle = L9.A02(bundle, DynamicLoaderImpl.class.getClassLoader());
+com\facebook\ads\redexgen\X\AnonymousClass52.java:         this.A05 = L9.A01(this.A0M.getIntent(), DynamicLoaderImpl.class.getClassLoader());
+com\facebook\ads\redexgen\X\C05934t.java:     public ClassLoader A00;
+com\facebook\ads\redexgen\X\C05934t.java:     public C05934t(T impl, ClassLoader classLoader) {
+com\facebook\ads\redexgen\X\C05934t.java:     public static Object A00(final ClassLoader classLoader, Method method) {
+com\facebook\ads\redexgen\X\C05944u.java:         ClassLoader classLoader = t.getClass().getClassLoader();
+com\facebook\ads\redexgen\X\C0828Eq.java:         ClassLoader classLoader = getClass().getClassLoader();
+com\facebook\ads\redexgen\X\C0828Eq.java:             classLoader = getContext().getClassLoader();
+com\facebook\ads\redexgen\X\C0987Lb.java:                 Object newProxyInstance = Proxy.newProxyInstance(C0987Lb.class.getClassLoader(), new Class[]{cls2}, new C0986La(intValue, linkedBlockingQueue, c8j));
+com\facebook\ads\redexgen\X\C1469be.java:         ClassLoader classLoader = getClass().getClassLoader();
+com\facebook\ads\redexgen\X\C3F.java:     public ClassLoader A0c;
+com\facebook\ads\redexgen\X\C3F.java:         ClassLoader classLoader = getClass().getClassLoader();
+com\facebook\ads\redexgen\X\C3F.java:             classLoader = context.getClassLoader();
+com\facebook\ads\redexgen\X\L9.java:     public static Intent A01(Intent startIntent, ClassLoader classLoader) {
+com\facebook\ads\redexgen\X\L9.java:     public static Bundle A02(Bundle bundle, ClassLoader classLoader) {
+com\facebook\ads\redexgen\X\YA.java:             return context.getClassLoader().loadClass(A05(55, 27, 35));
+com\facebook\appevents\internal\h.java:             cls = context.getClassLoader().loadClass(str);
+com\facebook\common\callercontext\ContextChain.java:         this.mParent = (ContextChain) parcel.readParcelable(ContextChain.class.getClassLoader());
+com\facebook\login\LoginClient.java:             this.b = (AccessToken) parcel.readParcelable(AccessToken.class.getClassLoader());
+com\facebook\login\LoginClient.java:             this.f3122e = (Request) parcel.readParcelable(Request.class.getClassLoader());
+com\facebook\login\LoginClient.java:         Parcelable[] readParcelableArray = parcel.readParcelableArray(LoginMethodHandler.class.getClassLoader());
+com\facebook\login\LoginClient.java:         this.f3118g = (Request) parcel.readParcelable(Request.class.getClassLoader());
+com\facebook\share\model\CameraEffectArguments.java:             d((CameraEffectArguments) parcel.readParcelable(CameraEffectArguments.class.getClassLoader()));
+com\facebook\share\model\CameraEffectArguments.java:         this.params = parcel.readBundle(getClass().getClassLoader());
+com\facebook\share\model\CameraEffectTextures.java:             d((CameraEffectTextures) parcel.readParcelable(CameraEffectTextures.class.getClassLoader()));
+com\facebook\share\model\CameraEffectTextures.java:         this.textures = parcel.readBundle(getClass().getClassLoader());
+com\facebook\share\model\ShareContent.java:         this.contentUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareLinkContent.java:         this.imageUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMedia.java:             Parcelable[] readParcelableArray = parcel.readParcelableArray(ShareMedia.class.getClassLoader());
+com\facebook\share\model\ShareHashtag.java:             d((ShareHashtag) parcel.readParcelable(ShareHashtag.class.getClassLoader()));
+com\facebook\share\model\ShareMessengerGenericTemplateContent.java:         this.genericTemplateElement = (ShareMessengerGenericTemplateElement) parcel.readParcelable(ShareMessengerGenericTemplateElement.class.getClassLoader());
+com\facebook\share\model\ShareMessengerOpenGraphMusicTemplateContent.java:         this.url = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMessengerGenericTemplateElement.java:         this.imageUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMessengerOpenGraphMusicTemplateContent.java:         this.button = (ShareMessengerActionButton) parcel.readParcelable(ShareMessengerActionButton.class.getClassLoader());
+com\facebook\share\model\ShareMessengerGenericTemplateElement.java:         this.defaultAction = (ShareMessengerActionButton) parcel.readParcelable(ShareMessengerActionButton.class.getClassLoader());
+com\facebook\share\model\ShareMessengerGenericTemplateElement.java:         this.button = (ShareMessengerActionButton) parcel.readParcelable(ShareMessengerActionButton.class.getClassLoader());
+com\facebook\share\model\ShareMediaContent.java:         this.media = Arrays.asList((ShareMedia[]) parcel.readParcelableArray(ShareMedia.class.getClassLoader()));
+com\facebook\share\model\ShareMessengerURLActionButton.java:         this.url = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMessengerURLActionButton.java:         this.fallbackUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMessengerMediaTemplateContent.java:         this.mediaUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareMessengerMediaTemplateContent.java:         this.button = (ShareMessengerActionButton) parcel.readParcelable(ShareMessengerActionButton.class.getClassLoader());
+com\facebook\share\model\ShareOpenGraphAction.java:             return f((ShareOpenGraphAction) parcel.readParcelable(ShareOpenGraphAction.class.getClassLoader()));
+com\facebook\share\model\SharePhoto.java:             return m((SharePhoto) parcel.readParcelable(SharePhoto.class.getClassLoader()));
+com\facebook\share\model\ShareOpenGraphValueContainer.java:         this.bundle = parcel.readBundle(a.class.getClassLoader());
+com\facebook\share\model\SharePhoto.java:         this.bitmap = (Bitmap) parcel.readParcelable(Bitmap.class.getClassLoader());
+com\facebook\share\model\SharePhoto.java:         this.imageUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\share\model\ShareVideo.java:             return h((ShareVideo) parcel.readParcelable(ShareVideo.class.getClassLoader()));
+com\facebook\share\model\ShareStoryContent.java:         this.mBackgroundAsset = (ShareMedia) parcel.readParcelable(ShareMedia.class.getClassLoader());
+com\facebook\share\model\ShareStoryContent.java:         this.mStickerAsset = (SharePhoto) parcel.readParcelable(SharePhoto.class.getClassLoader());
+com\facebook\share\model\ShareVideo.java:         this.localUrl = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\facebook\soloader\SoLoader.java: import dalvik.system.BaseDexClassLoader;
+com\facebook\soloader\SoLoader.java:             ClassLoader classLoader = SoLoader.class.getClassLoader();
+com\facebook\soloader\SoLoader.java:             if (classLoader != null && !(classLoader instanceof BaseDexClassLoader)) {
+com\facebook\soloader\SoLoader.java:                 throw new IllegalStateException("ClassLoader " + classLoader.getClass().getName() + " should be of type BaseDexClassLoader");
+com\facebook\soloader\SoLoader.java:                 return (String) BaseDexClassLoader.class.getMethod("getLdLibraryPath", new Class[0]).invoke((BaseDexClassLoader) classLoader, new Object[0]);
+com\facebook\soloader\SoLoader.java:                 Method declaredMethod = Runtime.class.getDeclaredMethod("nativeLoad", String.class, ClassLoader.class, String.class);
+com\google\android\gms\ads\internal\overlay\AdOverlayInfoParcel.java:             bundleExtra.setClassLoader(AdOverlayInfoParcel.class.getClassLoader());
+com\google\android\gms\ads\internal\util\zzj.java:             context.getClassLoader().loadClass("com.google.android.gms.ads.internal.ClientApi");
+com\google\android\gms\ads\internal\util\zzj.java:             Object newInstance = context.getClassLoader().loadClass("com.google.android.gms.ads.internal.util.WorkManagerUtil").getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+com\google\android\gms\ads\internal\util\zzj.java:     public static boolean zza(ClassLoader classLoader, Class<?> cls, List<String> list) {
+com\google\android\gms\cloudmessaging\Rpc.java:                 intent.setExtrasClassLoader(new zza.a());
+com\google\android\gms\cloudmessaging\zza.java:     public static final class a extends ClassLoader {
+com\google\android\gms\cloudmessaging\zza.java:         @Override // java.lang.ClassLoader
+com\google\android\gms\common\internal\DowngradeableSafeParcel.java:     private static ClassLoader zzb;
+com\google\android\gms\common\internal\safeparcel\SafeParcelReader.java:     public static void H(Parcel parcel, int i2, List list, ClassLoader classLoader) {
+com\google\android\gms\common\wrappers\a.java:                     context.getClassLoader().loadClass("com.google.android.instantapps.supervisor.InstantAppsRuntime");
+com\google\android\gms\dynamic\RemoteCreator.java:                     this.zzb = getRemoteCreator((IBinder) d2.getClassLoader().loadClass(this.zza).newInstance());
+com\google\android\gms\dynamite\DynamiteModule.java: import dalvik.system.DelegateLastClassLoader;
+com\google\android\gms\dynamite\DynamiteModule.java:     public static class DynamiteLoaderClassLoader {
+com\google\android\gms\dynamite\DynamiteModule.java:         @GuardedBy("DynamiteLoaderClassLoader.class")
+com\google\android\gms\dynamite\DynamiteModule.java:         public static ClassLoader sClassLoader;
+com\google\android\gms\dynamite\DynamiteModule.java:             ClassLoader classLoader = context.getApplicationContext().getClassLoader();
+com\google\android\gms\dynamite\DynamiteModule.java:         ClassLoader fVar;
+com\google\android\gms\dynamite\DynamiteModule.java:                         declaredField = context.getApplicationContext().getClassLoader().loadClass(DynamiteLoaderClassLoader.class.getName()).getDeclaredField("sClassLoader");
+com\google\android\gms\dynamite\DynamiteModule.java:                         ClassLoader classLoader = (ClassLoader) declaredField.get(null);
+com\google\android\gms\dynamite\DynamiteModule.java:                             if (classLoader == ClassLoader.getSystemClassLoader()) {
+com\google\android\gms\dynamite\DynamiteModule.java:                             declaredField.set(null, ClassLoader.getSystemClassLoader());
+com\google\android\gms\dynamite\DynamiteModule.java:                                         fVar = new DelegateLastClassLoader(f3703e, ClassLoader.getSystemClassLoader());
+com\google\android\gms\dynamite\DynamiteModule.java:                                         fVar = new f(f3703e, ClassLoader.getSystemClassLoader());
+com\google\android\gms\dynamite\DynamiteModule.java:                                 declaredField.set(null, ClassLoader.getSystemClassLoader());
+com\google\android\gms\dynamite\DynamiteModule.java:                 IBinder iBinder = (IBinder) context.createPackageContext("com.google.android.gms", 3).getClassLoader().loadClass("com.google.android.gms.chimera.container.DynamiteLoaderImpl").newInstance();
+com\google\android\gms\dynamite\DynamiteModule.java:     private static void k(ClassLoader classLoader) throws LoadingException {
+com\google\android\gms\dynamite\DynamiteModule.java:             return (IBinder) this.a.getClassLoader().loadClass(str).newInstance();
+com\google\android\gms\dynamite\f.java: import dalvik.system.PathClassLoader;
+com\google\android\gms\dynamite\f.java: final class f extends PathClassLoader {
+com\google\android\gms\dynamite\f.java:     public f(String str, ClassLoader classLoader) {
+com\google\android\gms\dynamite\f.java:     @Override // java.lang.ClassLoader
+com\google\android\gms\internal\ads\zzanf.java:             Class<?> cls = Class.forName(str, false, zzanf.class.getClassLoader());
+com\google\android\gms\internal\ads\zzanf.java:             return CustomEvent.class.isAssignableFrom(Class.forName(str, false, zzanf.class.getClassLoader()));
+com\google\android\gms\internal\ads\zzapq.java:         return new zzapt((RtbAdapter) Class.forName(str, false, zzapq.class.getClassLoader()).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]));
+com\google\android\gms\internal\ads\zzaxc.java:             Method declaredMethod = context.getClassLoader().loadClass("com.google.android.gms.measurement.AppMeasurement").getDeclaredMethod("logEventInternal", String.class, String.class, Bundle.class);
+com\google\android\gms\internal\ads\zzaxc.java:             Method declaredMethod = context.getClassLoader().loadClass("com.google.android.gms.measurement.AppMeasurement").getDeclaredMethod(str, new Class[0]);
+com\google\android\gms\internal\ads\zzaxc.java:             Method declaredMethod = context.getClassLoader().loadClass("com.google.firebase.analytics.FirebaseAnalytics").getDeclaredMethod(str, Activity.class, String.class, String.class);
+com\google\android\gms\internal\ads\zzaxc.java:                     context.getClassLoader().loadClass("com.google.firebase.analytics.FirebaseAnalytics");
+com\google\android\gms\internal\ads\zzaxc.java:             Method declaredMethod = context.getClassLoader().loadClass("com.google.android.gms.measurement.AppMeasurement").getDeclaredMethod(str, String.class);
+com\google\android\gms\internal\ads\zzaxc.java:                 atomicReference.compareAndSet(null, context.getClassLoader().loadClass(str).getDeclaredMethod("getInstance", Context.class).invoke(null, context));
+com\google\android\gms\internal\ads\zzcec.java:                         if (!com.google.android.gms.ads.internal.util.zzj.zza(this.context.getClassLoader(), cls, arrayList)) {
+com\google\android\gms\internal\ads\zzdvc.java: import dalvik.system.DexClassLoader;
+com\google\android\gms\internal\ads\zzdvc.java:                         Class loadClass = new DexClassLoader(zzdupVar.zzayl().getAbsolutePath(), zzaym.getAbsolutePath(), null, this.context.getClassLoader()).loadClass("com.google.ccc.abuse.droidguard.DroidGuard");
+com\google\android\gms\internal\ads\zzekz.java:         ClassLoader classLoader = zzekz.class.getClassLoader();
+com\google\android\gms\internal\ads\zzelb.java:                 Class.forName(cls.getName(), true, cls.getClassLoader());
+com\google\android\gms\internal\ads\zzfc.java: import dalvik.system.DexClassLoader;
+com\google\android\gms\internal\ads\zzfc.java:     private DexClassLoader zzyz;
+com\google\android\gms\internal\ads\zzfc.java:                         zzfcVar.zzyz = new DexClassLoader(file.getAbsolutePath(), cacheDir.getAbsolutePath(), null, zzfcVar.context.getClassLoader());
+com\google\android\gms\internal\ads\zzfc.java:     public final DexClassLoader zzch() {
+com\google\android\gms\internal\ads\zzgx.java:     private static final ClassLoader zzacl = zzgx.class.getClassLoader();
+com\google\android\gms\internal\ads\zzht.java:         this.zzahn = (zzpy) parcel.readParcelable(zzpy.class.getClassLoader());
+com\google\android\gms\internal\ads\zzht.java:         this.zzahh = (zzjo) parcel.readParcelable(zzjo.class.getClassLoader());
+com\google\android\gms\internal\ads\zzht.java:         this.zzahc = (zzmh) parcel.readParcelable(zzmh.class.getClassLoader());
+com\google\android\gms\internal\ads\zzmh.java:             zzaVarArr[i2] = (zza) parcel.readParcelable(zza.class.getClassLoader());
+com\google\android\gms\internal\ads\zzws.java:             Object newInstance = zzwc.class.getClassLoader().loadClass("com.google.android.gms.ads.internal.ClientApi").getDeclaredConstructor(new Class[0]).newInstance(new Object[0]);
+com\google\android\gms\internal\ads_identifier\zzc.java:     private static final ClassLoader zzd = zzc.class.getClassLoader();
+com\google\android\gms\internal\base\zad.java:     private static final ClassLoader zad = zad.class.getClassLoader();
+com\google\android\gms\internal\common\zzd.java:     private static final ClassLoader zza = zzd.class.getClassLoader();
+com\google\android\gms\internal\location\zzc.java:     private static final ClassLoader zzd = zzc.class.getClassLoader();
+com\google\android\gms\internal\maps\zzc.java:     private static final ClassLoader zzd = zzc.class.getClassLoader();
+com\google\android\gms\internal\measurement\zzc.java:     private static final ClassLoader zza = zzc.class.getClassLoader();
+com\google\android\gms\internal\measurement\zzhm.java:         ClassLoader classLoader = zzhm.class.getClassLoader();
+com\google\android\gms\internal\measurement\zzhs.java:                 Class.forName(cls.getName(), true, cls.getClassLoader());
+com\google\android\gms\internal\places\zzbc.java:                 Class.forName(cls.getName(), true, cls.getClassLoader());
+com\google\android\gms\internal\places\zze.java:     private static final ClassLoader zze = zze.class.getClassLoader();
+com\google\android\gms\internal\play_billing\zzh.java:     private static final ClassLoader zza = zzh.class.getClassLoader();
+com\google\android\gms\maps\MapFragment.java:             bundle.setClassLoader(MapFragment.class.getClassLoader());
+com\google\android\gms\maps\MapFragment.java:             bundle.setClassLoader(MapFragment.class.getClassLoader());
+com\google\android\gms\maps\SupportStreetViewPanoramaFragment.java:             bundle.setClassLoader(SupportStreetViewPanoramaFragment.class.getClassLoader());
+com\google\android\gms\maps\SupportStreetViewPanoramaFragment.java:             bundle.setClassLoader(SupportStreetViewPanoramaFragment.class.getClassLoader());
+com\google\android\gms\maps\SupportMapFragment.java:             bundle.setClassLoader(SupportMapFragment.class.getClassLoader());
+com\google\android\gms\maps\StreetViewPanoramaFragment.java:             bundle.setClassLoader(StreetViewPanoramaFragment.class.getClassLoader());
+com\google\android\gms\maps\SupportMapFragment.java:             bundle.setClassLoader(SupportMapFragment.class.getClassLoader());
+com\google\android\gms\maps\StreetViewPanoramaFragment.java:             bundle.setClassLoader(StreetViewPanoramaFragment.class.getClassLoader());
+com\google\android\gms\maps\g\q.java:         bundle.setClassLoader(q.class.getClassLoader());
+com\google\android\gms\maps\g\q.java:         bundle2.setClassLoader(q.class.getClassLoader());
+com\google\android\gms\maps\g\q.java:         bundle.setClassLoader(q.class.getClassLoader());
+com\google\android\gms\maps\g\q.java:         bundle2.setClassLoader(q.class.getClassLoader());
+com\google\android\gms\maps\g\r.java:             IBinder iBinder = (IBinder) c(d(context).getClassLoader(), "com.google.android.gms.maps.internal.CreatorImpl");
+com\google\android\gms\maps\g\r.java:     private static <T> T c(ClassLoader classLoader, String str) {
+com\google\android\gms\maps\model\n.java:                     SafeParcelReader.H(parcel, D, arrayList, n.class.getClassLoader());
+com\google\android\gms\measurement\internal\o4.java:                     E().a.a.getClassLoader().loadClass("com.google.firebase.remoteconfig.FirebaseRemoteConfig");
+com\google\android\material\bottomappbar\BottomAppBar.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\bottomappbar\BottomAppBar.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\bottomappbar\BottomAppBar.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\bottomappbar\BottomAppBar.java:         public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\appbar\AppBarLayout.java:             static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\appbar\AppBarLayout.java:                 @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\appbar\AppBarLayout.java:                 public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\appbar\AppBarLayout.java:             public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\button\MaterialButton.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\button\MaterialButton.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\button\MaterialButton.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\button\MaterialButton.java:         public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\button\MaterialButton.java:                 getClass().getClassLoader();
+com\google\android\material\bottomsheet\BottomSheetBehavior.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\bottomsheet\BottomSheetBehavior.java:                 return new SavedState(parcel, (ClassLoader) null);
+com\google\android\material\bottomsheet\BottomSheetBehavior.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\bottomsheet\BottomSheetBehavior.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\bottomsheet\BottomSheetBehavior.java:         public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\datepicker\CalendarConstraints.java:             return new CalendarConstraints((Month) parcel.readParcelable(Month.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), (DateValidator) parcel.readParcelable(DateValidator.class.getClassLoader()), (Month) parcel.readParcelable(Month.class.getClassLoader()), null);
+com\google\android\material\datepicker\CompositeDateValidator.java:             ArrayList readArrayList = parcel.readArrayList(CalendarConstraints.DateValidator.class.getClassLoader());
+com\google\android\material\datepicker\SingleDateSelector.java:             singleDateSelector.selectedItem = (Long) parcel.readValue(Long.class.getClassLoader());
+com\google\android\material\datepicker\RangeDateSelector.java:             rangeDateSelector.selectedStartItem = (Long) parcel.readValue(Long.class.getClassLoader());
+com\google\android\material\datepicker\RangeDateSelector.java:             rangeDateSelector.selectedEndItem = (Long) parcel.readValue(Long.class.getClassLoader());
+com\google\android\material\internal\CheckableImageButton.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\internal\CheckableImageButton.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\internal\CheckableImageButton.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\internal\CheckableImageButton.java:         public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\internal\ParcelableSparseArray.java:     static class a implements Parcelable.ClassLoaderCreator<ParcelableSparseArray> {
+com\google\android\material\internal\ParcelableSparseArray.java:         @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\internal\ParcelableSparseArray.java:         public ParcelableSparseArray createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\internal\ParcelableSparseArray.java:     public ParcelableSparseArray(@NonNull Parcel parcel, @Nullable ClassLoader classLoader) {
+com\google\android\material\internal\StaticLayoutBuilderCompat.java:                 ClassLoader classLoader = StaticLayoutBuilderCompat.class.getClassLoader();
+com\google\android\material\navigation\NavigationBarPresenter.java:             this.b = (ParcelableSparseArray) parcel.readParcelable(getClass().getClassLoader());
+com\google\android\material\navigation\NavigationBarView.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\navigation\NavigationBarView.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\navigation\NavigationBarView.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\navigation\NavigationBarView.java:         private void a(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\navigation\NavigationBarView.java:         public SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\navigation\NavigationBarView.java:             a(parcel, classLoader == null ? getClass().getClassLoader() : classLoader);
+com\google\android\material\navigation\NavigationView.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\navigation\NavigationView.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\navigation\NavigationView.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\navigation\NavigationView.java:         public SavedState(@NonNull Parcel parcel, @Nullable ClassLoader classLoader) {
+com\google\android\material\slider\RangeSlider.java:             super(parcel.readParcelable(RangeSliderState.class.getClassLoader()));
+com\google\android\material\slider\BaseSlider.java:             parcel.readList(arrayList, Float.class.getClassLoader());
+com\google\android\material\stateful\ExtendableSavedState.java:     static class a implements Parcelable.ClassLoaderCreator<ExtendableSavedState> {
+com\google\android\material\stateful\ExtendableSavedState.java:         @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\stateful\ExtendableSavedState.java:         public ExtendableSavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\stateful\ExtendableSavedState.java:     /* synthetic */ ExtendableSavedState(Parcel parcel, ClassLoader classLoader, a aVar) {
+com\google\android\material\stateful\ExtendableSavedState.java:     private ExtendableSavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\textfield\TextInputLayout.java:         static class a implements Parcelable.ClassLoaderCreator<SavedState> {
+com\google\android\material\textfield\TextInputLayout.java:             @Override // android.os.Parcelable.ClassLoaderCreator
+com\google\android\material\textfield\TextInputLayout.java:             public SavedState createFromParcel(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\material\textfield\TextInputLayout.java:         SavedState(@NonNull Parcel parcel, ClassLoader classLoader) {
+com\google\android\play\core\internal\e0.java:     public static Object d(ClassLoader classLoader) {
+com\google\android\play\core\internal\e0.java:     public static boolean e(ClassLoader classLoader, File file, File file2, boolean z, c0 c0Var, String str, b0 b0Var) {
+com\google\android\play\core\internal\e0.java:     public static void g(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\f0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\f0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\e0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\e0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\j0.java:     public static void d(ClassLoader classLoader, Set<File> set, i0 i0Var) {
+com\google\android\play\core\internal\j0.java:     public static boolean f(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\l0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\l0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\j0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\j0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\k0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\k0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\o0.java:     public static void c(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\o0.java:     public static boolean d(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\o0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\o0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\p0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\p0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\r0.java:     public final void a(ClassLoader classLoader, Set<File> set) {
+com\google\android\play\core\internal\r0.java:     public final boolean b(ClassLoader classLoader, File file, File file2, boolean z) {
+com\google\android\play\core\internal\s1.java:         s1.class.getClassLoader();
+com\google\android\play\core\internal\x.java:     void a(ClassLoader classLoader, Set<File> set);
+com\google\android\play\core\internal\x.java:     boolean b(ClassLoader classLoader, File file, File file2, boolean z);
+com\google\android\play\core\splitcompat\a.java:             ClassLoader classLoader = context.getClassLoader();
+com\growingio\android\sdk\collection\GrowingIOSettingsProvider.java:             GrowingIOSettingsProvider.class.getClassLoader().loadClass(str).newInstance();
+com\growingio\android\sdk\java_websocket\util\Base64.java:     /* JADX WARN: Type inference failed for: r3v0, types: [java.lang.ClassLoader] */
+com\growingio\android\sdk\java_websocket\util\Base64.java:     public static Object decodeToObject(String str, int i2, final ClassLoader classLoader) throws IOException, ClassNotFoundException {
+com\growingio\android\sdk\utils\ReflectUtil.java:         private ClassLoader classLoader;
+com\growingio\android\sdk\utils\ReflectUtil.java:             ClassLoader classLoader = this.classLoader;
+com\growingio\android\sdk\utils\ReflectUtil.java:             return getDeclaredRecur(cls, str, parseArgumentTypeByDesc(str2, cls.getClassLoader()));
+com\growingio\android\sdk\utils\ReflectUtil.java:     public static Class<?>[] parseArgumentTypeByDesc(String str, ClassLoader classLoader) throws ClassNotFoundException {
+com\growingio\android\sdk\utils\ReflectUtil.java:     public static Method getMethod(ClassLoader classLoader, String str, String str2, String str3) {
+com\mob\tools\utils\DeviceHelper.java:                     ClassLoader.getSystemClassLoader().loadClass("de.robv.android.xposed.XposedHelpers").newInstance();
+com\mob\tools\utils\DeviceHelper.java:                         ClassLoader.getSystemClassLoader().loadClass("de.robv.android.xposed.XposedBridge").newInstance();
+com\mob\tools\utils\ReflectHelper.java:         return Proxy.newProxyInstance(clsArr[0].getClassLoader(), clsArr, new InvocationHandler() { // from class: com.mob.tools.utils.ReflectHelper.2
+com\rockerhieu\emoji\model\Emoticon.java:         this.emoticonPkg = (EmoticonPkg) parcel.readParcelable(EmoticonPkg.class.getClassLoader());
+com\rockerhieu\emoji\model\Emoticon.java:         this.name = (EmoticonPkg.EmoticonName) parcel.readParcelable(EmoticonPkg.EmoticonName.class.getClassLoader());
+com\rockerhieu\emoji\model\EmoticonPkg.java:         this.pkgName = (EmoticonName) parcel.readParcelable(EmoticonName.class.getClassLoader());
+com\sina\weibo\sdk\api\StoryMessage.java:         this.imageUri = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\sina\weibo\sdk\api\StoryMessage.java:         this.videoUri = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\sina\weibo\sdk\api\VideoSourceObject.java:         this.coverPath = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\sina\weibo\sdk\api\VideoSourceObject.java:         this.videoPath = (Uri) parcel.readParcelable(Uri.class.getClassLoader());
+com\sina\weibo\sdk\web\WebData.java:         this.aA = (AuthInfo) parcel.readParcelable(AuthInfo.class.getClassLoader());
+com\tapjoy\TapjoyGpsHelper.java:                 this.a.getClassLoader().loadClass("com.google.android.gms.ads.identifier.AdvertisingIdClient");
+com\tapjoy\TapjoyUtil.java:             java.lang.ClassLoader r2 = r2.getClassLoader()     // Catch: java.lang.Throwable -> L9c java.lang.Exception -> L9e
+com\tapjoy\TapjoyUtil.java:             java.lang.ClassLoader r2 = r2.getClassLoader()
+com\tapjoy\internal\fn.java:         return Proxy.newProxyInstance(cls.getClassLoader(), new Class[]{cls}, new a(obj, Thread.currentThread(), Looper.myLooper()));
+com\tencent\matrix\trace\core\LooperMonitor.java:             java.lang.ClassLoader r5 = r5.getClassLoader()     // Catch: java.lang.Exception -> L70 java.lang.Throwable -> L72
+com\tencent\matrix\trace\core\LooperMonitor.java:             java.lang.ClassLoader r5 = r5.getClassLoader()     // Catch: java.lang.Exception -> L70 java.lang.Throwable -> L72
+com\unity3d\player\GoogleVrProxy.java:     private boolean a(ClassLoader classLoader) {
+com\unity3d\player\GoogleVrProxy.java:             } else if (!a(UnityPlayer.class.getClassLoader())) {
+com\unity3d\player\ReflectionHelper.java:         return Proxy.newProxyInstance(ReflectionHelper.class.getClassLoader(), clsArr, new b() { // from class: com.unity3d.player.ReflectionHelper.1
+d\c\a\a\c.java:         c.class.getClassLoader();
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:     private ClassLoader mRestoredClassLoader;
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:         ClassLoader c;
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:             public SavedState createFromParcel(Parcel parcel, ClassLoader classLoader) {
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:         SavedState(Parcel parcel, ClassLoader classLoader) {
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:             classLoader = classLoader == null ? getClass().getClassLoader() : classLoader;
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:         this.mRestoredClassLoader = null;
+h\a\a\b\b.java:     ClassLoader b;
+h\a\a\b\b.java:         this.b = cls.getClassLoader();
+h\a\a\b\b.java:     public static Class b(String str, ClassLoader classLoader) {
+h\a\a\b\f.java:     ClassLoader f8652g = null;
+h\a\a\b\f.java:     private ClassLoader h() {
+h\a\a\b\f.java:             this.f8652g = getClass().getClassLoader();
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:         this.mRestoredClassLoader = savedState.c;
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:                 this.mAdapter.restoreState(this.mRestoredAdapterState, this.mRestoredClassLoader);
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:                 this.mRestoredClassLoader = null;
+fr\castorflex\android\verticalviewpager\VerticalViewPager.java:         this.mRestoredClassLoader = null;
+kotlin\coroutines\jvm\internal\ModuleNameRetriever.java:             Cache cache2 = new Cache(Class.class.getDeclaredMethod("getModule", new Class[0]), baseContinuationImpl.getClass().getClassLoader().loadClass("java.lang.Module").getDeclaredMethod("getDescriptor", new Class[0]), baseContinuationImpl.getClass().getClassLoader().loadClass("java.lang.module.ModuleDescriptor").getDeclaredMethod("name", new Class[0]));
+kotlin\internal\b.java:                     ClassLoader classLoader = newInstance.getClass().getClassLoader();
+kotlin\internal\b.java:                     ClassLoader classLoader2 = a.class.getClassLoader();
+kotlin\internal\b.java:                     ClassLoader classLoader3 = newInstance3.getClass().getClassLoader();
+kotlin\internal\b.java:                     ClassLoader classLoader4 = a.class.getClassLoader();
+kotlin\internal\b.java:                         ClassLoader classLoader5 = newInstance2.getClass().getClassLoader();
+kotlin\internal\b.java:                         ClassLoader classLoader6 = a.class.getClassLoader();
+kotlin\internal\b.java:                     ClassLoader classLoader7 = newInstance4.getClass().getClassLoader();
+kotlin\internal\b.java:                     ClassLoader classLoader8 = a.class.getClassLoader();
+kotlin\x\a.java:     public static final Thread a(boolean z, boolean z2, ClassLoader classLoader, String str, int i2, kotlin.jvm.b.a<u> block) {
+kotlin\x\a.java:             c0320a.setContextClassLoader(classLoader);
+kotlinx\coroutines\internal\k.java:     private final <S> S a(String str, ClassLoader classLoader, Class<S> cls) {
+kotlinx\coroutines\internal\k.java:     private final <S> List<S> b(Class<S> cls, ClassLoader classLoader) {
+kotlinx\coroutines\internal\k.java:             return b(MainDispatcherFactory.class, MainDispatcherFactory.class.getClassLoader());
+kotlinx\coroutines\internal\k.java:                 mainDispatcherFactory = (MainDispatcherFactory) MainDispatcherFactory.class.cast(Class.forName("kotlinx.coroutines.android.AndroidDispatcherFactory", true, MainDispatcherFactory.class.getClassLoader()).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]));
+kotlinx\coroutines\internal\k.java:                 mainDispatcherFactory2 = (MainDispatcherFactory) MainDispatcherFactory.class.cast(Class.forName("kotlinx.coroutines.test.internal.TestMainDispatcherFactory", true, MainDispatcherFactory.class.getClassLoader()).getDeclaredConstructor(new Class[0]).newInstance(new Object[0]));
+kotlinx\coroutines\internal\k.java:             return b(MainDispatcherFactory.class, MainDispatcherFactory.class.getClassLoader());
+kotlinx\coroutines\internal\k.java:     public final <S> List<S> d(Class<S> cls, ClassLoader classLoader) {
+org\slf4j\c.java:             ClassLoader classLoader = c.class.getClassLoader();
+org\slf4j\c.java:                 resources = ClassLoader.getSystemResources(f8967e);
+rx\internal\util\PlatformDependent.java:     static ClassLoader getSystemClassLoader() {
+rx\internal\util\PlatformDependent.java:             return ClassLoader.getSystemClassLoader();
+rx\internal\util\PlatformDependent.java:         return (ClassLoader) AccessController.doPrivileged(new PrivilegedAction<ClassLoader>() { // from class: rx.internal.util.PlatformDependent.1
+rx\internal\util\PlatformDependent.java:             public ClassLoader run() {
+rx\internal\util\PlatformDependent.java:                 return ClassLoader.getSystemClassLoader();
+rx\internal\util\PlatformDependent.java:             return ((Integer) Class.forName("android.os.Build$VERSION", true, getSystemClassLoader()).getField("SDK_INT").get(null)).intValue();
+us\pinguo\admobvista\DataBean\InputAdvItem.java:         this.advData = (InputContentAdvData) parcel.readParcelable(InputContentAdvData.class.getClassLoader());
+us\pinguo\advconfigdata\AdvDex\DexFunction.java:             Class<?> loadClass = context.getClassLoader().loadClass("us.pinguo.inspire.adv.InpireAdvInterface");
+us\pinguo\advconfigdata\database\AdvItemSingle.java:         this.advData = (AdvData) parcel.readParcelable(AdvData.class.getClassLoader());
+us\pinguo\advconfigdata\database\AdvRepairItem.java:         this.info = (AdvRepairInfoItem) parcel.readParcelable(AdvRepairInfoItem.class.getClassLoader());
+us\pinguo\advconfigdata\database\AdvItem.java:         parcel.readList(arrayList, AdvDataKeeper.ImageData.class.getClassLoader());
+us\pinguo\advconfigdata\database\AdvItem.java:         parcel.readList(arrayList2, AdvDataKeeper.ImageData.class.getClassLoader());
+us\pinguo\advconfigdata\database\AdvItem.java:         parcel.readList(arrayList3, AdvDataKeeper.VideoData.class.getClassLoader());
+us\pinguo\advsdk\bean\AdsItem.java:         this.image = (ImageBean) parcel.readParcelable(ImageBean.class.getClassLoader());
+us\pinguo\advsdk\bean\AdsItem.java:         this.video = (VideoBean) parcel.readParcelable(VideoBean.class.getClassLoader());
+us\pinguo\advsdk\bean\AdsItem.java:         this.button = (ButtonBean) parcel.readParcelable(ButtonBean.class.getClassLoader());
+us\pinguo\bigdata\proxy\BDProxyFactory.java:         return Proxy.newProxyInstance(t.getClass().getClassLoader(), this.mOrigin.getClass().getInterfaces(), this);
+us\pinguo\camera360\shop\cardsviewpager\g.java:     public void restoreState(Parcelable parcelable, ClassLoader classLoader) {
+us\pinguo\camera360\shop\cardsviewpager\g.java:             bundle.setClassLoader(classLoader);
+us\pinguo\foundation\utils\entity\Clazz.java:         this.args = parcel.readArray(Object[].class.getClassLoader());
+us\pinguo\foundation\utils\entity\MobileModel.java:         this.clazz = (Clazz) parcel.readParcelable(Clazz.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.influencer = (Influencer) parcel.readParcelable(Influencer.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.endpage = (Endpage) parcel.readParcelable(Endpage.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.award = (InspireAward) parcel.readParcelable(InspireAward.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         parcel.readList(arrayList, AuthorInfo.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.dailyAward = (DailyAward) parcel.readParcelable(DailyAward.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.sceneParam = (SceneParam) parcel.readParcelable(SceneParam.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         this.isJoin = (JoinStatus) parcel.readParcelable(JoinStatus.class.getClassLoader());
+us\pinguo\inspire\model\InspireTask.java:         parcel.readList(arrayList2, InspireWork.class.getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             parcel.readList(arrayList, getClass().getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             inspireWork.geo = (InspireGeo) parcel.readParcelable(getClass().getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             inspireWork.taskInfo = (TaskInfo) parcel.readParcelable(getClass().getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             inspireWork.authorInfo = (AuthorInfo) parcel.readParcelable(AuthorInfo.class.getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             this.influencer = (Influencer) parcel.readParcelable(Influencer.class.getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             this.endpage = (Endpage) parcel.readParcelable(Endpage.class.getClassLoader());
+us\pinguo\inspire\model\InspireWork.java:             this.isJoin = (JoinStatus) parcel.readParcelable(JoinStatus.class.getClassLoader());
+us\pinguo\inspire\model\UploadWorkResult.java:         this.data = (InspireUploadItem) parcel.readParcelable(InspireUploadItem.class.getClassLoader());
+us\pinguo\inspire\model\UploadWorkResult.java:         this.qiNiuImageInfo = (QiNiuImageInfo) parcel.readParcelable(QiNiuImageInfo.class.getClassLoader());
+us\pinguo\inspire\module\MissionDetail\TaskDetailActivity.java:         intent.setExtrasClassLoader(getClassLoader());
+us\pinguo\inspire\module\challenge\ChallengeActivity.java:             intent.setExtrasClassLoader(getClassLoader());
+us\pinguo\inspire\module\challenge\FollowActivity.java:             intent.setExtrasClassLoader(getClassLoader());
+us\pinguo\inspire\module\comment\CommentLoader.java:             this.comment = (CommentResp) parcel.readParcelable(CommentResp.class.getClassLoader());
+us\pinguo\inspire\module\comment\CommentLoader.java:             this.like = (LikeResp) parcel.readParcelable(LikeResp.class.getClassLoader());
+us\pinguo\inspire\module\comment\CommentLoader.java:             this.toReplyComment = (InspireComment) parcel.readParcelable(InspireComment.class.getClassLoader());
+us\pinguo\inspire\module\comment\CommentLoader.java:             parcel.readList(arrayList, InspireComment.class.getClassLoader());
+us\pinguo\inspire\module\comment\CommentLoader.java:             parcel.readList(arrayList, InspireLike.class.getClassLoader());
+us\pinguo\inspire\module\comment\InspireComment.java:             this.emoticon = (Emoticon) parcel.readParcelable(Emoticon.class.getClassLoader());
+us\pinguo\inspire\module\comment\InspireComment.java:         this.sender = (InspireUser) parcel.readParcelable(InspireUser.class.getClassLoader());
+us\pinguo\inspire\module\comment\InspireComment.java:         this.receiver = (InspireUser) parcel.readParcelable(InspireUser.class.getClassLoader());
+us\pinguo\inspire\module\comment\InspireComment.java:         this.content = (CommentBody) parcel.readParcelable(CommentBody.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedContent.java:         this.task = (InspireFeedTask) parcel.readParcelable(InspireFeedTask.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedContent.java:         parcel.readList(arrayList, List.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedContent.java:         parcel.readList(arrayList2, List.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedContent.java:         this.geo = (InspireGeo) parcel.readParcelable(InspireGeo.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedContent.java:         parcel.readList(arrayList3, List.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.sender = (InspireFeedSender) parcel.readParcelable(InspireFeedSender.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.fcnt = (InspireFeedContent) parcel.readParcelable(InspireFeedContent.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.photoCnt = (InspireFeedContent) parcel.readParcelable(InspireFeedContent.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.videoCnt = (InspireFeedContent) parcel.readParcelable(InspireFeedContent.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.multiCnt = (InspireFeedContent) parcel.readParcelable(InspireFeedContent.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.followLikeCnt = (InspireCompositeCnt) parcel.readParcelable(InspireCompositeCnt.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeed.java:         this.latestTaskCnt = (InspireTaskCnt) parcel.readParcelable(InspireTaskCnt.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireTaskCnt.java:         this.task = (InspireTask) parcel.readParcelable(InspireTask.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireTaskCnt.java:         parcel.readList(arrayList, List.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireTaskCnt.java:         parcel.readList(arrayList2, List.class.getClassLoader());
+us\pinguo\inspire\module\discovery\entity\InspireFeedSender.java:         this.geo = (InspireGeo) parcel.readParcelable(InspireGeo.class.getClassLoader());
+us\pinguo\inspire\module\feeds\model\InspireCompositeCnt.java:         parcel.readList(arrayList, List.class.getClassLoader());
+us\pinguo\inspire\module\feeds\model\InspireCompositeCnt.java:         parcel.readList(arrayList2, List.class.getClassLoader());
+us\pinguo\inspire\module\profile\activity\GuestProfileActivity.java:         intent.setExtrasClassLoader(getClassLoader());
+us\pinguo\inspire\module\profile\activity\ProfileActivity.java:         intent.setExtrasClassLoader(getClassLoader());
+us\pinguo\inspire\module\publish\vo\PublishData.java:             this.uploadResults.put(parcel.readString(), (UploadWorkResult) parcel.readParcelable(UploadWorkResult.class.getClassLoader()));
+us\pinguo\inspire\module\publish\vo\PublishData.java:         parcel.readList(arrayList, BlockUploadInfo.class.getClassLoader());
+us\pinguo\inspire\module\publish\vo\PublishData.java:         this.commentInfo = (CommentInfo) parcel.readParcelable(CommentInfo.class.getClassLoader());
+us\pinguo\inspire\profile\CountryZone.java:         parcel.readList(arrayList, ListBean.class.getClassLoader());
+us\pinguo\inspire\util\transition\RotationInfo.java:         this.parcelable = parcel.readParcelable(Bitmap.class.getClassLoader());
+us\pinguo\inspire\util\transition\TouchScaleInfo.java:         this.bitmap = (Bitmap) parcel.readParcelable(Bitmap.class.getClassLoader());
+us\pinguo\inspire\util\transition\TouchScaleInfo.java:         this.bounds = (Rect) parcel.readParcelable(Rect.class.getClassLoader());
+us\pinguo\inspire\widget\photopager\FullScreenPhoto.java:         this.photo = (InspireFeedPhoto) parcel.readParcelable(InspireFeedPhoto.class.getClassLoader());
+us\pinguo\inspire\widget\photopager\FullScreenPhoto.java:         this.rect = (Rect) parcel.readParcelable(Rect.class.getClassLoader());
+us\pinguo\librouter\application\BaseApplication.java:             Method declaredMethod = Class.forName("android.app.ActivityThread", false, Application.class.getClassLoader()).getDeclaredMethod("currentProcessName", new Class[0]);
+us\pinguo\user\model\ProfileAuthorInfo.java:         this.geo = (InspireGeo) parcel.readParcelable(InspireGeo.class.getClassLoader());
+us\pinguo\util\h.java:                 Class<?> loadClass = context.getClassLoader().loadClass("com.huawei.android.util.HwNotchSizeUtil");
+us\pinguo\util\h.java:                 Class<?> loadClass = context.getClassLoader().loadClass("com.huawei.android.util.HwNotchSizeUtil");
+us\pinguo\util\h.java:                 Class<?> loadClass = context.getClassLoader().loadClass("android.util.FtFeature");
+BaseDexClassLoader matches:
+com\facebook\soloader\SoLoader.java: import dalvik.system.BaseDexClassLoader;
+com\facebook\soloader\SoLoader.java:             if (classLoader != null && !(classLoader instanceof BaseDexClassLoader)) {
+com\facebook\soloader\SoLoader.java:                 throw new IllegalStateException("ClassLoader " + classLoader.getClass().getName() + " should be of type BaseDexClassLoader");
+com\facebook\soloader\SoLoader.java:                 return (String) BaseDexClassLoader.class.getMethod("getLdLibraryPath", new Class[0]).invoke((BaseDexClassLoader) classLoader, new Object[0]);
+.startsWith matches:
+androidx\constraintlayout\core\motion\MotionConstrainedPoint.java:                     if (!str.startsWith("CUSTOM")) {
+androidx\constraintlayout\core\motion\key\MotionKeyCycle.java:             if (str.startsWith("CUSTOM")) {
+androidx\constraintlayout\core\motion\Motion.java:                 if (next2.startsWith("CUSTOM,")) {
+androidx\constraintlayout\core\motion\Motion.java:                     if (next5.startsWith("CUSTOM,")) {
+androidx\constraintlayout\core\motion\utils\Easing.java:         if (str.startsWith("cubic")) {
+androidx\constraintlayout\core\motion\utils\Easing.java:         if (str.startsWith("spline")) {
+androidx\constraintlayout\core\motion\utils\Easing.java:         if (str.startsWith("Schlick")) {
+androidx\constraintlayout\motion\utils\ViewOscillator.java:         if (str.startsWith("CUSTOM")) {
+androidx\constraintlayout\motion\widget\Debug.java:                 if (field.getName().startsWith("layout_constraint") && ((!(obj2 instanceof Integer) || !obj2.toString().equals(TaskDetailBasePresenter.SCENE_LIST)) && ((!(obj2 instanceof Integer) || !obj2.toString().equals("0")) && ((!(obj2 instanceof Float) || !obj2.toString().equals("1.0")) && (!(obj2 instanceof Float) || !obj2.toString().equals("0.5")))))) {
+androidx\constraintlayout\motion\widget\KeyCycle.java:             if (str.startsWith("CUSTOM")) {
+androidx\constraintlayout\motion\widget\KeyCycle.java:                         if (!str.startsWith("CUSTOM")) {
+androidx\constraintlayout\motion\widget\MotionConstrainedPoint.java:                     if (!str.startsWith("CUSTOM")) {
+androidx\constraintlayout\motion\widget\KeyCycle.java:                 if (str.startsWith("CUSTOM")) {
+androidx\constraintlayout\motion\widget\KeyTrigger.java:         if (str.startsWith(".")) {
+androidx\core\app\RemoteInput.java:             if (str2.startsWith(EXTRA_DATA_TYPE_RESULTS_DATA)) {
+androidx\constraintlayout\motion\widget\MotionController.java:                 if (next2.startsWith("CUSTOM,")) {
+androidx\constraintlayout\motion\widget\MotionController.java:                     if (next5.startsWith("CUSTOM,")) {
+androidx\coordinatorlayout\widget\CoordinatorLayout.java:         if (str.startsWith(".")) {
+androidx\core\content\FileProvider.java:                     if (canonicalFile.getPath().startsWith(file.getPath())) {
+androidx\core\content\FileProvider.java:                     if (canonicalPath.startsWith(path) && (entry == null || path.length() > entry.getValue().getPath().length())) {
+androidx\core\content\res\ResourcesCompat.java:             boolean r1 = r12.startsWith(r1)
+androidx\core\app\ActivityRecreator.java:                             if (e2.getClass() == RuntimeException.class && e2.getMessage() != null && e2.getMessage().startsWith("Unable to stop")) {
+androidx\core\net\MailTo.java:         return str != null && str.startsWith(MAILTO_SCHEME);
+androidx\core\os\EnvironmentCompat.java:             return file.getCanonicalPath().startsWith(Environment.getExternalStorageDirectory().getCanonicalPath()) ? Environment.getExternalStorageState() : "unknown";
+androidx\core\view\DisplayCompat.java:         return isTv(context) && "Sony".equals(Build.MANUFACTURER) && Build.MODEL.startsWith("BRAVIA") && context.getPackageManager().hasSystemFeature("com.sony.dtv.hardware.panel.qfhd");
+androidx\core\view\ViewCompat.java:                 } else if (strArr[i2].startsWith(Marker.ANY_MARKER)) {
+androidx\databinding\DataBindingUtil.java:             boolean r2 = r1.startsWith(r2)
+androidx\databinding\ViewDataBinding.java:             if (str2 != null && str2.startsWith(substring)) {
+androidx\exifinterface\media\ExifInterfaceUtils.java:     public static boolean startsWith(byte[] bArr, byte[] bArr2) {
+androidx\fragment\app\FragmentStatePagerAdapter.java:                 if (str.startsWith("f")) {
+androidx\room\util\DBUtil.java:             if (str.startsWith("room_fts_content_sync_")) {
+androidx\room\util\FtsTableInfo.java:                 if (str2.startsWith(str3)) {
+androidx\room\util\TableInfo.java:                     if (this.name.startsWith(DEFAULT_PREFIX)) {
+androidx\room\util\TableInfo.java:                         return index.name.startsWith(DEFAULT_PREFIX);
+androidx\room\util\TableInfo.java:             return ((((((this.name.startsWith(DEFAULT_PREFIX) ? -1184239155 : this.name.hashCode()) * 31) + (this.unique ? 1 : 0)) * 31) + this.columns.hashCode()) * 31) + this.orders.hashCode();
+androidx\viewpager2\adapter\FragmentStateAdapter.java:         return str.startsWith(str2) && str.length() > str2.length();
+butterknife\ButterKnife.java:             if (!name.startsWith("android.") && !name.startsWith("java.") && !name.startsWith("androidx.")) {
+cn\sharesdk\douyin\a.java:         if (str.startsWith("https://open.douyin.com/oauth/authorize/callback/")) {
+cn\sharesdk\facebook\g.java:             if (str2 != null && str.startsWith(str2)) {
+cn\sharesdk\facebook\Facebook.java:                             if (str.startsWith("http")) {
+cn\sharesdk\facebook\Facebook.java:                             if (file.exists() && str.startsWith("/data/")) {
+cn\sharesdk\facebook\k.java:                         if (str.startsWith("fbconnect://success")) {
+cn\sharesdk\framework\utils\ShareSDKFileProvider.java:                 if (absoluteFile.getPath().startsWith(file.getPath())) {
+cn\sharesdk\framework\utils\ShareSDKFileProvider.java:                     if (canonicalPath.startsWith(path) && (entry == null || path.length() > entry.getValue().getPath().length())) {
+cn\sharesdk\framework\utils\g.java:             if (str.startsWith("http")) {
+cn\sharesdk\framework\utils\g.java:                 if (str.startsWith("/data/")) {
+cn\sharesdk\instagram\a.java:         if (str2 != null && str.startsWith(str2)) {
+cn\sharesdk\instagram\a.java:         if (str2 != null && str.startsWith(str2)) {
+cn\sharesdk\sina\weibo\c.java:         if (!TextUtils.isEmpty(this.redirectUri) && str.startsWith(this.redirectUri)) {
+cn\sharesdk\sina\weibo\c.java:         } else if (str.startsWith("sms:")) {
+cn\sharesdk\sina\weibo\c.java:         if (!TextUtils.isEmpty(this.redirectUri) && str.startsWith(this.redirectUri)) {
+cn\sharesdk\sina\weibo\c.java:         } else if (str.startsWith("sms:")) {
+cn\sharesdk\sina\weibo\i.java:                     if (str.startsWith("http")) {
+cn\sharesdk\sina\weibo\i.java:                     if (file2.exists() && str.startsWith("/data/")) {
+cn\sharesdk\sina\weibo\h.java:                 if (str.startsWith("sinaweibo://browser/close")) {
+cn\sharesdk\tencent\qq\ReceiveActivity.java:             if (scheme == null || !scheme.startsWith(uriScheme)) {
+cn\sharesdk\tencent\qq\a.java:                         if (str.startsWith(Constants.DOWNLOAD_URI)) {
+cn\sharesdk\tencent\qq\b.java:         if (str.startsWith(this.redirectUri)) {
+cn\sharesdk\tencent\qq\c.java:         if (a.startsWith("callback")) {
+cn\sharesdk\tencent\qq\c.java:             while (!a.startsWith("{") && a.length() > 0) {
+cn\sharesdk\tencent\qq\b.java:         if (str.startsWith(this.redirectUri)) {
+cn\sharesdk\tencent\qzone\ReceiveActivity.java:             if (scheme == null || !scheme.startsWith(a)) {
+cn\sharesdk\tencent\qzone\a.java:         if (str.startsWith(this.redirectUri)) {
+cn\sharesdk\tencent\qq\c.java:                 if (file.exists() && str10.startsWith("/data/")) {
+cn\sharesdk\tencent\qzone\b.java:         if (a.startsWith("callback")) {
+cn\sharesdk\tencent\qzone\b.java:             while (!a.startsWith("{") && a.length() > 0) {
+cn\sharesdk\tencent\qzone\a.java:         if (str.startsWith(this.redirectUri)) {
+cn\sharesdk\tencent\qzone\b.java:                 if (!str8.startsWith("http") && !str8.startsWith("https")) {
+cn\sharesdk\tencent\qzone\b.java:                     if (file.exists() && str8.startsWith("/data/")) {
+cn\sharesdk\tencent\qzone\d.java:                 if (str != null && str.startsWith(d.this.f287f)) {
+cn\sharesdk\tencent\qzone\d.java:                 } else if (str != null && str.startsWith("mqzone://")) {
+cn\sharesdk\twitter\b.java:         if (str2 != null && str.startsWith(str2)) {
+cn\sharesdk\twitter\b.java:         if (str2 != null && str.startsWith(str2)) {
+cn\sharesdk\twitter\c.java:             if (str2.startsWith("http")) {
+cn\sharesdk\twitter\c.java:                 if (str2.startsWith("http") || str2.startsWith("https")) {
+cn\sharesdk\wechat\utils\n.java:             if (MobSDK.getContext() != null && str.startsWith(FirebaseAnalytics.Param.CONTENT)) {
+com\adjust\sdk\PackageFactory.java:         if (str == null || str2 == null || !str.startsWith(ADJUST_PREFIX)) {
+com\airbnb\lottie\u\b.java:         if (b.startsWith("data:") && b.indexOf("base64,") > 0) {
+com\android\pgvolley\toolbox\HttpHeaderParser.java:                 if (trim.startsWith("max-age=")) {
+com\android\pgvolley\toolbox\HttpHeaderParser.java:                 } else if (trim.startsWith("stale-while-revalidate=")) {
+com\android\volley\toolbox\HttpHeaderParser.java:                 if (trim.startsWith("max-age=")) {
+com\android\volley\toolbox\HttpHeaderParser.java:                 } else if (trim.startsWith("stale-while-revalidate=")) {
+com\bumptech\glide\g\a.java:                 if (indexOf == 6 && str.startsWith("REMOVE")) {
+com\bumptech\glide\g\a.java:             if (indexOf2 != -1 && indexOf == 5 && str.startsWith("CLEAN")) {
+com\bumptech\glide\g\a.java:             } else if (indexOf2 == -1 && indexOf == 5 && str.startsWith("DIRTY")) {
+com\bumptech\glide\g\a.java:             } else if (indexOf2 == -1 && indexOf == 4 && str.startsWith("READ")) {
+com\bumptech\glide\h\d.java:         if (!str.startsWith("GIF")) {
+com\bumptech\glide\load\model\o.java:         if (str.startsWith("/")) {
+com\bytedance\sdk\a\b\a\a\a.java:             if ((!"Warning".equalsIgnoreCase(a2) || !b.startsWith("1")) && (!a(a2) || rVar2.a(a2) == null)) {
+com\bytedance\sdk\a\b\a\c\k.java:         if (str.startsWith("HTTP/1.")) {
+com\bytedance\sdk\a\b\a\c\k.java:         } else if (str.startsWith("ICY ")) {
+com\bytedance\sdk\a\b\a\c.java:             if (str.startsWith("[") && str.endsWith("]")) {
+com\bytedance\sdk\a\b\a\d\a.java:                 if (this.f935g >= 0 && (trim.isEmpty() || trim.startsWith(";"))) {
+com\bytedance\sdk\a\b\a\i\e.java:         if (str != null && str.length() != 0 && !str.startsWith(".") && !str.endsWith("..") && str2 != null && str2.length() != 0 && !str2.startsWith(".") && !str2.endsWith("..")) {
+com\bytedance\sdk\a\b\a\i\e.java:             if (!lowerCase.startsWith("*.") || lowerCase.indexOf(42, 1) != -1 || str.length() < lowerCase.length() || "*.".equals(lowerCase)) {
+com\bytedance\sdk\a\b\g.java:             if (this.a.startsWith("*.")) {
+com\bytedance\sdk\a\b\l.java:             if (str.startsWith(".")) {
+com\bytedance\sdk\a\b\l.java:                 if (str.startsWith(PGTransHeader.CONNECTOR)) {
+com\bytedance\sdk\a\b\u.java:                         if (group3.startsWith("'") && group3.endsWith("'") && group3.length() > 2) {
+com\bytedance\sdk\a\b\r.java:             if (str.startsWith(":")) {
+com\bytedance\sdk\adnet\b\c.java:         return a2 != null && a2.startsWith("bytes");
+com\bytedance\sdk\adnet\c\f.java:             boolean r2 = r7.startsWith(r0)
+com\bytedance\sdk\adnet\d\b.java:                 if (trim.startsWith("max-age=")) {
+com\bytedance\sdk\adnet\d\b.java:                 } else if (trim.startsWith("stale-while-revalidate=")) {
+com\bytedance\sdk\open\aweme\authorize\ui\BaseWebAuthorizeActivity.java:         if (TextUtils.isEmpty(str) || (request = this.mAuthRequest) == null || (str2 = request.redirectUri) == null || !str.startsWith(str2)) {
+com\bytedance\sdk\openadsdk\core\nativeexpress\f.java:                     if (a2.startsWith("https")) {
+com\bytedance\sdk\openadsdk\core\nativeexpress\f.java:                     if ((str.startsWith("https") ? str.replaceFirst("https", "http") : str).equals(a2)) {
+com\bytedance\sdk\openadsdk\core\v.java:         if (str != null && str.startsWith("bytedance://")) {
+com\bytedance\sdk\openadsdk\core\v.java:                 } else if (str.startsWith("bytedance://private/setresult/")) {
+com\bytedance\sdk\openadsdk\core\video\c\a.java:             if (str3.startsWith("http") && str3.contains("?")) {
+com\bytedance\sdk\openadsdk\core\video\f\b.java:                 if (str.startsWith("http")) {
+com\bytedance\sdk\openadsdk\core\video\d\a.java:         this.f1796g = !str.startsWith("http");
+com\bytedance\sdk\openadsdk\core\widget\webview\SSWebView.java:             return (originalUrl == null || !originalUrl.startsWith("data:text/html") || (url = super.getUrl()) == null) ? originalUrl : url.startsWith(InspirePublishFragment.FILE_HEADER) ? url : originalUrl;
+com\bytedance\sdk\openadsdk\g\a\a.java:         if (str.startsWith("https")) {
+com\bytedance\sdk\openadsdk\h\g\d.java:         return str != null && (str.startsWith("video/") || "application/octet-stream".equals(str) || "binary/octet-stream".equals(str));
+com\bytedance\sdk\openadsdk\h\i.java:                         } else if (split[0].startsWith("u")) {
+com\bytedance\sdk\openadsdk\h\g\d.java:         return str != null && (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX));
+com\bytedance\sdk\openadsdk\j\b.java:             return !TextUtils.isEmpty(str) && (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX));
+com\bytedance\sdk\openadsdk\utils\n.java:             if (str != null && str.startsWith("javascript:")) {
+com\bytedance\sdk\openadsdk\utils\ab.java:                 return id.startsWith("Asia/") ? 2 : 3;
+com\bytedance\sdk\openadsdk\utils\ab.java:                     if (!id.startsWith("Europe/")) {
+com\bytedance\sdk\openadsdk\utils\p.java:                 if (str.startsWith("http") && str.contains("?")) {
+com\bytedance\sdk\openadsdk\utils\q.java:         return !TextUtils.isEmpty(str) && (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX));
+com\bytedance\sdk\openadsdk\utils\u.java:             if (TextUtils.isEmpty(str) || !str.toLowerCase().startsWith(Constants.REFERRER_API_HUAWEI)) {
+com\bytedance\sdk\openadsdk\utils\u.java:                 if (!str2.toLowerCase().startsWith(Constants.REFERRER_API_HUAWEI)) {
+com\bytedance\sdk\openadsdk\utils\ab.java:         } else if (p.startsWith("http")) {
+com\bytedance\sdk\openadsdk\utils\u.java:         return (!TextUtils.isEmpty(str) && str.toLowerCase().startsWith("emotionui")) || t();
+com\facebook\GraphRequest.java:         return str.startsWith("me/") || str.startsWith("/me/");
+com\facebook\GraphRequest.java:         if (D.startsWith("v")) {
+com\facebook\ads\redexgen\X\AnonymousClass39.java:                 if (str2.startsWith(A0Z(625, 7, 8)) || C0923Il.A06.startsWith(A0Z(597, 7, 55)) || C0923Il.A06.startsWith(A0Z(TypedValues.MotionType.TYPE_QUANTIZE_INTERPOLATOR, 7, 110)) || C0923Il.A06.startsWith(A0Z(618, 7, 51))) {
+com\facebook\ads\redexgen\X\AnonymousClass39.java:             boolean r0 = r3.startsWith(r0)
+com\facebook\ads\redexgen\X\C04991c.java:             if (A04(136, 7, 37).equals(C0923Il.A05) && (C0923Il.A03.startsWith(A04(143, 8, 111)) || C0923Il.A03.startsWith(A04(84, 7, 71)) || C0923Il.A03.startsWith(A04(91, 8, 52)))) {
+com\facebook\ads\redexgen\X\C05372p.java:             I6.A03(A0Q.startsWith(A02(47, 8, 70)));
+com\facebook\ads\redexgen\X\C05372p.java:         } while (!A0P.startsWith(A02(192, 8, 40)));
+com\facebook\ads\redexgen\X\C05372p.java:                 if (!this.A04 && A0P.startsWith(A02(47, 8, 70))) {
+com\facebook\ads\redexgen\X\C05372p.java:                 } else if (A0P.startsWith(A02(37, 10, 118))) {
+com\facebook\ads\redexgen\X\C05904q.java:             if (stackTraceElement.getClassName().startsWith(A01(14, 16, 111))) {
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(1042, 8, 110)) != false) goto L118;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(1050, 7, 106)) != false) goto L118;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(1036, 6, 14)) != false) goto L118;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(944, 2, 62)) != false) goto L135;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(997, 7, 77)) != false) goto L135;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(r4) != false) goto L135;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(991, 6, 10)) != false) goto L135;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(A07(1004, 2, 88)) == false) goto L136;
+com\facebook\ads\redexgen\X\C0810Dy.java:         if (com.facebook.ads.redexgen.X.C0923Il.A03.startsWith(r4) == false) goto L143;
+com\facebook\ads\redexgen\X\C0838Fc.java:             if (!TextUtils.isEmpty(A032) && (A032.startsWith(A03(ItemTouchHelper.Callback.DEFAULT_SWIPE_ANIMATION_DURATION, 4, 23)) || A032.startsWith(A03(254, 10, 41)))) {
+com\facebook\ads\redexgen\X\C1036Nb.java:             if (str.startsWith(A01)) {
+com\facebook\ads\redexgen\X\C1036Nb.java:             if (str.startsWith(A012)) {
+com\facebook\ads\redexgen\X\C1036Nb.java:             if (!str.startsWith(A013)) {
+com\facebook\ads\redexgen\X\C1050Np.java:             if (lowerPath.startsWith(cacheDir)) {
+com\facebook\ads\redexgen\X\C1219Ue.java:             if (hv.A04.getPath().startsWith(A06(0, 15, 23))) {
+com\facebook\ads\redexgen\X\C1224Uj.java:             boolean r0 = r3.startsWith(r0)     // Catch: java.io.IOException -> Lb9
+com\facebook\ads\redexgen\X\C1224Uj.java:             boolean r0 = r3.startsWith(r0)     // Catch: java.io.IOException -> Lb9
+com\facebook\ads\redexgen\X\C1239Uy.java:                             } else if (A02(44, 4, 11).startsWith(A0P)) {
+com\facebook\ads\redexgen\X\C7K.java:             if (str2.startsWith(A08(190, 7, 70))) {
+com\facebook\ads\redexgen\X\C7K.java:         if (failureReason.startsWith(A08(181, 9, 92))) {
+com\facebook\ads\redexgen\X\C9B.java:         if (!str.contains(A022) && !Build.FINGERPRINT.startsWith(A02(195, 7, 93))) {
+com\facebook\ads\redexgen\X\C9B.java:                         if (!str3.contains(A02(76, 8, 123)) && !Build.MODEL.contains(A02(12, 25, 126)) && !Build.MANUFACTURER.contains(A02(84, 10, 77)) && ((!Build.BRAND.startsWith(A022) || !Build.DEVICE.startsWith(A022)) && !A023.equals(Build.PRODUCT))) {
+com\facebook\ads\redexgen\X\IO.java:         if (r3.startsWith(A04(477, 4, 8)) == false) goto L59;
+com\facebook\ads\redexgen\X\IO.java:         if (r3.startsWith(A04(481, 4, 90)) == false) goto L61;
+com\facebook\ads\redexgen\X\IO.java:         if (r3.startsWith(A04(477, 4, 8)) == false) goto L59;
+com\facebook\ads\redexgen\X\IO.java:         if (r3.startsWith(A04(androidx.constraintlayout.core.motion.utils.TypedValues.PositionType.TYPE_POSITION_TYPE, 4, 37)) == false) goto L65;
+com\facebook\ads\redexgen\X\IO.java:         if (r3.startsWith(A04(624, 6, 0)) == false) goto L69;
+com\facebook\ads\redexgen\X\IO.java:             if (str.startsWith(in.A01)) {
+com\facebook\ads\redexgen\X\IB.java:         if (replace.startsWith(A05(1262, 4, 24))) {
+com\facebook\ads\redexgen\X\IB.java:         } else if (replace.startsWith(A05(1259, 3, 41))) {
+com\facebook\ads\redexgen\X\L9.java:             if (prefix.startsWith(url)) {
+com\facebook\appevents\codeless\CodelessMatcher.java:                 } else if (a.getClass().getName().startsWith("com.facebook.react")) {
+com\facebook\appevents\internal\b.java:         if (!str.startsWith("generic") && !str.startsWith("unknown")) {
+com\facebook\appevents\internal\b.java:             if (!str2.contains("google_sdk") && !str2.contains("Emulator") && !str2.contains("Android SDK built for x86") && !Build.MANUFACTURER.contains("Genymotion") && ((!Build.BRAND.startsWith("generic") || !Build.DEVICE.startsWith("generic")) && !"google_sdk".equals(Build.PRODUCT))) {
+com\facebook\appevents\j\d.java:                 if (!str2.startsWith("m") && !str2.startsWith("b") && !str2.startsWith("ge")) {
+com\facebook\appevents\ml\ModelManager.java:                 if (name.startsWith(str) && !name.startsWith(str2)) {
+com\facebook\common\a\a.java:         return str != null && str.startsWith("video/");
+com\facebook\common\util\d.java:         return uri2.startsWith(MediaStore.Images.Media.EXTERNAL_CONTENT_URI.toString()) || uri2.startsWith(MediaStore.Images.Media.INTERNAL_CONTENT_URI.toString());
+com\facebook\common\util\d.java:             return !path.startsWith(path2);
+com\facebook\f.java:                     if (str.toLowerCase(Locale.ROOT).startsWith("fb")) {
+com\facebook\internal\FeatureManager.java:                 if (str.startsWith(str2)) {
+com\facebook\internal\WebDialog.java:                 boolean r6 = r7.startsWith(r6)
+com\facebook\internal\WebDialog.java:                 boolean r6 = r7.startsWith(r6)
+com\facebook\internal\i.java:         if (!str2.startsWith("generic") || (i2 & 2) == 0) {
+com\facebook\internal\instrument\InstrumentData.java:         if (str.startsWith("crash_log_")) {
+com\facebook\internal\instrument\InstrumentData.java:         if (str.startsWith("shield_log_")) {
+com\facebook\internal\instrument\InstrumentData.java:         if (str.startsWith("thread_check_log_")) {
+com\facebook\internal\instrument\InstrumentData.java:         if (str.startsWith("analysis_log_")) {
+com\facebook\internal\instrument\c.java:                 if (stackTraceElement.getClassName().startsWith("com.facebook")) {
+com\facebook\internal\r.java:             if (!str.startsWith("FacebookSDK.")) {
+com\facebook\internal\p.java:         return a != null && a.startsWith("Unity.");
+com\facebook\internal\s.java:                     this.f3082g = (uri.getAuthority() == null || uri.getAuthority().startsWith("media")) ? false : false;
+com\facebook\internal\m.java:                 return !str.startsWith("buffer");
+com\facebook\internal\m.java:                 return str.startsWith("buffer");
+com\facebook\login\CustomTabLoginMethodHandler.java:             boolean r0 = r7.startsWith(r0)
+com\facebook\login\CustomTabLoginMethodHandler.java:             boolean r0 = r7.startsWith(r0)
+com\facebook\login\LoginManager.java:         return str != null && (str.startsWith("publish") || str.startsWith("manage") || f3123e.contains(str));
+com\facebook\referrals\a.java:         if (intent != null && (stringExtra = intent.getStringExtra(CustomTabMainActivity.f2240f)) != null && stringExtra.startsWith(e.c(c()))) {
+com\facebook\s\a\b\d\a.java:         return uri.toString().startsWith(this.a);
+com\facebook\soloader\c.java:             if (!str.startsWith("/")) {
+com\google\android\datatransport\cct\a.java:         if (str.startsWith("1$")) {
+com\google\android\datatransport\runtime\backends\j.java:                 if ((obj instanceof String) && str.startsWith("backend:")) {
+com\google\android\gms\ads\internal\e.java:         if (str.startsWith(this.a.L0())) {
+com\google\android\gms\ads\internal\e.java:         if (str.startsWith("gmsg://noAdLoaded")) {
+com\google\android\gms\ads\internal\e.java:         } else if (str.startsWith("gmsg://scriptLoadFailed")) {
+com\google\android\gms\ads\internal\e.java:         } else if (str.startsWith("gmsg://adResized")) {
+com\google\android\gms\ads\internal\e.java:         } else if (str.startsWith("gmsg://")) {
+com\google\android\gms\ads\internal\h.java:             } else if (str2.startsWith("csa_")) {
+com\google\android\gms\ads\internal\util\zzj.java:         if (str2.startsWith(str)) {
+com\google\android\gms\ads\internal\util\zzj.java:                     if (split[i2].trim().startsWith(HttpRequest.PARAM_CHARSET)) {
+com\google\android\gms\cloudmessaging\Rpc.java:                     if (stringExtra2.startsWith(Effect.DIVIDER)) {
+com\google\android\gms\cloudmessaging\Rpc.java:                             if (str2.startsWith(":")) {
+com\google\android\gms\common\util\o.java:                         if (Constants.REFERRER_API_GOOGLE.equals(Build.BRAND) && !Build.ID.startsWith("RPP1") && !Build.ID.startsWith("RPP2") && Integer.parseInt(Build.VERSION.INCREMENTAL) >= 6301457) {
+com\google\android\gms\dynamite\f.java:         if (!str.startsWith("java.") && !str.startsWith("android.")) {
+com\google\android\gms\internal\ads\zzakz.java:             } else if (this.zzdjn.startsWith("<html>")) {
+com\google\android\gms\internal\ads\zzaoj.java:                 if (str2.startsWith("custom:")) {
+com\google\android\gms\internal\ads\zzass.java:         if (!str6.startsWith(str5)) {
+com\google\android\gms\internal\ads\zzaza.java:         return str.startsWith(zzadr.zzdet.get());
+com\google\android\gms\internal\ads\zzaza.java:         return Build.DEVICE.startsWith("generic");
+com\google\android\gms\internal\ads\zzaza.java:                     if (!TextUtils.isEmpty(className) && (className.startsWith("android.") || className.startsWith("java."))) {
+com\google\android\gms\internal\ads\zzbbr.java:         if (str.startsWith("cache:")) {
+com\google\android\gms\internal\ads\zzbc.java:                 if (trim.startsWith("max-age=")) {
+com\google\android\gms\internal\ads\zzbc.java:                 } else if (trim.startsWith("stale-while-revalidate=")) {
+com\google\android\gms\internal\ads\zzbee.java:                             if (headerField.startsWith("tel:")) {
+com\google\android\gms\internal\ads\zzcrb.java:                 hashMap.put("olaih", String.valueOf(stringExtra3.startsWith("http")));
+com\google\android\gms\internal\ads\zzdfo.java:         boolean startsWith = Build.DEVICE.startsWith("generic");
+com\google\android\gms\internal\ads\zzdfo.java:         return new zzdfp(z2, z3, country, startsWith, a, b, language, arrayList, zza, zzu, str, z, Build.MODEL, com.google.android.gms.ads.internal.zzr.zzkt().zzzg());
+com\google\android\gms\internal\ads\zzdyk.java:         if (getClass().getName().startsWith("com.google.common.util.concurrent.")) {
+com\google\android\gms\internal\ads\zzebm.java:                 if (str.toLowerCase(locale).startsWith("tinkaead")) {
+com\google\android\gms\internal\ads\zzebm.java:                 if (!str.toLowerCase(locale).startsWith("tinkdeterministicaead")) {
+com\google\android\gms\internal\ads\zzebm.java:                     if (!str.toLowerCase(locale).startsWith("tinkstreamingaead")) {
+com\google\android\gms\internal\ads\zzebm.java:                         if (!str.toLowerCase(locale).startsWith("tinkhybriddecrypt") && !str.toLowerCase(locale).startsWith("tinkhybridencrypt")) {
+com\google\android\gms\internal\ads\zzebm.java:                             if (!str.toLowerCase(locale).startsWith("tinkmac")) {
+com\google\android\gms\internal\ads\zzebm.java:                                 if (!str.toLowerCase(locale).startsWith("tinkpublickeysign") && !str.toLowerCase(locale).startsWith("tinkpublickeyverify")) {
+com\google\android\gms\internal\ads\zzebm.java:                                     if (str.toLowerCase(locale).startsWith("tink")) {
+com\google\android\gms\internal\ads\zzjc.java:             boolean r7 = r4.startsWith(r7)
+com\google\android\gms\internal\ads\zzjc.java:             boolean r7 = r4.startsWith(r7)
+com\google\android\gms\internal\ads\zzjc.java:             boolean r4 = r4.startsWith(r7)
+com\google\android\gms\internal\ads\zzqa.java:             boolean r4 = r1.startsWith(r4)     // Catch: java.lang.Throwable -> L53
+com\google\android\gms\internal\ads\zzqa.java:             boolean r1 = r1.startsWith(r4)     // Catch: java.lang.Throwable -> L53
+com\google\android\gms\internal\ads\zzrk.java:             if (!activity.getClass().getName().startsWith(MobileAds.ERROR_DOMAIN)) {
+com\google\android\gms\internal\ads\zzth.java:                     if (str3.startsWith("tag.")) {
+com\google\android\gms\internal\measurement\zziz.java:                 if (method.getName().startsWith("get")) {
+com\google\android\gms\internal\measurement\zziz.java:             String substring = str.startsWith("get") ? str.substring(3) : str;
+com\google\android\gms\measurement\internal\aa.java:                 return Boolean.valueOf(str.startsWith(str2));
+com\google\android\gms\measurement\internal\f3.java:             if (str.startsWith("_exp_")) {
+com\google\android\gms\measurement\internal\n9.java:         return !TextUtils.isEmpty(str) && str.startsWith("_");
+com\google\android\gms\measurement\internal\n9.java:             if (str2.startsWith(strArr3[i2])) {
+com\google\android\play\core\assetpacks\g2.java:                     return str2.startsWith(String.valueOf(this.a).concat(PGTransHeader.CONNECTOR)) && str2.endsWith(".apk");
+com\google\android\play\core\splitcompat\c.java:         if (file2.getCanonicalPath().startsWith(file.getCanonicalPath())) {
+com\google\android\play\core\splitinstall\p.java:         return str.startsWith("config.");
+com\google\firebase\components\ComponentDiscovery.java:                 if (ComponentDiscovery.COMPONENT_SENTINEL_VALUE.equals(metadata.get(str)) && str.startsWith(ComponentDiscovery.COMPONENT_KEY_PREFIX)) {
+com\google\firebase\crashlytics\internal\persistence\CrashlyticsReportPersistence$$Lambda$6.java:         boolean startsWith;
+com\google\firebase\crashlytics\internal\persistence\CrashlyticsReportPersistence$$Lambda$6.java:         startsWith = str.startsWith("event");
+com\google\firebase\crashlytics\internal\persistence\CrashlyticsReportPersistence$$Lambda$6.java:         return startsWith;
+com\google\firebase\crashlytics\internal\persistence\CrashlyticsReportPersistence.java:         return str.startsWith("event") && str.endsWith(PRIORITY_EVENT_SUFFIX);
+com\google\firebase\crashlytics\internal\persistence\CrashlyticsReportPersistence.java:         return str.startsWith("event") && !str.endsWith(PRIORITY_EVENT_SUFFIX);
+com\google\firebase\iid\Metadata.java:         if (applicationId.startsWith("1:")) {
+com\google\firebase\iid\Store.java:             if (str.startsWith("{")) {
+com\google\firebase\iid\ServiceStarter.java:                 if (str.startsWith(".")) {
+com\google\firebase\installations\local\IidStore.java:         if (applicationId.startsWith("1:") || applicationId.startsWith("2:")) {
+com\google\firebase\installations\local\IidStore.java:                     if (string.startsWith(JSON_ENCODED_PREFIX)) {
+com\google\firebase\messaging\Constants.java:                     if (!str.startsWith(RESERVED_PREFIX) && !str.startsWith(MessageNotificationKeys.RESERVED_PREFIX) && !str.equals("from") && !str.equals(MESSAGE_TYPE) && !str.equals(COLLAPSE_KEY)) {
+com\google\firebase\messaging\MessagingAnalytics.java:         if (applicationId.startsWith("1:")) {
+com\google\firebase\messaging\MessagingAnalytics.java:         if (stringExtra == null || !stringExtra.startsWith("/topics/")) {
+com\google\firebase\messaging\NotificationParams.java:         return str.startsWith(Constants.AnalyticsKeys.PREFIX) || str.equals("from");
+com\google\firebase\messaging\NotificationParams.java:         return str.startsWith(Constants.MessagePayloadKeys.RESERVED_CLIENT_LIB_PREFIX) || str.startsWith(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX) || str.startsWith(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX_OLD);
+com\google\firebase\messaging\NotificationParams.java:         return !str.startsWith(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX) ? str : str.replace(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX, Constants.MessageNotificationKeys.NOTIFICATION_PREFIX_OLD);
+com\google\firebase\messaging\NotificationParams.java:         if (!this.data.containsKey(str) && str.startsWith(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX)) {
+com\google\firebase\messaging\NotificationParams.java:         return str.startsWith(Constants.MessageNotificationKeys.NOTIFICATION_PREFIX) ? str.substring(6) : str;
+com\google\firebase\messaging\TopicOperation.java:         if (str != null && str.startsWith("/topics/")) {
+com\google\firebase\remoteconfig\internal\ConfigGetParameterHandler.java:             if (next.startsWith(str)) {
+com\google\zxing\datamatrix\encoder\j.java:         if (str.startsWith("[)>\u001e05\u001d") && str.endsWith("\u001e\u0004")) {
+com\google\zxing\datamatrix\encoder\j.java:         } else if (str.startsWith("[)>\u001e06\u001d") && str.endsWith("\u001e\u0004")) {
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:         byte startsWithSap;
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             return this.referenceType == entry.referenceType && this.referencedSize == entry.referencedSize && this.sapDeltaTime == entry.sapDeltaTime && this.sapType == entry.sapType && this.startsWithSap == entry.startsWithSap && this.subsegmentDuration == entry.subsegmentDuration;
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             return this.startsWithSap;
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             return (((((((((this.referenceType * 31) + this.referencedSize) * 31) + ((int) (j2 ^ (j2 >>> 32)))) * 31) + this.startsWithSap) * 31) + this.sapType) * 31) + this.sapDeltaTime;
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             this.startsWithSap = b;
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             return "Entry{referenceType=" + ((int) this.referenceType) + ", referencedSize=" + this.referencedSize + ", subsegmentDuration=" + this.subsegmentDuration + ", startsWithSap=" + ((int) this.startsWithSap) + ", sapType=" + ((int) this.sapType) + ", sapDeltaTime=" + this.sapDeltaTime + '}';
+com\googlecode\mp4parser\boxes\threegpp26244\SegmentIndexBox.java:             this.startsWithSap = z ? (byte) 1 : (byte) 0;
+com\googlecode\mp4parser\util\Path.java:         if (str.startsWith("/")) {
+com\growingio\android\sdk\api\TagStore.java:             if (tag.attrs.domain.startsWith(str)) {
+com\growingio\android\sdk\autoburry\page\PageObserver.java:                             if (str.startsWith("gio-tag-") && childAt.getTag(AbstractGrowingIO.GROWING_IMP_TAG_MARKED) == null) {
+com\growingio\android\sdk\crash\CrashManager.java:         return firstTargetElement.getClassName().startsWith("com.growingio");
+com\growingio\android\sdk\deeplink\DeeplinkManager.java:         if (data.getScheme().startsWith("growing.")) {
+com\growingio\android\sdk\heatmap\HeatMapNodeTraveler.java:         if (x.startsWith("#")) {
+com\growingio\android\sdk\deeplink\DeeplinkManager.java:         if (!str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\growingio\android\sdk\java_websocket\DebuggerSocketMain.java:         if (str.startsWith("wss")) {
+com\growingio\android\sdk\monitor\analysis\Analyser.java:             if (!stackTraceElement.getClassName().startsWith(stackGroup.getName())) {
+com\growingio\android\sdk\monitor\analysis\Analyser.java:             if (str.startsWith(str2)) {
+com\growingio\android\sdk\monitor\event\helper\AndroidEventBuilderHelper.java:             if (!str.startsWith("generic") && !str.startsWith("unknown")) {
+com\growingio\android\sdk\monitor\event\helper\AndroidEventBuilderHelper.java:                 if (!str2.contains("google_sdk") && !str2.contains("Emulator") && !str2.contains("Android SDK built for x86") && !Build.MANUFACTURER.contains("Genymotion") && ((!Build.BRAND.startsWith("generic") || !Build.DEVICE.startsWith("generic")) && !"google_sdk".equals(Build.PRODUCT))) {
+com\growingio\android\sdk\monitor\jvmti\FrameCache.java:                     if (stackTraceElement.getClassName().startsWith(str)) {
+com\growingio\android\sdk\monitor\marshaller\json\StackTraceInterfaceBinding.java:             if (module.startsWith(str) && !isBlacklistedFromInApp(module)) {
+com\growingio\android\sdk\utils\LogUtil.java:             if (str3.startsWith("{")) {
+com\growingio\android\sdk\utils\LogUtil.java:             } else if (str3.startsWith("[")) {
+com\growingio\android\sdk\utils\Util.java:         return str.startsWith(Constants.HTTP_PROTOCOL_PREFIX);
+com\growingio\android\sdk\utils\Util.java:         return str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX);
+com\growingio\eventcenter\LogUtils.java:             if (str.startsWith("{")) {
+com\growingio\eventcenter\LogUtils.java:             } else if (str.startsWith("[")) {
+com\hw\videoprocessor\e.java:                 if (string.startsWith("audio/")) {
+com\hw\videoprocessor\e.java:             } else if (string.startsWith("video/")) {
+com\ironsource\environment\ANRError.java:             if (entry.getKey() == thread || (entry.getKey().getName().startsWith(str) && (z || entry.getValue().length > 0))) {
+com\ironsource\mediationsdk\m0\a.java:         if (!sVar.b.startsWith("4.1") && !sVar.b.startsWith("4.3")) {
+com\ironsource\sdk\WPAD\c.java:         return str.startsWith(".");
+com\mob\commons\i.java:             if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) && (parse = Uri.parse(str.trim())) != null && (scheme = parse.getScheme()) != null && scheme.equals("http")) {
+com\mob\commons\i.java:         if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX)) {
+com\mob\commons\i.java:         if (str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\mob\commons\i.java:         if (str.startsWith(str2 + ".")) {
+com\mob\commons\i.java:         if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX)) {
+com\mob\commons\i.java:         if (str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\mob\commons\i.java:         if (str.startsWith(str2 + ".")) {
+com\mob\tools\MobUIShell.java:             if (str.startsWith(".")) {
+com\mob\tools\MobUIShell.java:                 if (stackTrace[i3].toString().startsWith("java.lang.Thread.getStackTrace") && (i3 = i3 + 2) < stackTrace.length) {
+com\mob\tools\MobUIShell.java:                     int onSetTheme = this.executor.onSetTheme(i2, stackTrace[i3].toString().startsWith("android.app.ActivityThread.performLaunchActivity"));
+com\mob\tools\network\NetworkHelper.java:                     if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) && (parse = Uri.parse(str.trim())) != null && (scheme = parse.getScheme()) != null && scheme.equals("http")) {
+com\mob\tools\network\NetworkHelper.java:         if (str2.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\mob\tools\utils\BitmapHelper.java:                 if (str3.trim().startsWith("filename")) {
+com\mob\tools\utils\BitmapHelper.java:                     if (str2.startsWith("\"") && str2.endsWith("\"")) {
+com\mob\tools\utils\BitmapHelper.java:             if (trim.startsWith("image/")) {
+com\mob\tools\utils\Hashon.java:                 if (str.startsWith("[") && str.endsWith("]")) {
+com\mob\tools\utils\Hashon.java:         if (str.startsWith("[")) {
+com\mob\tools\utils\ReflectHelper.java:         while (str2.startsWith("[")) {
+com\mob\tools\utils\ReflectHelper.java:             if (str.startsWith("[") && str.endsWith("]")) {
+com\mob\tools\utils\ReflectHelper.java:             if (str.startsWith("[") && str.endsWith("]")) {
+com\mob\tools\utils\ReflectHelper.java:         if (str.startsWith("[")) {
+com\mob\tools\utils\ReflectHelper.java:             if (str.startsWith("[") && str.endsWith("]")) {
+com\mob\tools\utils\ReflectHelper.java:         } else if (str.startsWith("[") && str.endsWith("]")) {
+com\mob\tools\utils\ReflectHelper.java:                 while (name.startsWith("[")) {
+com\mob\tools\utils\DeviceHelper.java:             boolean r7 = r6.startsWith(r7)     // Catch: java.lang.Throwable -> L7f
+com\mob\tools\utils\DeviceHelper.java:                 return lowerCase.startsWith("wifi") ? "wifi" : lowerCase.startsWith("5g") ? "5g" : lowerCase.startsWith("4g") ? "4g" : lowerCase.startsWith("3g") ? "3g" : lowerCase.startsWith("2g") ? "2g" : lowerCase.startsWith("bluetooth") ? "bluetooth" : lowerCase;
+com\mob\tools\utils\DeviceHelper.java:         return (TextUtils.isEmpty(lowerCase) || PortalFollowFeeds.TYPE_NONE.equals(lowerCase)) ? PortalFollowFeeds.TYPE_NONE : (lowerCase.startsWith("5g") || lowerCase.startsWith("4g") || lowerCase.startsWith("3g") || lowerCase.startsWith("2g")) ? "cell" : lowerCase.startsWith("wifi") ? "wifi" : a.PAGE_TYPE_OTHER;
+com\mob\tools\utils\DeviceHelper.java:                 if (readLine.startsWith(i4 + " bytes from")) {
+com\nostra13\universalimageloader\core\download\ImageDownloader.java:             return str.toLowerCase(Locale.US).startsWith(this.uriPrefix);
+com\nostra13\universalimageloader\core\download\BaseImageDownloader.java:         return type.startsWith("video/");
+com\nostra13\universalimageloader\core\download\BaseImageDownloader.java:         } else if (str.startsWith("content://com.android.contacts/")) {
+com\pinguo\album\data\download\ImageDownloader$Scheme.java:         return str.toLowerCase(Locale.US).startsWith(this.mUriPrefix);
+com\pinguo\album\data\download\PGImageDownloader.java:         if (str.startsWith("content://com.android.contacts/")) {
+com\pinguo\album\j\c.java:                 } else if (!file2.getName().startsWith("C360")) {
+com\pinguo\camera360\adv\c.java:         return (advItem == null || (str = advItem.interactionUri) == null || !str.startsWith("app://camera360/familyAlbum")) ? false : true;
+com\pinguo\camera360\camera\activity\IntentBufferActivity.java:                 if (dataString != null && dataString.startsWith("camera360://")) {
+com\pinguo\camera360\camera\activity\IntentBufferActivity.java:         if (!scheme.toLowerCase().startsWith("file")) {
+com\pinguo\camera360\camera\controller\WelcomeAdsFragment.java:                 if (this.a.startsWith("assets://")) {
+com\pinguo\camera360\camera\options\OptionsSavePath.java:         return isDirectory && (name.startsWith(".") ^ true) && (name.equals("lost+found") ^ true);
+com\pinguo\camera360\cloud\cropImage\c.java:             this.f6277e = (str == null || !str.startsWith("video/")) ? 0 : 1;
+com\pinguo\camera360\cloud\cropImage\f.java:         long a2 = str.startsWith(FirebaseAnalytics.Param.CONTENT) ? j2 : b.a(str);
+com\pinguo\camera360\cloud\cropImage\f.java:         boolean z = str.startsWith(FirebaseAnalytics.Param.CONTENT) || str.startsWith(InspirePublishFragment.FILE_HEADER);
+com\pinguo\camera360\cloud\cropImage\f.java:         if (!str.startsWith(FirebaseAnalytics.Param.CONTENT) && !str.startsWith("file")) {
+com\pinguo\camera360\cloud\cropImage\f.java:             if (!str.startsWith(FirebaseAnalytics.Param.CONTENT) && !str.startsWith("file")) {
+com\pinguo\camera360\effect\model\entity\EffectType.java:         return (str == null || !str.startsWith("#")) ? DEFAULT_COLOR : Color.parseColor(this.mEffectTypeBean.color);
+com\pinguo\camera360\gallery\data\b.java:             if (cVar5.c.startsWith("0") && cVar5.c.length() > 1) {
+com\pinguo\camera360\gallery\data\b.java:             if (substring6.startsWith("0") && cVar6.c.length() > 1) {
+com\pinguo\camera360\gallery\util\a.java:             if (substring2.startsWith("0")) {
+com\pinguo\camera360\gallery\util\a.java:             if (substring3.startsWith("0")) {
+com\pinguo\camera360\gallery\util\a.java:             if (substring2.startsWith("0")) {
+com\pinguo\camera360\gallery\util\a.java:             if (substring3.startsWith("0")) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             if (!str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) && !str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:         boolean startsWith = str.startsWith("market://");
+com\pinguo\camera360\lib\ui\WebViewActivity.java:         boolean startsWith2 = str.startsWith("https://play.google.com");
+com\pinguo\camera360\lib\ui\WebViewActivity.java:         if (!startsWith && !startsWith2) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             if (!str.startsWith("app://") && !str.startsWith("component://")) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                 if (str.startsWith("scheme://")) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                 } else if (!str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) && !str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                     if (str.startsWith(InspirePublishFragment.FILE_HEADER)) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                             if (str.startsWith("weixin://wap/pay?")) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                             } else if (str.startsWith("alipays://")) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             d1(startsWith, str);
+com\pinguo\camera360\lib\ui\WebViewActivity.java:                 d1(startsWith, str);
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             d1(startsWith, str);
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX)) {
+com\pinguo\camera360\lib\ui\WebViewActivity.java:             if (this.z.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\pinguo\camera360\n\b\d.java:         } else if (!str.startsWith("app://camera360/") && !str.startsWith("component://")) {
+com\pinguo\camera360\n\b\d.java:             if (!str.startsWith(com.growingio.android.sdk.collection.Constants.HTTP_PROTOCOL_PREFIX) && !str.startsWith(com.growingio.android.sdk.collection.Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\pinguo\lib\HardwareInfo.java:         return str.startsWith("cpu") && isNum(str.substring(3));
+com\pinguo\lib\HardwareInfo.java:         if (lowerCase.startsWith("mt") && lowerCase.length() >= 6 && isNum(lowerCase.substring(2, 6))) {
+com\qiniu\android\dns\NetworkReceiver.java:                 if (!TextUtils.isEmpty(string) && (string.startsWith("ctwap") || string.startsWith("ctnet"))) {
+com\sina\weibo\sdk\c\b.java:             return !TextUtils.isEmpty(a) && a.startsWith("image/");
+com\sina\weibo\sdk\c\b.java:                     return TextUtils.isEmpty(str) && str.startsWith("video/");
+com\sina\weibo\sdk\web\WebActivity.java:         return str.startsWith("https://service.weibo.com/share/mobilesdk.php") || str.startsWith("https://open.weibo.cn/oauth2/authorize?");
+com\sina\weibo\sdk\web\a\a.java:         return (a == null || !str.startsWith(a.getRedirectUrl()) || (g2 = e.g(str)) == null || TextUtils.isEmpty(g2.getString("access_token"))) ? false : true;
+com\sina\weibo\sdk\web\a\a.java:         if (a == null || !str.startsWith(a.getRedirectUrl())) {
+com\sina\weibo\sdk\web\a\d.java:         if (TextUtils.isEmpty(str) || !str.startsWith("sinaweibo://browser/close")) {
+com\sina\weibo\sdk\web\a\d.java:         if (TextUtils.isEmpty(uri) || !uri.startsWith("sinaweibo://browser/close")) {
+com\tapjoy\TJAdUnit.java:                 } else if (str.startsWith("javascript:") && Build.VERSION.SDK_INT >= 19) {
+com\tapjoy\TJSplitWebView.java:             if (str2 != null && uri != null && str != null && str.startsWith(str2)) {
+com\tapjoy\TJWebViewJSInterface.java:                 if (str.startsWith("javascript:") && Build.VERSION.SDK_INT >= 19) {
+com\tapjoy\TapjoyCache.java:         if (str.startsWith("//")) {
+com\tapjoy\TapjoyUtil.java:             boolean r2 = r7.startsWith(r2)     // Catch: java.lang.Throwable -> L9c java.lang.Exception -> L9e
+com\tapjoy\TapjoyUtil.java:             boolean r2 = r7.startsWith(r2)     // Catch: java.lang.Throwable -> L9c java.lang.Exception -> L9e
+com\tapjoy\TapjoyUtil.java:             boolean r2 = r7.startsWith(r2)     // Catch: java.lang.Throwable -> L7f java.lang.Exception -> L81
+com\tapjoy\TapjoyUtil.java:             boolean r2 = r7.startsWith(r2)     // Catch: java.lang.Throwable -> L7f java.lang.Exception -> L81
+com\tapjoy\internal\Cif.java:         if (!str.startsWith("GIF")) {
+com\tapjoy\internal\dg.java:                     if (obj2.startsWith("{")) {
+com\tapjoy\internal\hx.java:                 if (trim.startsWith("max-age=")) {
+com\tapjoy\internal\p.java:                     if (stringExtra2.startsWith(Effect.DIVIDER)) {
+com\tencent\bugly\agent\GameAgent.java:             if (str3.startsWith("stack traceback")) {
+com\tencent\bugly\agent\GameAgent.java:         if (str.startsWith("<Log>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogDebug>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogInfo>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogWarning>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogAssert>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogError>")) {
+com\tencent\bugly\agent\GameAgent.java:         } else if (str.startsWith("<LogException>")) {
+com\tencent\bugly\crashreport\common\info\b.java:             return method.invoke(null, new Object[0]).getClass().getName().startsWith("$Proxy") ? 256 : 0;
+com\tencent\bugly\crashreport\crash\anr\b.java:             if (str.startsWith("bugly_trace_")) {
+com\tencent\bugly\crashreport\crash\anr\b.java:                         if (name.startsWith("jni_mannual_bugly_trace_") && (indexOf = name.indexOf(".txt")) > 0) {
+com\tencent\bugly\crashreport\crash\anr\b.java:                         if (!name.startsWith("bugly_trace_") && !name.startsWith("bugly_trace_")) {
+com\tencent\bugly\crashreport\crash\jni\b.java:             boolean r10 = r2.startsWith(r10)     // Catch: java.lang.Throwable -> L74
+com\tencent\bugly\crashreport\crash\anr\b.java:                 if (next.startsWith(thread.getName())) {
+com\tencent\bugly\crashreport\crash\jni\b.java:             boolean r4 = r2.startsWith(r4)     // Catch: java.lang.Throwable -> L4a
+com\tencent\bugly\proguard\d.java:         if (!str.startsWith(".")) {
+com\tencent\bugly\proguard\z.java:         } else if (str.toLowerCase().startsWith("http")) {
+com\tencent\connect\auth\a.java:             } else if (!a.this.p.startsWith("https://login.imgcache.qq.com/ptlogin/static/qzsjump.html?")) {
+com\tencent\connect\auth\a.java:             if (str.startsWith("auth://browser")) {
+com\tencent\connect\auth\a.java:             } else if (str.startsWith("auth://tauth.qq.com/")) {
+com\tencent\connect\auth\a.java:             } else if (str.startsWith(Constants.CANCEL_URI)) {
+com\tencent\connect\auth\a.java:             } else if (str.startsWith(Constants.CLOSE_URI)) {
+com\tencent\connect\auth\a.java:             } else if (!str.startsWith(Constants.DOWNLOAD_URI) && !str.endsWith(".apk")) {
+com\tencent\connect\auth\a.java:                 if (str.startsWith("auth://progress")) {
+com\tencent\connect\auth\a.java:                 } else if (!str.startsWith("auth://onLoginSubmit")) {
+com\tencent\connect\auth\a.java:                     if (str.startsWith(Constants.DOWNLOAD_URI)) {
+com\tencent\matrix\util\DeviceUtil.java:                 if (str.startsWith("VmSize")) {
+com\tencent\mm\opensdk\utils\b.java:         if (a != null && str.startsWith(FirebaseAnalytics.Param.CONTENT)) {
+com\tencent\open\TDialog.java:             if (str.startsWith(h.a().a((Context) TDialog.this.f8149e.get(), "auth://tauth.qq.com/"))) {
+com\tencent\open\TDialog.java:             } else if (str.startsWith(Constants.CANCEL_URI)) {
+com\tencent\open\TDialog.java:             } else if (str.startsWith(Constants.CLOSE_URI)) {
+com\tencent\open\TDialog.java:             } else if (!str.startsWith(Constants.DOWNLOAD_URI) && !str.endsWith(".apk")) {
+com\tencent\open\TDialog.java:                 return str.startsWith("auth://progress");
+com\tencent\open\TDialog.java:                     if (str.startsWith(Constants.DOWNLOAD_URI)) {
+com\tencent\open\a\a.java:         if (lowerCase.startsWith("cmwap")) {
+com\tencent\open\a\a.java:         if (!lowerCase.startsWith("cmnet") && !lowerCase.startsWith("epc.tmobile.com")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("uniwap")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("uninet")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("wap")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("net")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("ctwap")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("ctnet")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("3gwap")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("3gnet")) {
+com\tencent\open\a\a.java:             if (lowerCase.startsWith("#777")) {
+com\tencent\open\c.java:             if (str.startsWith(h.a().a((Context) c.this.f8174j.get(), "auth://tauth.qq.com/"))) {
+com\tencent\open\c.java:             } else if (str.startsWith(Constants.CANCEL_URI)) {
+com\tencent\open\c.java:             } else if (str.startsWith(Constants.CLOSE_URI)) {
+com\tencent\open\utils\l.java:             if (i.a(str, "4.3") >= 0 && !str.startsWith("4.4") && (signatureArr = packageInfo.signatures) != null) {
+com\tencent\open\utils\l.java:         return str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX);
+com\tencent\open\utils\l.java:                 if (documentId.startsWith("raw:")) {
+com\tencent\stat\StatNativeCrashReport.java:                     if (file2.getName().startsWith(PRE_TAG_TOMBSTONE_FNAME) && file2.isFile()) {
+com\unity3d\player\m.java:         if (b.startsWith(InspirePublishFragment.FILE_HEADER)) {
+com\unity3d\player\UnityPlayer.java:         if (!str.startsWith("http:")) {
+com\unity3d\player\UnityPlayer.java:             if (str.startsWith("https:")) {
+com\unity3d\player\n.java:         if (!str.startsWith("deeplinker")) {
+com\unity3d\player\n.java:             if (b.startsWith(InspirePublishFragment.FILE_HEADER)) {
+com\unity3d\player\n.java:         return str.startsWith("http");
+com\unity3d\splash\services\core\request\WebRequest.java:         if (i().toString().startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+com\unity3d\splash\services\core\request\WebRequest.java:         } else if (!i().toString().startsWith(Constants.HTTP_PROTOCOL_PREFIX)) {
+com\unity3d\splash\services\core\webview\bridge\c.java:             if (cls != null && (cls.getPackage().getName().startsWith("com.unity3d.splash.services") || cls.getPackage().getName().startsWith("com.unity3d.splash.test"))) {
+d\d\a\a\a\d\e.java:                     if (obj2.startsWith("{")) {
+d\f\a\a\a\c\c\a.java:                 if (indexOf == 6 && str.startsWith("REMOVE")) {
+d\f\a\a\a\c\c\a.java:             if (indexOf2 != -1 && indexOf == 5 && str.startsWith("CLEAN")) {
+d\f\a\a\a\c\c\a.java:             } else if (indexOf2 == -1 && indexOf == 5 && str.startsWith("DIRTY")) {
+d\f\a\a\a\c\c\a.java:             } else if (indexOf2 == -1 && indexOf == 4 && str.startsWith("READ")) {
+d\f\a\b\e.java:             if (str2.startsWith(str)) {
+de\greenrobot\event\j.java:             if (name.startsWith("java.") || name.startsWith("javax.") || name.startsWith("android.")) {
+de\greenrobot\event\j.java:                 if (name2.startsWith(str)) {
+kotlin\jvm\internal\w.java:         return obj.startsWith("kotlin.jvm.functions.") ? obj.substring(21) : obj;
+kotlin\text\t.java:             return str.startsWith(prefix);
+okio\ByteString.java:     public final boolean startsWith(ByteString byteString) {
+okio\ByteString.java:     public final boolean startsWith(byte[] bArr) {
+org\slf4j\c.java:                 if (str.startsWith(str2)) {
+pl\droidsonroids\gif\j.java:             return str.startsWith(j.a) || str.startsWith(this.a);
+rx\plugins\RxJavaPlugins.java:                 if (obj.startsWith("rxjava.plugin.") && obj.endsWith(".class") && simpleName.equals(entry.getValue().toString())) {
+tv\danmaku\ijk\media\player\IjkMediaCodecInfo.java:         if (!lowerCase.startsWith("omx.")) {
+tv\danmaku\ijk\media\player\IjkMediaCodecInfo.java:         } else if (lowerCase.startsWith("omx.pv") || lowerCase.startsWith("omx.google.") || lowerCase.startsWith("omx.ffmpeg.") || lowerCase.startsWith("omx.k3.ffmpeg.") || lowerCase.startsWith("omx.avcodec.")) {
+tv\danmaku\ijk\media\player\IjkMediaCodecInfo.java:             if (!lowerCase.startsWith("omx.ittiam.")) {
+tv\danmaku\ijk\media\player\IjkMediaCodecInfo.java:                 if (!lowerCase.startsWith("omx.mtk.")) {
+us\pinguo\advconfigdata\DispatcherData\AdvDataKeeper.java:         } else if (str.startsWith("callApi://")) {
+us\pinguo\advconfigdata\Utils\AdvUtils.java:         return !TextUtils.isEmpty(str) && str.startsWith("http");
+us\pinguo\advsdk\b\a.java:         boolean startsWith = str2.startsWith("https://play.google.com");
+us\pinguo\advsdk\b\a.java:             if (a && startsWith) {
+us\pinguo\advsdk\manager\PgAdvManager.java:         return (str.startsWith(h()) || str.startsWith(l()) || str.startsWith("https://ad-dev.360in.com") || str.startsWith("https://ad.360in.com") || str.startsWith("http://ad.360in.com") || str.startsWith("http://exp-dev.360in.com") || str.startsWith("https://exp.360in.com") || str.startsWith("http://exp.360in.com")) ? false : true;
+us\pinguo\advsdk\manager\k.java:         if (!TextUtils.isEmpty(e2) && e2.startsWith(str)) {
+us\pinguo\advstrategy\MyWebView.java:         return str.startsWith(this.GP_PRIX) || str.startsWith(this.GP_HOST);
+us\pinguo\camera360\module\PushInit.java:             return str.startsWith("d//") || str.startsWith("APA") || str.length() == 32 || str.length() == 44 || str.length() > 64 || str.matches("[0-9A-Za-z]+=?/*//");
+us\pinguo\camera360\shop\cardsviewpager\g.java:                 if (str.startsWith("f")) {
+us\pinguo\camera360\shop\data\NameHelper.java:         if (this.a.startsWith("{") && this.a.endsWith("}")) {
+us\pinguo\camera360\shop\data\g.java:         if (!this.mItemBean.getIcon().startsWith(InspirePublishFragment.FILE_HEADER) && !this.mItemBean.getIcon().startsWith("assets://") && !this.mItemBean.getIcon().startsWith(Constants.HTTP_PROTOCOL_PREFIX) && !this.mItemBean.getIcon().startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+us\pinguo\camera360\shop\data\h.java:         if (!this.b.getIcon().startsWith(InspirePublishFragment.FILE_HEADER) && !this.b.getIcon().startsWith("assets://") && !this.b.getIcon().startsWith("asset://") && !this.b.getIcon().startsWith(Constants.HTTP_PROTOCOL_PREFIX) && !this.b.getIcon().startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+us\pinguo\camera360\shop\data\h.java:         if (e2.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\camera360\shop\data\install\e.java:             if (a.startsWith("assets://")) {
+us\pinguo\camera360\shop\download\BaseDownloader.java:             return str.toLowerCase(Locale.US).startsWith(this.uriPrefix);
+us\pinguo\camera360\shop\download\BaseDownloader.java:         if (!str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) && !str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) {
+us\pinguo\camera360\shop\download\BaseDownloader.java:             if (str.startsWith("assets://")) {
+us\pinguo\camera360\shop\download\BaseDownloader.java:             if (str.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\common\db\b.java:                 if (str.startsWith("CREATE TABLE ")) {
+us\pinguo\common\debug\ANRError.java:             if (entry.getKey() == thread || (entry.getKey().getName().startsWith(str) && (z || entry.getValue().length > 0))) {
+us\pinguo\common\utils\j.java:             if (attributeSet.getAttributeNameResource(i3) == i2 && (attributeValue = attributeSet.getAttributeValue(i3)) != null && attributeValue.startsWith("?")) {
+us\pinguo\foundation\f.java:         str.startsWith("HTC Sensation Z710e");
+us\pinguo\foundation\f.java:         str.startsWith("SM-G9006W");
+us\pinguo\foundation\f.java:         f11002j = str.equals("MB525") && str3.startsWith("2.");
+us\pinguo\foundation\f.java:         n = str.startsWith("TAH-AN00") || str.startsWith("TAH-N29");
+us\pinguo\foundation\f.java:         boolean startsWith = str.startsWith("MI ");
+us\pinguo\foundation\f.java:         r = startsWith;
+us\pinguo\foundation\f.java:         x = startsWith;
+us\pinguo\foundation\statistics\k.java:         return TextUtils.isEmpty(str) ? "unknown" : !TextUtils.isEmpty(str2) ? "op" : str.contains("app://inspire/at") ? "@" : str.contains("app://inspire/like") ? "like" : str.contains("app://inspire/vote") ? InspireMsg.TYPE_VOTE : str.contains("app://inspire/award") ? "award" : str.contains("app://inspire/comment") ? "comment" : str.contains("app://inspire/attention") ? "fan" : str.contains("app://inspire/pcmessagelist") ? "pcmessagelist" : str.contains("app://inspire/system") ? "system" : (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX)) ? "http" : str;
+us\pinguo\foundation\utils\o0.java:                     if (str2.startsWith("/") && !str2.toLowerCase(Locale.US).contains("vold")) {
+us\pinguo\inspire\module\MissionDetail\TaskDetailBasePresenter.java:         if (taskInfo.sceneGotoUrl.startsWith("app://camera360/cameraSocial")) {
+us\pinguo\inspire\module\MissionDetail\TaskDetailBasePresenter.java:         } else if (task.sceneGotoUrl.startsWith("app://camera360/dStickerWithReturn")) {
+us\pinguo\inspire\module\MissionDetail\TaskDetailBasePresenter.java:                     if (inspireTask.sceneGotoUrl.startsWith("app://camera360/cameraSocial")) {
+us\pinguo\inspire\module\MissionDetail\TaskDetailBasePresenter.java:                     } else if (inspireTask.sceneGotoUrl.startsWith("app://camera360/dStickerWithReturn")) {
+us\pinguo\inspire\module\feeds\view\RoundFrameImageView.java:         if (str != null && str.startsWith(ParamItem.DRAWABLE_PREFIX)) {
+us\pinguo\inspire\module\photomovie\PhotoMoviePresenter.java:                     if (PhotoMoviePresenter.this.mPlayingMusic.j() != null && PhotoMoviePresenter.this.mPlayingMusic.j().startsWith("assets://")) {
+us\pinguo\inspire\module\photomovie\PhotoMoviePresenter.java:             if (videoMusic.j() != null && videoMusic.j().startsWith("assets")) {
+us\pinguo\inspire\module\profile\view\ProfileTimeView.java:         return str.startsWith("0") ? str.replace("0", "") : str;
+us\pinguo\inspire\module\publish\InspirePublishTask.java:             if (str2.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\inspire\util\siliconpressor\videocompression\MediaController.java:                 if (string.startsWith("audio/")) {
+us\pinguo\inspire\util\siliconpressor\videocompression\MediaController.java:             } else if (string.startsWith("video/")) {
+us\pinguo\inspire\widget\fresco\QiNiuDraweeView.java:             if (uri2 != null && uri2.startsWith("https")) {
+us\pinguo\inspire\widget\fresco\QiNiuDraweeView.java:             if (uri2.startsWith("http")) {
+us\pinguo\inspire\widget\fresco\WebpDraweeView.java:         if (str != null && str.startsWith("https")) {
+us\pinguo\inspire\widget\j\b.java:             if (!arrayList.isEmpty() && str.startsWith((String) arrayList.get(0))) {
+us\pinguo\inspire\widget\j\b.java:         if (substring.startsWith("url")) {
+us\pinguo\inspire\widget\j\b.java:         } else if (substring.startsWith("award")) {
+us\pinguo\inspire\widget\j\b.java:             if (!arrayList.isEmpty() && str.startsWith((String) arrayList.get(0))) {
+us\pinguo\inspire\widget\photopager\b.java:         if (str.startsWith(Constants.HTTP_PROTOCOL_PREFIX)) {
+us\pinguo\inspire\widget\photopager\b.java:             if (!str.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\inspire\widget\photopager\a.java:         if (str.startsWith("http")) {
+us\pinguo\inspire\widget\photopager\a.java:             if (!str.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\inspire\widget\photopager\a.java:         if (str.startsWith("http")) {
+us\pinguo\inspire\widget\photopager\a.java:             if (!str.startsWith(InspirePublishFragment.FILE_HEADER)) {
+us\pinguo\interaction\a0.java:         return uri.toString().startsWith("app://camera360/setting");
+us\pinguo\interaction\c0.java:         return i(context, uri.getQueryParameter("categoryID"), uri.getQueryParameter("stickerId"), uri.toString().startsWith("app://camera360/stickervideo") ? "video" : uri.getQueryParameter("type"));
+us\pinguo\interaction\c0.java:         return uri.toString().startsWith("app://camera360/stickervideo") || uri.toString().startsWith("app://camera360/sticker");
+us\pinguo\interaction\d0.java:         return uri.toString().startsWith("app://camera360/store");
+us\pinguo\interaction\g.java:         return uri.toString().startsWith("app://camera360/applist");
+us\pinguo\interaction\g0.java:         return uri.toString().startsWith("app://camera360/miniProgram");
+us\pinguo\interaction\e0.java:         return uri.toString().startsWith("http");
+us\pinguo\interaction\f.java:         return uri.toString().startsWith("app://camera360/goto");
+us\pinguo\interaction\e.java:         return uri.toString().startsWith("app://camera360/condition");
+us\pinguo\interaction\h.java:         return uri.toString().startsWith(a);
+us\pinguo\interaction\j.java:         return uri.toString().startsWith("app://camera360/beautylab");
+us\pinguo\interaction\i.java:         return uri.toString().startsWith("app://pinguo/april");
+us\pinguo\interaction\o.java:         return uri.toString().startsWith("app://camera360/homeinspire") && !uri.toString().startsWith("app://camera360/homeinspire/rec");
+us\pinguo\interaction\s.java:         return uri.toString().startsWith("app://camera360/feedback") || "app://pinguo.android.team.feedback".equals(uri.toString());
+us\pinguo\interaction\q.java:         boolean z = str.startsWith("market://") || str.startsWith("https://play.google.com");
+us\pinguo\interaction\u.java:         boolean z = str.startsWith("market://") || str.startsWith("https://play.google.com");
+us\pinguo\interaction\u.java:                 if (HuaweiAgent.isHuaweiSupport() && str.startsWith("market://")) {
+us\pinguo\interaction\u.java:         if (uri.toString().startsWith("https://play.google.com")) {
+us\pinguo\interaction\z.java:         return uri.toString().startsWith("app://camera360/homeinspire/rec");
+us\pinguo\pgshare\commons\a.java:                         if (str.startsWith(str3.substring(0, str3.length() - 2))) {
+us\pinguo\pgshare\commons\a.java:                         if (str2.startsWith(str4.substring(0, str4.length() - 2))) {
+us\pinguo\repository2020\utils\NameHelper.java:         if (this.a.startsWith("{") && this.a.endsWith("}")) {
+us\pinguo\share\a.java:         if (str == null || str.startsWith("http") || str.startsWith("file")) {
+us\pinguo\share\d\b.java:             return str.startsWith(InspirePublishFragment.FILE_HEADER) ? str.substring(7, str.length()) : str;
+us\pinguo\share\d\b.java:         return str.startsWith(Constants.HTTP_PROTOCOL_PREFIX) || str.startsWith(Constants.HTTPS_PROTOCOL_PREFIX);
+us\pinguo\smaatoapi\activity\InsertitialWebActivity.java:             if (!str.startsWith("http:") && !str.startsWith("https:")) {
+us\pinguo\smaatoapi\activity\WebViewActivity.java:             if (str.startsWith("http:") || str.startsWith("https:")) {
+us\pinguo\ui\uilview\PhotoImageView.java:         if (str == null || !str.startsWith("http")) {
+us\pinguo\ui\uilview\PhotoImageView.java:         if ((str != null && str.startsWith("file")) || str.startsWith("FILE")) {
+us\pinguo\ui\uilview\PhotoImageView.java:         if (str != null && str.startsWith("http")) {
+us\pinguo\ui\uilview\PhotoImageView.java:         return str.startsWith("https") ? str.replaceFirst("https", "http") : str;
+us\pinguo\ui\uilview\UilImageView.java:         if (!TextUtils.isEmpty(str) && str.startsWith("https")) {
+us\pinguo\ui\widget\video\d.java:         if (!a || uri == null || uri.getScheme() == null || !uri.getScheme().startsWith("http")) {
+us\pinguo\user\ui\view\EditTextWithPrompt.java:                 } else if (EditTextWithPrompt.f12458i[i3].startsWith(substring2)) {
+us\pinguo\user\util\i.java:             return (message == null || !message.startsWith(";") || message.length() <= 1) ? message : message.substring(1);
+us\pinguo\webview\d.java:         if (str.startsWith(c.d())) {

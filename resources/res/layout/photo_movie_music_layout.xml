@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.inspire.module.photomovie.widget.PhotoMovieMusicLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/photo_movie_menu_bg" android:layout_width="match_parent" android:layout_height="@dimen/photo_movie_music_height">
+    <TextView android:textSize="14dp" android:textColor="@color/text_white" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/photo_movie_music_title" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/photo_movie_music_playing" android:maxLines="1"/>
+    <View android:background="#7fcccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginTop="40dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/photo_movie_music_list" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="66dp"/>
+    <TextView android:textSize="15dp" android:textColor="@color/text_white" android:layout_gravity="bottom|center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:text="@string/video_change_music"/>
+</us.pinguo.inspire.module.photomovie.widget.PhotoMovieMusicLayout>

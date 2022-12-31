@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="56dp">
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="match_parent" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+        <TextView android:textSize="15dp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@+id/edit_area_item_text" android:background="#ffffffff" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="中国"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View android:background="#ffe5e5e5" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp"/>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/transparent" android:layout_width="@dimen/challenge_share_dialog_width" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/challenge_share_bg" android:layout_width="match_parent" android:layout_height="370dp">
+        <ImageView android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="43dp" android:layout_marginTop="30dp" android:layout_marginBottom="0dp" android:src="@drawable/challenge_share_title" android:layout_centerHorizontal="true"/>
+        <FrameLayout android:layout_gravity="center_horizontal" android:id="@+id/challenge_share_content" android:background="@drawable/challenge_share_frame" android:paddingLeft="@dimen/challenge_share_content_padding" android:paddingTop="@dimen/challenge_share_content_padding" android:paddingRight="@dimen/challenge_share_content_padding" android:paddingBottom="@dimen/challenge_share_content_padding" android:layout_width="@dimen/challenge_share_content_width" android:layout_height="@dimen/challenge_share_content_height" android:layout_marginTop="82dp" android:layout_centerHorizontal="true">
+            <us.pinguo.ui.widget.video.BaseVideoTextureView android:layout_gravity="center" android:id="@+id/challenge_share_video" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <us.pinguo.ui.uilview.PhotoNsImageView android:id="@+id/challenge_share_photo" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/challenge_play_icon" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/icon_play_video"/>
+        </FrameLayout>
+        <FrameLayout android:orientation="horizontal" android:background="@drawable/challenge_share_wave" android:layout_width="match_parent" android:layout_height="104dp" android:layout_alignParentBottom="true">
+            <com.balysv.materialripple.MaterialRippleLayout android:layout_gravity="bottom|center_horizontal" android:id="@+id/challenge_guide_goto_challenge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true" app:mrl_rippleRoundedCorners="16dp">
+                <TextView android:textSize="@dimen/challenge_guide_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/challenge_guide_goto_challenge_child" android:background="@drawable/challenge_share_shape" android:layout_width="match_parent" android:layout_height="32dp" android:minWidth="150dp" android:text="@string/msg_share" android:layout_centerInParent="true"/>
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </FrameLayout>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="70dp">
+        <ImageView android:id="@+id/challengeGuideCloseBtn" android:background="@drawable/home_interstitial_fullscreen_close" android:layout_width="50dp" android:layout_height="50dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

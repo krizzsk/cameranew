@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="#ffffff" android:paddingLeft="28dp" android:paddingRight="28dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="22dp" android:textColor="#dd000000" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_now"/>
+    <TextView android:textSize="13dp" android:textColor="#7a000000" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="25dp" android:text="@string/discovery_more_content"/>
+    <include android:id="@+id/fast_login_container" android:background="@drawable/fast_login_container_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_centerInParent="true" layout="@layout/fast_login_content_layout"/>
+</LinearLayout>

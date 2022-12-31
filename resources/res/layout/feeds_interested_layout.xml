@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:paddingLeft="@dimen/feeds_margin" android:paddingTop="8dp" android:paddingRight="@dimen/feeds_margin" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/text_deeper" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feeds_interested"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/feeds_interested_close_all" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feeds_interest_close"/>
+    </FrameLayout>
+    <View android:background="@color/divider_color_res_0x7d03000b" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/feeds_interested_recyclerview" android:layout_width="match_parent" android:layout_height="150dp"/>
+    <View android:background="@color/divider_color_res_0x7d03000b" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+        <include android:id="@+id/feeds_interested_bottom_layout" layout="@layout/feeds_interested_bottom_layout"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</LinearLayout>

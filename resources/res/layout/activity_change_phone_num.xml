@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/change_phone_toolbar" android:background="@color/color_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/elevation_height"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp">
+        <Spinner android:id="@+id/zone_spinner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:theme="@style/LoginFieldPhoneBind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp">
+        <com.google.android.material.textfield.TextInputLayout android:gravity="center" android:id="@+id/input_old_phone_layout" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16dp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:gravity="center_vertical" android:id="@+id/edit_old_phone" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/current_phone" android:singleLine="true" android:layout_centerVertical="true" android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <RelativeLayout android:theme="@style/LoginFieldPhoneBind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp">
+        <com.google.android.material.textfield.TextInputLayout android:gravity="center" android:id="@+id/input_phone_text_layout" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="16dp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:gravity="center_vertical" android:id="@+id/edit_input_phone" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/new_phone_num" android:singleLine="true" android:layout_centerVertical="true" android:inputType="phone"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp">
+        <RelativeLayout android:theme="@style/LoginFieldPhoneBind" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_weight="1">
+            <com.google.android.material.textfield.TextInputLayout android:gravity="center" android:id="@+id/input_verify_code_text_layout" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <EditText android:textSize="16dp" android:textColor="#ff333333" android:textColorHint="#ff999999" android:gravity="center_vertical" android:id="@+id/edt_input_verify_code" android:layout_width="match_parent" android:layout_height="match_parent" android:hint="@string/input_verify_code" android:singleLine="true" android:maxLength="6" android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/change_phone_send_verify_code" android:background="@drawable/fast_login_c360_btn_border" android:layout_width="match_parent" android:layout_height="44dp" android:layout_weight="1.5">
+            <TextView android:textSize="@dimen/fast_login_text_size" android:textColor="#ff3c97ff" android:layout_gravity="center" android:id="@+id/change_phone_send_verify_code_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/get_verify_code" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/child_chang_phone_btn" android:background="@drawable/fast_phone_bind_btn_unable_border" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+        <TextView android:textSize="@dimen/fast_login_text_size" android:textColor="#ffffff" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/submit_new_phone_num" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

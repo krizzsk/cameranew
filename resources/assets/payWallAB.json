@@ -1,0 +1,47 @@
+{
+  "data": {
+    "level": [
+      {
+        "lid": "android_vip_sub_pcr",
+        "lname": "price test",
+        "instance_ids": [
+          "us_0499_monthly_sub"
+        ]
+      }
+    ],
+    "instance": [
+      {
+        "tname": "price test",
+        "channels": [
+        ],
+        "tid": "us_0499_monthly_sub",
+        "percent": 1,
+        "plan": [
+          {
+            "gid": "2399_yearly_3day_trial",
+            "gname": "group_2399",
+            "value": 0.5,
+            "customJSON": ""
+          },
+          {
+            "gid": "0499_monthly_3day_trial",
+            "gname": "group_0499",
+            "value": 0.5,
+            "customJSON": ""
+          }
+        ],
+        "startTime": 1612403160,
+        "endTime": 1640102400,
+        "collectStartAt": 1612403160,
+        "collectEndAt": 1612886400,
+        "userGroupFilterType": 0,
+        "userGroupId": "",
+        "userRegisterTimeRange": 0
+      }
+    ]
+  },
+  "status": 200,
+  "message": "ok",
+  "serverTime": 1612403165.5909,
+  "exetime": "1612403165530-1612403165590"
+}

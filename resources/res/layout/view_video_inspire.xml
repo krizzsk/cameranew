@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <us.pinguo.inspire.widget.video.WorkDetailVideoView android:id="@+id/wdvv_video_video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_photo_video_view" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <us.pinguo.inspire.module.feeds.view.FeedsCommentView android:id="@+id/feeds_video_comments" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/iv_progress_video_view" android:visibility="gone" android:layout_width="@dimen/inspire_progress_size" android:layout_height="@dimen/inspire_progress_size" android:layout_centerInParent="true" app:matProg_barColor="@color/progress_color" app:matProg_progressIndeterminate="true"/>
+    <us.pinguo.inspire.widget.videocell.VisibilityListenImageView android:id="@+id/iv_play_video_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play_video" android:layout_centerInParent="true"/>
+</merge>

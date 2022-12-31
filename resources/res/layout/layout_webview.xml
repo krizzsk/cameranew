@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/root_web_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/top_container" android:background="@color/primary_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+        <com.pinguo.camera360.lib.ui.WebviewToolbar android:id="@+id/app_webview_title_bar" android:layout_width="match_parent" android:layout_height="@dimen/webview_actionbar_height" android:layout_alignParentTop="true"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/top_container">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/lay_url_input" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textSize="10dp" android:id="@+id/et_input_url" android:layout_width="0dp" android:layout_height="40dp" android:layout_weight="1"/>
+            <Button android:id="@+id/btn_input_url" android:layout_width="72dp" android:layout_height="36dp" android:text="Load"/>
+        </LinearLayout>
+        <us.pinguo.ui.widget.FixedJsWebView android:id="@+id/pg_webview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/progress_layout" android:background="#20000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/app_webview_title_bar">
+        <ProgressBar android:layout_width="40dp" android:layout_height="40dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

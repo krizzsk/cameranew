@@ -1,0 +1,12 @@
+package com.google.android.gms.internal.ads;
+/* compiled from: com.google.android.gms:play-services-ads@@19.7.0 */
+/* loaded from: classes2.dex */
+public final class zzaug implements zzauh {
+    @Override // com.google.android.gms.internal.ads.zzauh
+    public final void zzdc(int i2) {
+    }
+
+    @Override // com.google.android.gms.internal.ads.zzauh
+    public final void zzwu() {
+    }
+}

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/v_shadow_base_list_res_0x7f09095b" android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="5dp"/>

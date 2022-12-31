@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.hw.photomovie.render.GLTextureView android:id="@+id/photo_movie_gl" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_gravity="bottom" android:id="@+id/photo_movie_bottom" android:layout_width="match_parent" android:layout_height="@dimen/photo_movie_bottom_height" layout="@layout/photo_movie_bottom"/>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/photo_movie_transfer_stub" android:visibility="gone" android:layout="@layout/photo_movie_transfer_layout" android:inflatedId="@+id/photo_movie_transfer_layout" android:layout_width="match_parent" android:layout_height="@dimen/photo_movie_transfer_height"/>
+    <ViewStub android:layout_gravity="bottom" android:id="@+id/photo_movie_music_stub" android:visibility="gone" android:layout="@layout/photo_movie_music_layout" android:inflatedId="@+id/photo_movie_music_layout" android:layout_width="match_parent" android:layout_height="@dimen/photo_movie_music_height"/>
+</FrameLayout>

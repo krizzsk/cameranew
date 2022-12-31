@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.camera2020.view.CameraZoomLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/zoomBarLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.camera2020.view.focusview.ZoomSeekBar android:id="@+id/sbZoomSeekbar" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerVertical="true" android:paddingStart="10dp" android:paddingEnd="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0" app:lineColor="@color/white" app:markerBackground="@drawable/zoom_point"/>
+</us.pinguo.camera2020.view.CameraZoomLayout>

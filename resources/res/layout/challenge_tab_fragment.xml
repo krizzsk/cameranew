@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/challenge_tab_fragment_layout" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.ui.widget.NoScrollViewPager android:id="@+id/challenge_viewpager" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <View android:id="@+id/challenge_tab_title_shadow" android:background="@drawable/challenge_top_shadow" android:layout_width="match_parent" android:layout_height="100dp" android:alpha="0"/>
+    <FrameLayout android:id="@+id/challenge_tab_title_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="center" android:id="@+id/challenge_tab_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tabIndicatorColor="@color/challenge_red" app:tabIndicatorHeight="2dp" app:tabMinWidth="60dp" app:tabPaddingBottom="0dp" app:tabPaddingEnd="4dp" app:tabPaddingStart="4dp" app:tabPaddingTop="0dp"/>
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_gravity="center_vertical" android:id="@+id/challenge_back" android:layout_width="50dp" android:layout_height="50dp" app:mrl_rippleColor="@color/light_common_high_light" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/sticker_arrow_back" android:scaleType="centerInside"/>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-5dp" android:layout_below="@+id/title_view_main_res_0x7e04003b">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_layout_res_0x7e040002" android:background="@color/white" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="@dimen/splcie_bottom_height" android:weightSum="4" android:layout_alignParentBottom="true">
+            <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/splice_full" android:background="@drawable/ripple_rect_background_selector" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/splice_full_normal" android:scaleType="centerInside" android:layout_weight="1"/>
+            <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/splice_1x1" android:background="@drawable/ripple_rect_background_selector" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/splice_1x1_normal" android:scaleType="centerInside" android:layout_weight="1"/>
+            <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/splice_3x4" android:background="@drawable/ripple_rect_background_selector" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/splice_3x4_normal" android:scaleType="centerInside" android:layout_weight="1"/>
+            <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/splice_9x16" android:background="@drawable/ripple_rect_background_selector" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/splice_9x16_normal" android:scaleType="centerInside" android:layout_weight="1"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/edit_layout" android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottom_layout_res_0x7e040002">
+            <FrameLayout android:id="@+id/splice_edit_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginRight="8dp">
+                <com.camera360.dynamic_feature_splice.SpliceScrollView android:layout_gravity="center" android:id="@+id/scroll_splice_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/swap_layout" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+                <FrameLayout android:background="@color/primary_yellow" android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <TextView android:textSize="18dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/btn_swap" android:background="@drawable/ripple_rect_background_selector" android:paddingLeft="14dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/splice_swap"/>
+                </FrameLayout>
+                <ImageView android:id="@+id/btn_swap_cancel" android:layout_width="44dp" android:layout_height="44dp" android:foreground="@drawable/ripple_oval_background_selector" android:src="@drawable/splice_swap_bg" android:scaleType="fitXY"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_swap" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentBottom="true">
+            <LinearLayout android:gravity="center" android:id="@+id/layout_swap_bottom" android:background="@drawable/splice_selector" android:paddingLeft="60dp" android:paddingRight="60dp" android:layout_width="match_parent" android:layout_height="@dimen/splcie_bottom_height" android:layout_alignParentBottom="true">
+                <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/primary_black_87" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/swap_set_name" android:paddingRight="30dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true" android:layout_centerVertical="true"/>
+                <us.pinguo.ui.widget.RotateImageView android:layout_gravity="center_vertical" android:id="@+id/splice_arrow_res_0x7e04002f" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="-30dp" android:src="@drawable/splice_arrow_up" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layout_swap_bottom">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_swap_items" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_swap_set" android:background="@color/white" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/guide_layout" android:background="#c854d7ff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp" android:layout_alignParentTop="true">
+            <ImageView android:id="@+id/guide_close" android:padding="5dp" android:layout_width="30dp" android:layout_height="36dp" android:src="@drawable/ic_camera_top_bar_close_w" android:scaleType="centerInside" android:layout_alignParentRight="true"/>
+            <View android:background="#12000000" android:layout_width="1dp" android:layout_height="match_parent" android:layout_marginTop="4dp" android:layout_marginBottom="4dp" android:layout_toLeftOf="@+id/guide_close"/>
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:gravity="center" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/splice_drag_notice" android:maxLines="2" android:layout_toLeftOf="@+id/guide_close" android:layout_centerInParent="true"/>
+            <View android:id="@+id/btn_close_guide" android:layout_width="50dp" android:layout_height="36dp" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/loading_layout" android:background="@color/black_30_res_0x7f060039" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ProgressBar android:layout_gravity="center" android:layout_width="20dp" android:layout_height="20dp" android:indeterminate="false" android:indeterminateDrawable="@anim/sticker_download_progress_anim_res_0x7e010002" android:indeterminateBehavior="repeat"/>
+            <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/feeds_share_wait_res_0x7e070000"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/title_view_main_res_0x7e04003b" android:layout_width="match_parent" android:layout_height="53dp" android:layout_alignParentTop="true">
+        <View android:id="@+id/shadow_view" android:background="@drawable/title_bar_shadow_res_0x7e030018" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+        <RelativeLayout android:id="@+id/content_res_0x7e040008" android:background="@color/primary_white_color" android:layout_width="match_parent" android:layout_height="48dp" android:layout_above="@+id/shadow_view">
+            <ImageView android:id="@+id/title_back_btn_res_0x7e040034" android:background="@drawable/white_selector_res_0x7e030019" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/sticker_arrow_back" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16dp" android:textColor="@drawable/title_text_selector" android:gravity="center" android:id="@+id/title_right_btn_res_0x7e040037" android:background="@drawable/white_selector_res_0x7e030019" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/pg_sdk_edit_save" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/title_text_size" android:textColor="@color/primary_black_87" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/title_text_res_0x7e040039" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:layout_marginLeft="32dp" android:layout_marginRight="20dp" android:text="@string/title_splice" android:singleLine="true" android:layout_toLeftOf="@+id/title_right_btn_res_0x7e040037" android:layout_toRightOf="@+id/title_back_btn_res_0x7e040034" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

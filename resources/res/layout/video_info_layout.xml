@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/video_info_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <us.pinguo.ui.widget.video.BaseVideoTextureView android:layout_gravity="center" android:id="@+id/wdvv_video_video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/video_info_cover_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <us.pinguo.inspire.module.comment.widget.CoverImageView android:layout_gravity="center" android:id="@+id/piv_photo_video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+    </FrameLayout>
+    <us.pinguo.inspire.widget.videocell.VisibilityListenImageView android:layout_gravity="center" android:id="@+id/iv_play_video_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_play_video"/>
+</merge>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="@dimen/feeds_margin" android:paddingRight="@dimen/feeds_margin" android:layout_width="match_parent" android:layout_height="@dimen/feeds_interest_item_height">
+    <us.pinguo.widet.PortraitImageView android:id="@+id/feeds_interested_avatar" android:layout_width="@dimen/feeds_avatar_size" android:layout_height="@dimen/feeds_avatar_size" android:src="@drawable/default_avatar" app:civ_border_width="0dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avatar_name_margin" android:layout_marginTop="0dp" android:layout_weight="1">
+        <TextView android:id="@+id/feeds_interested_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Name" style="@style/FeedsName"/>
+        <TextView android:id="@+id/feeds_interested_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:text="desc" style="@style/FeedsDesc"/>
+    </LinearLayout>
+    <us.pinguo.user.ui.view.AttentionButton android:layout_gravity="center" android:id="@+id/feeds_interested_relation" android:layout_marginLeft="4dp" android:text="@string/un_attention" style="@style/AttentionMDButton"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/feeds_interested_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:src="@drawable/feeds_interest_close"/>
+</LinearLayout>

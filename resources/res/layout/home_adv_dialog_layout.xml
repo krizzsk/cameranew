@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/contentLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/backView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/contentContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/imageContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginRight="21dp" android:layout_centerInParent="true">
+            <us.pinguo.common.widget.FunctionItemAnimDraweeView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" app:actualImageScaleType="6" app:aspectRatio="0.8" app:placeholderImageScaleType="6" app:roundedCornerRadius="3dp"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/exit" android:padding="15dp" android:layout_width="65dp" android:layout_height="45dp" android:scaleType="fitCenter" android:layout_below="@+id/imageContainer" android:layout_centerHorizontal="true" app:srcCompat="@drawable/arrowdown_pop"/>
+    </RelativeLayout>
+</RelativeLayout>

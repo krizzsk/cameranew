@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="square_space">12dp</dimen>
+    <dimen name="square_space_top_bottom">16dp</dimen>
+    <dimen name="store_details_button_height">76dp</dimen>
+    <dimen name="store_details_margin_left_right">20dp</dimen>
+    <dimen name="store_pkg_description_margin_top">16dp</dimen>
+    <dimen name="store_pkg_image_shadow_margin_left_right">0dp</dimen>
+    <dimen name="store_pkg_slide_image_padding_left_right">20dp</dimen>
+    <dimen name="store_pkg_slide_image_padding_top">16dp</dimen>
+    <dimen name="store_scene_tab_text_size">16sp</dimen>
+</resources>

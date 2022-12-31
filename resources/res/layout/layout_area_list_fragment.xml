@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/base_list_layout_res_0x7f0900c9" android:background="@color/portal_page_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/base_title_container_res_0x7f0900cd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="4dp">
+        <include layout="@layout/md_common_title"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/fl_list_content_res_0x7f0902b2" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/base_list_footer_res_0x7f0900c8" android:layout_below="@+id/base_title_container_res_0x7f0900cd">
+        <us.pinguo.widet.FixBugSwipeRefreshLayout android:id="@+id/base_list_swipe_res_0x7f0900cb" android:layout_width="match_parent" android:layout_height="match_parent">
+            <us.pinguo.user.recycler.FocusChildRecyclerView android:id="@+id/base_list_recycle_view_res_0x7f0900ca" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </us.pinguo.widet.FixBugSwipeRefreshLayout>
+        <include layout="@layout/common_shadow"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/base_list_footer_res_0x7f0900c8" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:elevation="5dp"/>
+    <FrameLayout android:id="@+id/fl_expand_base_list_res_0x7f0902b0" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignTop="@+id/fl_list_content_res_0x7f0902b2"/>
+    <FrameLayout android:id="@+id/base_fragment_title_container_res_0x7f0900c7" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/base_fragment_header_tool_bar_res_0x7f0900c6" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:theme="@style/ToolbarTheme"/>
+    </FrameLayout>
+</RelativeLayout>

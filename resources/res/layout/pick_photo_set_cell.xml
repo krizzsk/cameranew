@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/splice_selector" android:layout_width="match_parent" android:layout_height="80dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/pick_set_res_0x7e04001b" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="centerCrop" android:layout_alignParentLeft="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:weightSum="2" android:layout_toRightOf="@+id/pick_set_res_0x7e04001b">
+        <us.pinguo.ui.widget.AutofitTextView android:textSize="20dp" android:textColor="#3a404d" android:gravity="bottom|left" android:id="@+id/set_title_res_0x7e040029" android:layout_width="match_parent" android:layout_height="0dp" android:maxLines="1" android:layout_weight="1" app:minTextSize="12dp" app:precision="1"/>
+        <TextView android:textSize="14dp" android:textColor="#3a404d" android:gravity="top|left" android:id="@+id/set_count_res_0x7e040028" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:paddingLeft="@dimen/feeds_margin" android:paddingRight="@dimen/feeds_margin" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <us.pinguo.widet.PortraitImageView android:id="@+id/feeds_publish_guide_avatar" android:layout_width="@dimen/feeds_avatar_size" android:layout_height="@dimen/feeds_avatar_size" android:src="@drawable/feeds_publish_guide_avatar" android:layout_centerVertical="true" app:civ_border_width="0dp"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toLeftOf="@+id/feeds_publish_guide_right" android:layout_toRightOf="@+id/feeds_publish_guide_avatar" android:layout_centerVertical="true">
+            <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:ellipsize="end" android:id="@+id/feeds_publish_guide_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_guide_new_pic" android:singleLine="true"/>
+            <TextView android:textSize="11dp" android:textColor="@color/text_lower" android:ellipsize="end" android:id="@+id/feeds_publish_guide_loc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Barcelona,Spain" android:singleLine="true"/>
+        </LinearLayout>
+        <FrameLayout android:id="@+id/feeds_publish_guide_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feeds_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:enabled="false" android:gravity="center" android:layout_gravity="center" android:id="@+id/feeds_publish_guide_publish" android:text="@string/msg_share" style="@style/AttentionMDButton"/>
+        </FrameLayout>
+    </RelativeLayout>
+    <us.pinguo.inspire.module.feeds.view.FeedsPublishGridView android:id="@+id/feeds_publish_guide_photos" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="@dimen/feeds_lower_part_padding">
+        <TextView android:textSize="12dp" android:textColor="@color/text_deeper" android:ellipsize="end" android:gravity="left" android:id="@+id/feeds_publish_guide_selected" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="0dp" android:text="@string/publish_guide_seleted" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="13dp" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/feeds_publish_guide_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_guide_closed" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

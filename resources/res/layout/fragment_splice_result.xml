@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.ui.widget.TitleBarLayout android:id="@+id/title_bar_layout_res_0x7e040035" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.camera360.dynamic_feature_splice.SpliceResultLayout android:id="@+id/puzzle_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="12dp" android:layout_above="@+id/iv_once_more" android:layout_centerHorizontal="true">
+                <ImageView android:id="@+id/puzzle_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <View android:layout_gravity="bottom|right" android:id="@+id/puzzle_image_detail" android:background="@drawable/splice_amplification" android:layout_width="@dimen/splcie_result_image_min_width" android:layout_height="@dimen/splcie_result_image_min_width"/>
+            </com.camera360.dynamic_feature_splice.SpliceResultLayout>
+            <FrameLayout android:id="@+id/iv_once_more" android:background="@drawable/btn_yellow_bg" android:layout_width="wrap_content" android:layout_height="72dp" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:layout_above="@+id/share_layout" android:layout_centerHorizontal="true">
+                <us.pinguo.ui.widget.AutofitTextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/splice_more" android:maxLines="1" app:minTextSize="12dp" app:precision="1"/>
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/share_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="130dp" android:layout_alignParentBottom="true">
+                <include layout="@layout/splice_result_share_list"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </us.pinguo.ui.widget.TitleBarLayout>
+    <FrameLayout android:id="@+id/big_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/action_select" android:title="@string/select" android:showAsAction="never"/>
+    <item android:id="@+id/action_date" android:title="@string/date" android:showAsAction="never"/>
+    <item android:id="@+id/action_month" android:orderInCategory="100" android:title="@string/month" android:showAsAction="never"/>
+</menu>

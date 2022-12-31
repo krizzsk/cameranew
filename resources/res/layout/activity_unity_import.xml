@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:id="@+id/unity_info" android:layout_width="match_parent" android:layout_height="60dp"/>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/unity_dir" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Camera360/unity" android:hint="选择素材文件夹,默认（Camera360/unity）" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView android:textSize="12dp" android:id="@+id/unity_import_paths" android:layout_width="match_parent" android:layout_height="180dp"/>
+    <Button android:id="@+id/unity_select" android:layout_width="match_parent" android:layout_height="60dp" android:text="选择导入素材" android:onClick="unityImport"/>
+    <View android:layout_width="match_parent" android:layout_height="5dp"/>
+    <Button android:id="@+id/unity_import" android:layout_width="match_parent" android:layout_height="60dp" android:text="安装素材" android:onClick="unityInstall"/>
+</LinearLayout>

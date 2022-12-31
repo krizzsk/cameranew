@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="52dp">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/search_edit_text" android:background="@null" android:paddingRight="40dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:hint="@string/search_nickname_or_id" android:singleLine="true" android:imeOptions="actionSearch"/>
+        <ImageView android:id="@+id/search_clear_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_clear_icon" android:layout_alignBottom="@+id/search_edit_text" android:layout_alignParentRight="true"/>
+        <View android:background="@color/primary_black_20" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="16dp" android:layout_marginTop="2dp" android:layout_below="@+id/search_edit_text"/>
+    </RelativeLayout>
+</LinearLayout>

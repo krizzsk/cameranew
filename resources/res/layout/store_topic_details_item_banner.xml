@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.lib.ui.FixedRateRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rate="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent" rate:frrl_ratio="2.1562">
+    <us.pinguo.camera360.shop.view.details.TopicImageLoaderView android:id="@+id/store_details_topic_item_banner_tilv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+</com.pinguo.camera360.lib.ui.FixedRateRelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/lay_rotate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_color" android:layout_width="282dp" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:paddingLeft="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="58dp">
+            <TextView android:textSize="20dp" android:textColor="@color/dialog_btn_text_color" android:ellipsize="end" android:gravity="center" android:id="@+id/update_titletv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="56dp" android:text="@string/app_name_res_0x7f110062" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:id="@+id/titleDivider" android:background="@color/dialog_color" android:layout_width="match_parent" android:layout_height="1.5dp" android:layout_marginLeft="1.5dp" android:layout_marginRight="1.5dp" android:scaleType="fitXY"/>
+        <ScrollView android:paddingLeft="25dp" android:paddingTop="5dp" android:paddingRight="25dp" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="16dp" android:textColor="@color/dialog_msg_text_color" android:id="@+id/content_tv" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/empty_string"/>
+        </ScrollView>
+        <View android:background="@color/dialog_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="1.5dp" android:layout_marginRight="1.5dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp">
+            <Button android:id="@+id/update_left" android:text="@string/update_after" style="@style/DialogUpdateBtn"/>
+            <View android:id="@+id/leftdivider" android:background="@color/dialog_color" android:layout_width="1.5dp" android:layout_height="47dp"/>
+            <Button android:id="@+id/update_right" android:text="@string/update_update_now" style="@style/DialogUpdateBtn"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

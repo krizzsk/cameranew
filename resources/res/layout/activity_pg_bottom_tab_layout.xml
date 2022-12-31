@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit1" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit2" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit3" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit4" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit5" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+    <us.pinguo.common.widget.tab.PGEditBottomTabLayout android:id="@+id/tabEdit6" android:layout_width="match_parent" android:layout_height="@dimen/pg_bottom_edit_tab_height" android:layout_marginTop="30dp"/>
+</LinearLayout>

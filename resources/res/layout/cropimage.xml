@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.foundation.ui.RotateLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/cropImagePanel" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <view android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" class="com.pinguo.camera360.ui.view.CropImageView"/>
+        <include android:id="@+id/advanceModifyPicTitle" layout="@layout/layout_title_view"/>
+    </RelativeLayout>
+</us.pinguo.foundation.ui.RotateLayout>

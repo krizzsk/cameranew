@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_dialog_color" android:layout_width="282dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:id="@+id/content_tv" android:padding="10dp" android:layout_width="207dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:text="@string/tips_forcequit" android:lineSpacingExtra="2dp" style="@style/PinGuoAPIDialogText"/>
+        <View android:layout_gravity="bottom" android:background="@drawable/camera360_person" android:layout_width="50dp" android:layout_height="57dp" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+    <View android:background="@color/dialog_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="1.5dp" android:layout_marginRight="1.5dp"/>
+    <LinearLayout android:orientation="horizontal" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16dp" android:id="@+id/bug_btn_feed_back" android:background="@drawable/bg_dialog_click_color" android:layout_width="match_parent" android:layout_height="47dp" android:minHeight="47dp" android:text="@string/menu_report" android:maxLines="1" style="@style/PinGuoAPIDialogButtonText"/>
+    </LinearLayout>
+</LinearLayout>

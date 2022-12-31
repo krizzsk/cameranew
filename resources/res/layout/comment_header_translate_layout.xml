@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.inspire.module.comment.TranslateLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:id="@+id/translate_layout" android:paddingTop="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/translate_btn_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ProgressBar android:id="@+id/translate_progress" android:visibility="gone" android:layout_width="12dp" android:layout_height="12dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/translate_rotate_progress" android:indeterminateBehavior="repeat" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/translate_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/translate_ic"/>
+        </FrameLayout>
+        <TextView android:textSize="14dp" android:textColor="@color/text_lower" android:id="@+id/translate_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:text="@string/translate_show"/>
+    </LinearLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/translate_content" android:paddingLeft="18dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_below="@+id/translate_btn_layout" android:textIsSelectable="true"/>
+</us.pinguo.inspire.module.comment.TranslateLayout>

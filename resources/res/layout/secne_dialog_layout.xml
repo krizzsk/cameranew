@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/scene_template_dialog_shap" android:layout_width="290dp" android:layout_height="387dp" android:layout_centerInParent="true">
+        <FrameLayout android:id="@+id/scene_image_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <us.pinguo.ui.widget.RoundRecImageView android:id="@+id/scene_image" android:background="@android:color/white" android:layout_width="290dp" android:layout_height="290dp" android:layout_centerHorizontal="true"/>
+            <TextView android:layout_gravity="bottom" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="5dp"/>
+        </FrameLayout>
+        <RelativeLayout android:background="@drawable/secene_layout_bg_shape" android:layout_width="wrap_content" android:layout_height="97dp" android:layout_below="@+id/scene_image_parent">
+            <TextView android:textSize="15dp" android:textColor="@color/text_deeper" android:gravity="center" android:id="@+id/scene_title" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="48dp"/>
+            <RelativeLayout android:id="@+id/btn_use_scene_parent" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="35dp" android:layout_below="@+id/scene_title">
+                <TextView android:textSize="13dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/btn_use_scene" android:background="@drawable/scene_btn_bg_sharp" android:visibility="visible" android:layout_width="200dp" android:layout_height="35dp" android:text="@string/download_scene_template" android:layout_centerHorizontal="true"/>
+                <ProgressBar android:id="@+id/scene_progress" android:background="@drawable/scene_progress_bg_sharp" android:visibility="gone" android:layout_width="200dp" android:layout_height="35dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/scene_progress_bg_selector" android:layout_centerHorizontal="true" style="?android:attr/progressBarStyleHorizontal"/>
+                <TextView android:textSize="13dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/progress_text_res_0x7d0601d7" android:background="@drawable/scene_progress_bg_sharp" android:visibility="gone" android:layout_width="200dp" android:layout_height="35dp" android:text="@string/downloading" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/btn_scene_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/scene_btn_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

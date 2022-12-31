@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar_layout_res_0x7f090781" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/light_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ScrollView android:background="@color/light_common_bg" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <TextView android:id="@+id/option_picture_title" android:text="@string/settings_title_path" style="@style/OptionsClassTitleStyle"/>
+                <com.pinguo.camera360.ui.view.SettingItemMore android:id="@+id/option_item_picture_save_path" style="@style/OptionsItemClickable"/>
+                <ImageView android:background="@color/light_common_divider" android:layout_width="match_parent" android:layout_height="1dp"/>
+                <TextView android:id="@+id/option_picture_title" android:text="@string/settings_title_other" style="@style/OptionsClassTitleStyle"/>
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:theme="@style/OptionsPicturesSwitch" android:orientation="vertical" android:id="@+id/option_item_picture_save_org" android:background="@drawable/settings_item_click_selector" android:paddingLeft="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <com.pinguo.camera360.ui.view.SettingItemSwitcher android:theme="@style/OptionsPicturesSwitch" android:orientation="vertical" android:id="@+id/option_item_picture_gps" android:background="@drawable/settings_item_click_selector" android:paddingLeft="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

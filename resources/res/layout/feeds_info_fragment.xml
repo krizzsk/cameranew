@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rockerhieu.emoji.KeyboardFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/info_keyboard_layout" android:background="@color/info_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/info_refresh" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <us.pinguo.inspire.module.comment.widget.FullScreenLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <us.pinguo.inspire.module.comment.widget.FlingDownViewPager android:id="@+id/feeds_detail_viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </us.pinguo.inspire.module.comment.widget.FullScreenLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <ViewStub android:id="@+id/info_comment_layout_stub" android:layout="@layout/info_comment_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_gravity="bottom" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/info_bottom_layout"/>
+    <include android:layout_gravity="top" android:layout_width="match_parent" android:layout_height="48dp" layout="@layout/info_top_layout"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/info_progress_stub" android:layout="@layout/info_progress_layout" android:inflatedId="@+id/info_progress" android:layout_width="64dp" android:layout_height="64dp"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/info_like_anim_stub" android:layout="@layout/info_like_anim" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ViewStub android:layout_gravity="center" android:id="@+id/info_guide_stub" android:layout="@layout/info_guide_layout" android:inflatedId="@+id/info_guide_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</com.rockerhieu.emoji.KeyboardFrameLayout>

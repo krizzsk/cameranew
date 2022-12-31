@@ -1,0 +1,75 @@
+{
+  "ShareAppKey": "ef6bf6123890",
+  "ShareAppSecret": "ef6bf6123890",
+  "DevInfor": {
+    "WECHAT_FRIENDS": {
+      "AppKey": "wx9eb0c14967cc1036",
+      "AppSecret": "2a9b1510924ee1216641afb61e0b80c0",
+      "Enable": "true",
+      "Id": "1",
+      "SortId": "1"
+    },
+    "WECHAT_MOMENTS": {
+      "AppKey": "wx9eb0c14967cc1036",
+      "AppSecret": "2a9b1510924ee1216641afb61e0b80c0",
+      "Enable": "true",
+      "Id": "2",
+      "SortId": "2"
+    },
+    "DOUYIN": {
+      "AppKey": "aw23xsebq2saoo8z",
+      "AppSecret": "1a87f2e53290b6f6d0df5e6211d6641f",
+      "Enable": "true",
+      "Id": "2",
+      "SortId": "2"
+    },
+    "SINAWEIBO": {
+      "AppKey": "3555837032",
+      "AppSecret": "0b0bb9a659cd6fbdccd17024e3007e54",
+      "RedirectUrl": "http://dispatcher.camera360.us/camera360",
+      "Enable": "true",
+      "Id": "3",
+      "ShareByAppClient": "true",
+      "SortId": "3"
+    },
+    "QZONE": {
+      "AppKey":"100303003",
+      "AppSecret":"7a32c51df7e23c98cb789cba8f42d21d",
+      "Enable": "true",
+      "Id": "4",
+      "ShareByAppClient": "true",
+      "SortId": "4"
+    },
+    "QQ": {
+      "AppKey":"100303003",
+      "AppSecret":"7a32c51df7e23c98cb789cba8f42d21d",
+      "Enable": "true",
+      "Id": "5",
+      "ShareByAppClient": "true",
+      "SortId": "5"
+    },
+    "FACEBOOK": {
+      "AppKey":"109356832549275",
+      "AppSecret":"3e6c53b85ba7d7e935c55f84c55ffcf6",
+      "RedirectUrl": "https://wshare.camera360.com/login_callback.json",
+      "Enable": "true",
+      "Id": "6",
+      "ClientOnly":true,
+      "SortId": "6"
+    },
+    "INSTAGRAM": {
+      "ClientId":"ff68e3216b4f4f989121aa1c2962d058",
+      "ClientSecret":"1b2e82f110264869b3505c3fe34e31a1",
+      "RedirectUri": "http://sharesdk.cn",
+      "Enable": "true",
+      "Id": "7",
+      "SortId": "7"
+    },
+    "TWITTER": {
+      "ConsumerKey":"LRBM0H75rWrU9gNHvlEAA2aOy",
+      "ConsumerSecret":"gbeWsZvA9ELJSdoBzJ5oLKX0TU09UOwrzdGfo9Tg7DjyGuMe8G",
+      "Id": "8",
+      "SortId": "8"
+    }
+  }
+}

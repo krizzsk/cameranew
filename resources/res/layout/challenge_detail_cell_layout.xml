@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/challenge_cell_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.inspire.widget.fresco.WebpDraweeView android:layout_gravity="center" android:id="@+id/challenge_cell_img" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <TextView android:textSize="11dp" android:textColor="@color/text_white" android:layout_gravity="top|left" android:id="@+id/challenge_cell_tag" android:paddingLeft="2dp" android:paddingTop="1dp" android:paddingRight="2dp" android:paddingBottom="1dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="4dp"/>
+    <us.pinguo.inspire.widget.like.LikeImageView android:id="@+id/challenge_cell_like" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <ImageView android:layout_gravity="center" android:id="@+id/challenge_cell_like_anim" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/like_anim"/>
+</FrameLayout>

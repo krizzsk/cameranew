@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="40dp" android:layout_marginRight="40dp">
+    <TextView android:textSize="18dp" android:textColor="#333333" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/pg_sdk_edit_quit_edit"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/cancel_layout" android:background="@drawable/click_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="44dp">
+        <CheckBox android:gravity="center" android:id="@+id/check_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@drawable/checkbox_style"/>
+        <TextView android:textSize="14dp" android:textColor="@color/black_50" android:paddingLeft="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/splice_cancel_noti_more" android:maxLines="2"/>
+    </LinearLayout>
+</LinearLayout>

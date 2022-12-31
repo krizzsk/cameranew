@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/video_music_cell_layout" android:background="?android:attr/selectableItemBackground" android:padding="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/video_music_icon_layout" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="10dp">
+        <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/video_music_icon" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/video_music_play" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/video_edit_play"/>
+    </FrameLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/text_deeper" android:ellipsize="end" android:id="@+id/video_music_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/video_music_icon_layout"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/video_music_author" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:maxLines="1" android:layout_toRightOf="@+id/video_music_icon_layout" android:layout_below="@+id/video_music_name"/>
+    <TextView android:textSize="12dp" android:textColor="@color/text_primary" android:ellipsize="end" android:id="@+id/video_music_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@+id/video_music_icon_layout" android:layout_below="@+id/video_music_author"/>
+</RelativeLayout>

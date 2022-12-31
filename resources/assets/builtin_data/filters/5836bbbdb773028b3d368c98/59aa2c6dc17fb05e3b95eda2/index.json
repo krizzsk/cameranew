@@ -1,0 +1,38 @@
+{"params":{
+  "items" : [
+    {
+      "effectKey" : "",
+      "default" : 100,
+      "min" : 0,
+      "cmdType" : "",
+      "value" : 100,
+      "max" : 100,
+      "key" : "EffectOpacity",
+      "step" : 1,
+      "type" : "NoEffectItem"
+    }
+  ]
+},"t":"r","android_cmds":{"makeCmd":[{
+  "cmd" : "Portrait_AutoLevel|Effect=SkinSoft;Curve0=<A>10=0,127=145<\/A>;whiteLevel=0",
+  "device" : 0
+}],"preCmd":[{
+  "cmd" : "Portrait_AutoLevel|Effect=SkinSoft;Curve0=<A>10=0,127=145;whiteLevel=0<\/A>;guassFrame=<PyramidLevel>4<\/PyramidLevel><StandLength>400<\/StandLength><StandAmount>5<\/StandAmount>",
+  "device" : 0
+}]},"maxPixels":0,"cmds":{"makeCmd":[{
+  "cmd" : "Effect=C360_Skin_Soft",
+  "device" : 0
+},{
+  "cmd" : "Effect=C360_Skin_Soft",
+  "device" : 1
+}],"preCmd":[{
+  "cmd" : "Effect=C360_Skin_Soft",
+  "device" : 1
+},{
+  "cmd" : "Effect=C360_Skin_Soft_Fast",
+  "device" : 0
+}]},"isSupportRealRender":1,"subt":"ft","type":"Filter","textures":{
+  "items" : [
+
+  ],
+  "rule" : 1
+}}

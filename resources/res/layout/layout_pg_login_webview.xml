@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/id_login_root_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/id_login_loading_page" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.pnikosis.materialishprogress.ProgressWheel android:layout_width="80dp" android:layout_height="80dp" wheel:matProg_barColor="@color/light_colorAccent" wheel:matProg_progressIndeterminate="true"/>
+        </LinearLayout>
+        <us.pinguo.ui.widget.FixedWebView android:id="@+id/id_login_webview" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</LinearLayout>

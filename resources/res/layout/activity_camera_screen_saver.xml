@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#190614" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="2" android:onClick="wakeUp">
+    <ImageView android:id="@+id/camera_sleep_img" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/img_wake_up" android:scaleType="centerInside" android:layout_weight="1"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:textSize="16dp" android:textColor="#50ffffff" android:gravity="center" android:id="@+id/camera_sleep_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_screen_saver_title" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:textColor="#30ffffff" android:gravity="center_horizontal" android:id="@+id/camera_sleep_notify_bt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/text_screen_saver_click_hint" android:layout_below="@+id/camera_sleep_tv"/>
+    </RelativeLayout>
+</LinearLayout>

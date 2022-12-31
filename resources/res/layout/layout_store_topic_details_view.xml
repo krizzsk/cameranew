@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.camera360.shop.details.TopicDetailsView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/store_topic_details_view" android:background="@color/primary_white_color" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/store_topic_details_panel_rv" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/store_details_dlv" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/layout_store_details_load"/>
+    </RelativeLayout>
+</us.pinguo.camera360.shop.details.TopicDetailsView>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/root_res_0x7f09060e" android:background="@color/edit_result_title_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/top_res_0x7f090796" android:layout_width="match_parent" android:layout_height="49dp">
+        <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/header_bar_back" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/edit_result_back" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_marginStart="10dp"/>
+        <us.pinguo.ui.uilview.AlphaImageView android:id="@+id/header_bar_photo_to_home" android:padding="10dp" android:layout_width="44dp" android:layout_height="44dp" android:src="@drawable/ic_camera_home_button" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_marginEnd="18dp"/>
+        <View android:id="@+id/view_shadow_compatible_toolbar" android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="5dp" android:layout_alignParentBottom="true"/>
+        <TextView android:textSize="14dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/topToast" android:background="#ff2d2d2d" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/result_save_tip"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/content_scroll_layout" android:background="@color/edit_result_title_bg" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/result_image" android:background="@color/edit_result_title_bg" android:layout_width="120dp" android:layout_height="120dp" android:layout_marginTop="10dp" android:scaleType="centerCrop" android:transitionName="imageView"/>
+            <us.pinguo.ui.widget.AlphaPressedAutofitTextView android:textSize="14dp" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/txt_continue_editing" android:background="@drawable/result_page_continue_edit_bg" android:layout_width="260dp" android:layout_height="40dp" android:layout_marginTop="41dp" android:text="@string/result_edit_again"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="266dp" android:layout_height="46dp" android:layout_marginTop="14dp">
+                <us.pinguo.ui.widget.AlphaPressedAutofitTextView android:textSize="14dp" android:textColor="#2d2d2d" android:gravity="center" android:id="@+id/share_2_sns" android:background="@drawable/result_page_bt_share_bg" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="3dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp" android:text="@string/result_share_2_world" android:layout_weight="1"/>
+                <FrameLayout android:id="@+id/layout_print_photo" android:visibility="gone" android:layout_width="0dp" android:layout_height="46dp" android:layout_marginLeft="20dp" android:layout_weight="1">
+                    <us.pinguo.ui.widget.AlphaPressedAutofitTextView android:textSize="14dp" android:textColor="#2d2d2d" android:gravity="center" android:id="@+id/print_photo" android:background="@drawable/result_page_bt_share_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="3dp" android:layout_marginRight="3dp" android:layout_marginBottom="3dp" android:text="@string/print_photo" android:layout_weight="1"/>
+                    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="right" android:background="@drawable/ic_edit_result_photo_in" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginBottom="6dp"/>
+                </FrameLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_gravity="bottom" android:id="@+id/pg_edit_result_ad_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

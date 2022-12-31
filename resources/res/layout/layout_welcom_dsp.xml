@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/launch_background_bitmap" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/logo_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="111dp" android:layout_alignParentBottom="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_dsp_logo" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/brandCtaButton" android:background="@drawable/welcome_splash_brand_cta_bg" android:paddingTop="20dp" android:paddingBottom="20dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:layout_marginRight="28dp" android:layout_marginBottom="32dp" android:layout_above="@+id/logo_layout">
+        <TextView android:textSize="17dp" android:textColor="#cccccc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/welcome_splash_brand_cta_text"/>
+        <ImageView android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/welcome_brand_cta_text_icon" android:scaleType="fitXY" android:layout_marginStart="6dp"/>
+    </LinearLayout>
+    <vStudio.Android.Camera360.guide.view.GuideVideoView android:id="@+id/guide_video_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/logo_layout"/>
+    <us.pinguo.common.imageloader.widget.ImageLoaderView android:id="@+id/welcome_ad_image_view" android:background="#ffffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop" android:layout_above="@+id/logo_layout"/>
+    <ImageView android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/splash_ad_icon" android:layout_above="@+id/logo_layout" android:layout_alignParentRight="true"/>
+    <ImageView android:id="@+id/guide_video_sound" android:padding="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/guide_video_sound_open"/>
+    <TextView android:textSize="14dp" android:textColor="#eeeeee" android:gravity="center" android:id="@+id/skip" android:background="@drawable/bg_skip_btn" android:paddingLeft="19dp" android:paddingRight="19dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:text="@string/guide_page_jump_text" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

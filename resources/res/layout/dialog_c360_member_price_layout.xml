@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18dp" android:textColor="#333333" android:id="@+id/vip_title" android:paddingLeft="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:layout_marginBottom="23dp" android:text="@string/c360_vip_title"/>
+    <View android:id="@+id/divide" android:background="#cccccc" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/vip_title"/>
+    <androidx.recyclerview.widget.RecyclerView android:gravity="center_vertical" android:id="@+id/c360_recharge_detail_list" android:background="@android:color/white" android:paddingRight="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/divide"/>
+    <Button android:textSize="17dp" android:textColor="@android:color/white" android:id="@+id/open_member" android:background="@drawable/shape_btn_pay_immediately" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="40dp" android:layout_marginTop="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="21dp" android:text="@string/pay_member" android:layout_below="@+id/c360_recharge_detail_list"/>
+</RelativeLayout>

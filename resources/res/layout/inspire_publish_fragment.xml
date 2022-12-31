@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rockerhieu.emoji.KeyboardLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/keyboard_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_res_0x7d0601f7" android:layout_width="match_parent" android:layout_height="match_parent">
+        <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/toolbar_publish" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="52dp" android:minHeight="45dp">
+            <TextView android:textSize="15dp" android:textColor="#3c97ff" android:id="@+id/tv_submit_inspire_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.5dp" android:foreground="?android:attr/selectableItemBackgroundBorderless" android:text="@string/publish_share_title" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </us.pinguo.user.ui.view.CompatibleToolbar>
+        <View android:id="@+id/v_shadow_base_list_res_0x7d060274" android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="2dp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_weight="1">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <FrameLayout android:id="@+id/editTextContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <us.pinguo.inspire.widget.SystemErrorEditText android:textSize="15dp" android:textColor="@color/primary_black_87" android:textColorHint="@color/primary_black_24" android:gravity="top|left" android:id="@+id/et_description_inspire_publish" android:background="#ffffff" android:paddingLeft="16dp" android:paddingTop="13dp" android:paddingRight="16dp" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/publish_hint_msg" android:minLines="3" android:lineSpacingMultiplier="1.2" android:inputType="textNoSuggestions" android:textCursorDrawable="@null"/>
+                </FrameLayout>
+                <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.zhy.android.percent.support.PercentFrameLayout android:orientation="vertical" android:id="@+id/pfl_video_inspire_publish" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:layout_marginRight="16dp" android:layout_marginBottom="8dp">
+                        <us.pinguo.common.imageloader.widget.ImageLoaderView android:id="@+id/change_scene" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                        <us.pinguo.inspire.module.publish.PublishGridView android:id="@+id/pgv_photos_inspire_publish" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                        <RelativeLayout android:id="@+id/rl_video_cover_inspire_publish" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/btn_publish_add_photo">
+                            <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_video_cover_inspire_publish" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                            <ImageView android:id="@+id/iv_play_video_inspire_publish" android:padding="0dp" android:layout_width="40dp" android:layout_height="40dp" android:src="@drawable/icon_play_video" android:layout_centerInParent="true"/>
+                            <ImageView android:id="@+id/iv_close_res_0x7d06012c" android:background="@drawable/public_delete_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                        </RelativeLayout>
+                    </com.zhy.android.percent.support.PercentFrameLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:orientation="horizontal" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="12dp" android:textColor="@color/primary_black_54" android:layout_gravity="center" android:id="@+id/tv_publish_word_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:text="140"/>
+        </FrameLayout>
+        <View android:background="#e5e5e5" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <RelativeLayout android:background="#fafafa" android:layout_width="match_parent" android:layout_height="44dp">
+            <ImageView android:id="@+id/ll_add_more_inspire_publish" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:src="@drawable/chat_bottom_pic" android:layout_toLeftOf="@+id/iv_emoji" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_emoji" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:layout_toLeftOf="@+id/ll_select_friends_inspire_publish" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ll_select_friends_inspire_publish" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp" android:foreground="?android:attr/selectableItemBackgroundBorderless" android:src="@drawable/chat_bottom_at" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <com.rockerhieu.emoji.expression.ExpressionPagerView android:id="@+id/chat_bottom_expression" android:background="#f5f5f5" android:visibility="gone" android:layout_width="match_parent" android:layout_height="232dp"/>
+    </LinearLayout>
+</com.rockerhieu.emoji.KeyboardLayout>

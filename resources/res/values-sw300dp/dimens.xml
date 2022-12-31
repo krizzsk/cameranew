@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="vip_fun_item_text_size">14dp</dimen>
+    <dimen name="vip_product_price_text_size">16dp</dimen>
+    <dimen name="vip_product_width">98dp</dimen>
+</resources>

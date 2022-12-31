@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="103dp" android:layout_height="111dp">
+    <ImageView android:layout_gravity="center" android:id="@+id/img_main_content" android:layout_width="80dp" android:layout_height="80dp" android:scaleType="centerCrop"/>
+    <us.pinguo.ui.uilview.AlphaImageView android:layout_gravity="top|right" android:id="@+id/img_cancel_pick" android:layout_width="46dp" android:layout_height="31dp" android:src="@drawable/ic_cancel_pick_splice" android:scaleType="centerInside"/>
+</FrameLayout>

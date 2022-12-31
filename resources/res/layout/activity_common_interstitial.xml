@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/root_res_0x7f09060e" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:layout_gravity="right" android:id="@+id/close_button" android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/home_dialog_close_icon" android:scaleType="fitXY"/>
+        <RelativeLayout android:id="@+id/rl_ad_container" android:background="@drawable/dialog_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+            <RelativeLayout android:id="@+id/rl_ad_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivAdv" android:layout_width="match_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:roundBottomLeft="false" app:roundBottomRight="false" app:roundedCornerRadius="4dp" app:viewAspectRatio="1.9"/>
+                <us.pinguo.ui.widget.FixedRateRelativeLayout android:id="@+id/layout_video" android:tag="layout_video" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                <ImageView android:id="@+id/tvMark" android:layout_width="15dp" android:layout_height="8dp" android:layout_marginTop="6dp" android:src="@drawable/icon_ad_mark" android:scaleType="centerCrop" android:layout_alignParentLeft="true"/>
+                <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/ad_choices_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/ivIcon" android:tag="adv_icon" android:layout_width="43dp" android:layout_height="43dp" android:layout_marginTop="16dp" android:scaleType="centerCrop" android:layout_below="@+id/ivAdv" android:layout_centerHorizontal="true" app:roundedCornerRadius="4dp" app:viewAspectRatio="1"/>
+                <us.pinguo.ui.widget.AdvClipArcLayout android:id="@+id/adv_icon_container" android:tag="layout_icon" android:visibility="gone" android:layout_width="43dp" android:layout_height="43dp" android:layout_marginTop="16dp" android:scaleType="centerCrop" android:layout_below="@+id/ivAdv" android:layout_centerHorizontal="true" app:advallRadius="4dp"/>
+                <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/home_full_adv_bottom_layout2" android:layout_width="320dp" android:layout_height="160dp" android:layout_below="@+id/ivIcon" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#000000" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tvAdvTitle" android:tag="adv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxLines="1" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="11dp" android:textColor="#000000" android:gravity="center_horizontal" android:id="@+id/tvAdvContent" android:tag="adv_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="4dp" android:layout_marginRight="20dp" android:maxLines="2" android:layout_below="@+id/tvAdvTitle" android:layout_centerHorizontal="true"/>
+                    <RelativeLayout android:id="@+id/btnAdvClick_layout" android:clickable="false" android:layout_width="240dp" android:layout_height="40dp" android:layout_marginTop="10dp" android:layout_marginBottom="20dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+                        <TextView android:textSize="18dp" android:textColor="#ffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/btnAdvClick" android:tag="adv_btn" android:background="@drawable/shape_button_shawdow" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/cta_bt_default" android:layout_centerInParent="true"/>
+                        <us.pinguo.ui.widget.ShimmerFrameLayout android:layout_gravity="center" android:id="@+id/shimmer_view_container" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                            <View android:background="#99ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+                        </us.pinguo.ui.widget.ShimmerFrameLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

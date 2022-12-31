@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/zone_more_toolbar" android:background="@color/color_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/elevation_height"/>
+    <TextView android:textSize="18dp" android:textColor="#ff333333" android:gravity="center_vertical" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="16dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp" android:text="@string/current_country_zone"/>
+    <RelativeLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:textSize="18dp" android:textColor="#ff333333" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/current_zone_number" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="16dp" android:text="+86"/>
+        <TextView android:textSize="16dp" android:textColor="#de000000" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/current_zone_name" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="30dp" android:text="中国" android:layout_toRightOf="@+id/current_zone_number"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/recyclerView_res_0x7f0905e7" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <us.pinguo.inspire.widget.quicksidebar.QuickSideBarTipsView android:id="@+id/quickSideBarTipsView" android:layout_width="@dimen/height_quicksidebartips" android:layout_height="match_parent" android:layout_toLeftOf="@+id/quickSideBarView" app:sidebarBackgroundColor="@color/colorPrimary_res_0x7f06005b" app:sidebarTextColor="@android:color/white" app:sidebarTextSize="@dimen/textSize_quicksidebartips"/>
+        <us.pinguo.inspire.widget.quicksidebar.QuickSideBarView android:id="@+id/quickSideBarView" android:layout_width="20dp" android:layout_height="match_parent" android:layout_marginTop="40dp" android:layout_alignParentRight="true" app:sidebarItemHeight="@dimen/height_quicksidebaritem" app:sidebarTextColor="#ff4487f2" app:sidebarTextColorChoose="@color/colorPrimary_res_0x7f06005b" app:sidebarTextSize="@dimen/textSize_quicksidebar" app:sidebarTextSizeChoose="@dimen/textSize_quicksidebar_choose"/>
+    </RelativeLayout>
+</LinearLayout>

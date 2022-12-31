@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#eeeeee" android:layout_width="match_parent" android:layout_height="16dp"/>
+    <us.pinguo.foundation.ui.view.CommonItemView android:id="@+id/address_book_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/find_friends_contacts" app:leftIconHeight="24dp" app:leftIconWidth="24dp" app:text="@string/contact_book"/>
+    <View android:id="@+id/divider_address_book_view" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="56dp"/>
+    <us.pinguo.foundation.ui.view.CommonItemView android:id="@+id/address_facebook_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/find_friends_facebook" app:leftIconHeight="24dp" app:leftIconWidth="24dp" app:text="@string/facebook_friend"/>
+    <View android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="56dp"/>
+    <us.pinguo.foundation.ui.view.CommonItemView android:id="@+id/address_weibo_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/find_friends_weibo" app:leftIconHeight="24dp" app:leftIconWidth="24dp" app:text="@string/weibo_friend"/>
+    <View android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="56dp"/>
+    <us.pinguo.foundation.ui.view.CommonItemView android:id="@+id/address_twitter_view" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/find_friends_twitter" app:leftIconHeight="24dp" app:leftIconWidth="24dp" app:text="@string/titter_friend"/>
+    <FrameLayout android:background="@color/portal_page_bg" android:layout_width="match_parent" android:layout_height="12dp">
+        <View android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="5dp"/>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.inspire.module.comment.widget.InfoTopLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/info_top_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="48dp" app:title_color="#3a404d">
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="4dp" android:layout_centerVertical="true" app:mrl_rippleColor="@color/light_common_high_light" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/info_top_close" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/info_video_back" android:scaleType="centerInside"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="50dp" android:layout_height="50dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:mrl_rippleColor="@color/light_common_high_light" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="center" android:id="@+id/info_top_more" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/info_video_more" android:scaleType="centerInside"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</us.pinguo.inspire.module.comment.widget.InfoTopLayout>

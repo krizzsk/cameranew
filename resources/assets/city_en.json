@@ -1,0 +1,23 @@
+{
+  "list": [
+    {
+      "code": "CN",
+      "name": "China",
+      "cc": 86
+    },
+    {
+      "code": "HK",
+      "name": "Hong Kong China",
+      "cc": 852
+    },
+    {
+      "code": "MO",
+      "name": "Macao China",
+      "cc": 853
+    },
+    {
+      "code": "TW",
+      "name": "Taiwan China",
+      "cc": 886
+    }]
+}

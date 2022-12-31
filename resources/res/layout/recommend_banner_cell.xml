@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_cover_recommend_banner_cell" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/recommend_loading_icon"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ll_cover_and_desc_recommend_banner_cell" android:background="@color/cover_color" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/piv_cover_recommend_banner_cell" android:layout_alignBottom="@+id/piv_cover_recommend_banner_cell">
+            <TextView android:textSize="17dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="center" android:id="@+id/tv_desc_nice_work_cell" android:padding="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <TextView android:textSize="13dp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tv_detail_nice_work_cell" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="4"/>
+    <include layout="@layout/inspire_common_divider"/>
+</LinearLayout>

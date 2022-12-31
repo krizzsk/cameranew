@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/base_title_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/pf_suggestion_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="55dp">
+            <ImageView android:id="@+id/profile_suggestion_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/profile_suggestion" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13dp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/profile_suggestion" android:layout_toRightOf="@+id/profile_suggestion_icon" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/profile_suggestion_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/mission_detail_more_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+        <RelativeLayout android:id="@+id/pf_help_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="55dp">
+            <ImageView android:id="@+id/profile_normal_issue_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/profile_help" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13dp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/profile_common_issue" android:layout_toRightOf="@+id/profile_normal_issue_icon" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/profile_normal_issue_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/mission_detail_more_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="15dp"/>
+        <RelativeLayout android:id="@+id/pf_about_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="55dp">
+            <ImageView android:id="@+id/profile_about_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/profile_about" android:layout_centerVertical="true"/>
+            <TextView android:textSize="13dp" android:textColor="@color/text_primary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/profile_about" android:layout_toRightOf="@+id/profile_about_icon" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/profile_about_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/mission_detail_more_nor" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

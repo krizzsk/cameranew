@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:paddingTop="12dp" android:paddingBottom="@dimen/feeds_lower_part_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feeds_margin" android:layout_marginRight="@dimen/feeds_margin">
+        <us.pinguo.inspire.module.feeds.view.MultiAvatarView android:id="@+id/feeds_dynamic_avatars" android:layout_width="@dimen/feeds_avatar_size" android:layout_height="@dimen/feeds_avatar_size"/>
+        <TextView android:id="@+id/feeds_dynamic_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/avatar_name_margin" android:text="@string/feeds_dynamic_title" android:layout_weight="1" style="@style/FeedsName"/>
+        <TextView android:textSize="14dp" android:textColor="#ff6696cc" android:ellipsize="end" android:id="@+id/feeds_dynamic_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/feeds_more" android:singleLine="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:src="@drawable/feeds_more_friends"/>
+    </LinearLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/text_deeper" android:ellipsize="end" android:id="@+id/feeds_dynamic_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/feeds_margin" android:layout_marginTop="@dimen/feeds_upper_part_padding" android:layout_marginRight="@dimen/feeds_margin" android:layout_marginBottom="@dimen/feeds_upper_part_padding" android:text="" android:singleLine="true"/>
+    <us.pinguo.inspire.widget.PhotoGridView android:id="@+id/feeds_dynamic_photo" android:layout_width="match_parent" android:layout_height="100dp"/>
+</LinearLayout>

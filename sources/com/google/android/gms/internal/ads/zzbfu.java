@@ -1,0 +1,49 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+import android.os.IInterface;
+import android.os.RemoteException;
+import com.google.android.gms.dynamic.b;
+import java.util.List;
+import java.util.Map;
+/* compiled from: com.google.android.gms:play-services-ads-lite@@19.7.0 */
+/* loaded from: classes2.dex */
+public interface zzbfu extends IInterface {
+    void beginAdUnitExposure(String str) throws RemoteException;
+
+    void clearConditionalUserProperty(String str, String str2, Bundle bundle) throws RemoteException;
+
+    void endAdUnitExposure(String str) throws RemoteException;
+
+    long generateEventId() throws RemoteException;
+
+    String getAppIdOrigin() throws RemoteException;
+
+    String getAppInstanceId() throws RemoteException;
+
+    List getConditionalUserProperties(String str, String str2) throws RemoteException;
+
+    String getCurrentScreenClass() throws RemoteException;
+
+    String getCurrentScreenName() throws RemoteException;
+
+    String getGmpAppId() throws RemoteException;
+
+    int getMaxUserProperties(String str) throws RemoteException;
+
+    Map getUserProperties(String str, String str2, boolean z) throws RemoteException;
+
+    void logEvent(String str, String str2, Bundle bundle) throws RemoteException;
+
+    void performAction(Bundle bundle) throws RemoteException;
+
+    Bundle performActionWithResponse(Bundle bundle) throws RemoteException;
+
+    void setConditionalUserProperty(Bundle bundle) throws RemoteException;
+
+    void setConsent(Bundle bundle) throws RemoteException;
+
+    void zza(String str, String str2, b bVar) throws RemoteException;
+
+    void zzb(b bVar, String str, String str2) throws RemoteException;
+}

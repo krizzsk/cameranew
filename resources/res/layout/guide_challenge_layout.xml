@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/btn_guide_back_parent" android:background="#151617" android:layout_width="match_parent" android:layout_height="61dp" android:layout_alignParentTop="true">
+        <ImageView android:id="@+id/btn_guide_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/title_back_selector" android:layout_centerVertical="true"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:id="@+id/guide_challenge_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/participant_challenge" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/guide_challenge_cover" android:layout_width="match_parent" android:layout_height="300dp"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <us.pinguo.ui.widget.GaussianBlur.stackblur.GuideGaussianBlurImageView android:id="@+id/guide_challenge_blur_image" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+                <View android:background="#7f000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TextView android:textSize="15dp" android:textColor="#ffffff" android:id="@+id/guide_challenge_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="10dp" android:textColor="@android:color/white" android:id="@+id/guide_participant_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_below="@+id/guide_challenge_tips" android:layout_centerHorizontal="true"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:gravity="center" android:id="@+id/btn_guide_participant" android:background="@drawable/guide_challenge_btn_shape" android:layout_width="215dp" android:layout_height="45dp" android:layout_marginTop="20dp" android:text="@string/participant_now" android:layout_below="@+id/guide_participant_count" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

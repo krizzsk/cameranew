@@ -1,0 +1,650 @@
+{
+  "version": 2,
+  "updateTime": 1634796010,
+  "gpuLadders": [
+    {
+      "gpuName": "A14 Bionic’s GPU",
+      "gpuRegex": "Apple",
+      "socName": "Apple A14 Bionic",
+      "socRegex": "Apple",
+      "centurionMark": 134
+    },
+    {
+      "gpuName": "Adreno 660",
+      "gpuRegex": "Adreno.*660",
+      "socName": "Snapdragon 888",
+      "socRegex": "Snapdragon.*888|SDM.*888",
+      "centurionMark": 131
+    },
+    {
+      "gpuName": "A13 Bionic’s GPU",
+      "gpuRegex": "Apple",
+      "socName": "Apple A13 Bionic",
+      "socRegex": "Apple",
+      "centurionMark": 126
+    },
+    {
+      "gpuName": "Mali-G78 MP24",
+      "gpuRegex": "Mali.*G78",
+      "socName": "Kirin 9000",
+      "socRegex": "Kirin.*9000",
+      "centurionMark": 124
+    },
+    {
+      "gpuName": "Mali-G78 MP22",
+      "gpuRegex": "Mali.*G78",
+      "socName": "Kirin 9000E",
+      "socRegex": "Kirin.*9000E",
+      "centurionMark": 122
+    },
+    {
+      "gpuName": "Adreno 650",
+      "gpuRegex": "Adreno.*650",
+      "socName": "Snapdragon 870,865,865+",
+      "socRegex": "Snapdragon.*870|Snapdragon.*865|Snapdragon.*865+|SDM.*870|SDM.*865|SDM.*865+|Google Inc. (Qualcomm)|Qualcomm Technologies, Inc KONA",
+      "centurionMark": 122
+    },
+    {
+      "gpuName": "Mali-G78 MP14",
+      "gpuRegex": "Mali.*G78",
+      "socName": "Exynos 2100",
+      "socRegex": "Exynos.*2100",
+      "centurionMark": 119
+    },
+    {
+      "gpuName": "A12 Bionic’s GPU",
+      "gpuRegex": "Apple",
+      "socName": "Apple A12 Bionic",
+      "socRegex": "Apple",
+      "centurionMark": 119
+    },
+    {
+      "gpuName": "Mali G78 MP10",
+      "gpuRegex": "Mali.*G78",
+      "socName": "Exynos 1080",
+      "socRegex": "Exynos.*1080",
+      "centurionMark": 118
+    },
+    {
+      "gpuName": "Adreno 640",
+      "gpuRegex": "Adreno.*640",
+      "socName": "Snapdragon 855,855+",
+      "socRegex": "Snapdragon.*855|Snapdragon.*855+|SDM.*855|SDM.*855+",
+      "centurionMark": 117
+    },
+    {
+      "gpuName": "Adreno 642L",
+      "gpuRegex": "Adreno.*642L",
+      "socName": "Snapdragon 778G",
+      "socRegex": "Snapdragon.*778G|SDM.*778G",
+      "centurionMark": 115
+    },
+    {
+      "gpuName": "Adreno 630",
+      "gpuRegex": "Adreno.*630",
+      "socName": "Snapdragon 845",
+      "socRegex": "Snapdragon.*845|SDM.*845",
+      "centurionMark": 114
+    },
+    {
+      "gpuName": "Mali G77 MP11",
+      "gpuRegex": "Mali.*G77",
+      "socName": "Exynos 990",
+      "socRegex": "Exynos.*990",
+      "centurionMark": 114
+    },
+    {
+      "gpuName": "Mali-G77 MC9",
+      "gpuRegex": "Mali.*G77",
+      "socName": "MediaTek Dimensity 1200,1100,1000+,1000",
+      "socRegex": "Dimensity.*1200|Dimensity.*1100|Dimensity.*1000+|Dimensity.*1000|MT6893|MT6891|MT6889",
+      "centurionMark": 112
+    },
+    {
+      "gpuName": "Mali-G76 MP16",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Kirin 990",
+      "socRegex": "Kirin.*990",
+      "centurionMark": 110
+    },
+    {
+      "gpuName": "Mali-G77 MP8",
+      "gpuRegex": "Mali.*G77",
+      "socName": "Kirin 985 5G",
+      "socRegex": "Kirin.*985",
+      "centurionMark": 110
+    },
+    {
+      "gpuName": "Mali-G77 MC7",
+      "gpuRegex": "Mali.*G77",
+      "socName": "MediaTek Dimensity 1000L",
+      "socRegex": "Dimensity.*1000L|MT6885",
+      "centurionMark": 109
+    },
+    {
+      "gpuName": "Mali-G76 MP14",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Kirin 990E 5G",
+      "socRegex": "Kirin.*990E",
+      "centurionMark": 109
+    },
+    {
+      "gpuName": "Mali-G76 MP12",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Exynos 9820,9825",
+      "socRegex": "Exynos.*9820|Exynos.*9825",
+      "centurionMark": 108
+    },
+    {
+      "gpuName": "Mali-G76 MP10",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Kirin 980",
+      "socRegex": "Kirin.*980",
+      "centurionMark": 107
+    },
+    {
+      "gpuName": "Mali G76 MP5",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Exynos 980",
+      "socRegex": "Exynos.*980",
+      "centurionMark": 107
+    },
+    {
+      "gpuName": "Mali-G68 MC2",
+      "gpuRegex": "Mali.*G68",
+      "socName": "Dimensity 900",
+      "socRegex": "Dimensity.*900|MT6877",
+      "centurionMark": 106
+    },
+    {
+      "gpuName": "Mali-G57 MC5",
+      "gpuRegex": "Mali.*G57",
+      "socName": "Dimensity 820,1000C",
+      "socRegex": "Dimensity.*820|Dimensity.*1000C|MT6875|MT6883",
+      "centurionMark": 106
+    },
+    {
+      "gpuName": "Mali-G72 MP18",
+      "gpuRegex": "Mali.*G72",
+      "socName": "Exynos 9810",
+      "socRegex": "Exynos.*9810",
+      "centurionMark": 105
+    },
+    {
+      "gpuName": "Adreno 620",
+      "gpuRegex": "Adreno.*620",
+      "socName": "Snapdragon 765,765G,768G",
+      "socRegex": "Snapdragon.*765|Snapdragon.*765G|Snapdragon.*768|SDM.*765|SDM.*765G|SDM.*768G",
+      "centurionMark": 105
+    },
+    {
+      "gpuName": "Mali-G57 MC4",
+      "gpuRegex": "Mali.*G57",
+      "socName": "Dimensity 800",
+      "socRegex": "Dimensity.*800|MT6873",
+      "centurionMark": 105
+    },
+    {
+      "gpuName": "A11 Bionic’s GPU",
+      "gpuRegex": "Apple",
+      "socName": "Apple A11 Bionic",
+      "socRegex": "Apple",
+      "centurionMark": 105
+    },
+    {
+      "gpuName": "Mali-G52 MP6",
+      "gpuRegex": "Mali.*G52",
+      "socName": "Kirin 810",
+      "socRegex": "Kirin.*810",
+      "centurionMark": 103
+    },
+    {
+      "gpuName": "Adreno 540",
+      "gpuRegex": "Adreno.*540",
+      "socName": "Snapdragon 835",
+      "socRegex": "Snapdragon.*835|SDM.*835",
+      "centurionMark": 103
+    },
+    {
+      "gpuName": "Adreno 619",
+      "gpuRegex": "Adreno.*619",
+      "socName": "Snapdragon 750G,480",
+      "socRegex": "Snapdragon.*750G|Snapdragon.*480|SDM.*750G|SDM.*480",
+      "centurionMark": 103
+    },
+    {
+      "gpuName": "Adreno 619L",
+      "gpuRegex": "Adreno.*619L",
+      "socName": "Snapdragon 690",
+      "socRegex": "Snapdragon.*690|SDM.*690",
+      "centurionMark": 101
+    },
+    {
+      "gpuName": "Mali-G76 MP5",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Exynos 880",
+      "socRegex": "Exynos.*880",
+      "centurionMark": 101
+    },
+    {
+      "gpuName": "Mali-G72 MP12",
+      "gpuRegex": "Mali.*G72",
+      "socName": "Kirin 970",
+      "socRegex": "Kirin.*970",
+      "centurionMark": 101
+    },
+    {
+      "gpuName": "Mali-G76 3EEMC4",
+      "gpuRegex": "Mali.*G76",
+      "socName": "Helio G90,G90T,G95",
+      "socRegex": "Helio.*G90|Helio.*G90T|Helio.*G95|MT6785",
+      "centurionMark": 100
+    },
+    {
+      "gpuName": "Mali-G57 MC3",
+      "gpuRegex": "Mali.*G57",
+      "socName": "Dimensity 720,800U",
+      "socRegex": "Dimensity.*720|Dimensity.*800U|MT6853|MT6737",
+      "centurionMark": 99
+    },
+    {
+      "gpuName": "Adreno 618",
+      "gpuRegex": "Adreno.*618",
+      "socName": "Snapdragon 720G,730,730G,732G",
+      "socRegex": "Snapdragon.*720G|Snapdragon.*730|Snapdragon.*730G|Snapdragon.*732G|SDM.*720G|SDM.*730|SDM.*730G",
+      "centurionMark": 99
+    },
+    {
+      "gpuName": "Mail-G57 MC2",
+      "gpuRegex": "Mail.*G57",
+      "socName": "Dimensity 700,Dimensity 810",
+      "socRegex": "Dimensity.*810|MT6833",
+      "centurionMark": 97
+    },
+    {
+      "gpuName": "Mali-G71 MP20",
+      "gpuRegex": "Mali.*G71",
+      "socName": "Exynos 8895",
+      "socRegex": "Exynos.*8895",
+      "centurionMark": 96
+    },
+    {
+      "gpuName": "PowerVR 7XT GT7600 Plus",
+      "gpuRegex": "PowerVR.*GT7600",
+      "socName": "Apple A10 Fusion",
+      "socRegex": "Apple.*A10",
+      "centurionMark": 95
+    },
+    {
+      "gpuName": "Adreno 530",
+      "gpuRegex": "Adreno.*530",
+      "socName": "Snapdragon 820,821",
+      "socRegex": "Snapdragon.*820|Snapdragon.*821|SDM.*820|SDM.*821",
+      "centurionMark": 93
+    },
+    {
+      "gpuName": "Adreno 616",
+      "gpuRegex": "Adreno.*616",
+      "socName": "Snapdragon 710,712",
+      "socRegex": "Snapdragon.*710|Snapdragon.*712|SDM.*710|SDM.*712",
+      "centurionMark": 90
+    },
+    {
+      "gpuName": "PowerVR 7XT GT7600",
+      "gpuRegex": "PowerVR.*GT7600",
+      "socName": "Apple A9",
+      "socRegex": "Apple.*A9",
+      "centurionMark": 88
+    },
+    {
+      "gpuName": "PowerVR 7XTP-MT4",
+      "gpuRegex": "PowerVR.*7XTP",
+      "socName": "Helio X30",
+      "socRegex": "Helio.*X30|MT6799",
+      "centurionMark": 87
+    },
+    {
+      "gpuName": "Adreno 615",
+      "gpuRegex": "Adreno.*615",
+      "socName": "Snapdragon 670",
+      "socRegex": "Snapdragon.*670|SDM.*670",
+      "centurionMark": 85
+    },
+    {
+      "gpuName": "Mali-G71 MP8",
+      "gpuRegex": "Mali.*G71",
+      "socName": "Kirin 960",
+      "socRegex": "Kirin.*960",
+      "centurionMark": 84
+    },
+    {
+      "gpuName": "IMG PowerVR GM 9446",
+      "gpuRegex": "PowerVR.*9446",
+      "socName": "Helio P90,P95",
+      "socRegex": "Helio.*P90|Helio.*P95|MT6779",
+      "centurionMark": 82
+    },
+    {
+      "gpuName": "Adreno 612",
+      "gpuRegex": "Adreno.*612",
+      "socName": "Snapdragon 675,Snapdragon,678",
+      "socRegex": "Snapdragon.*675|Snapdragon.*678|SDM.*675|SDM.*678",
+      "centurionMark": 82
+    },
+    {
+      "gpuName": "Mali-T880 MP12",
+      "gpuRegex": "Mali.*T880",
+      "socName": "Exynos 8890",
+      "socRegex": "Exynos.*8890",
+      "centurionMark": 81
+    },
+    {
+      "gpuName": "Mali-G52 MC2",
+      "gpuRegex": "Mali.*G52",
+      "socName": "Helio G70,G80,G85",
+      "socRegex": "Helio.*G70|Helio.*G80|Helio.*G85|MT6769|MT6768|T610.*Unisoc",
+      "centurionMark": 81
+    },
+    {
+      "gpuName": "Adreno 610",
+      "gpuRegex": "Adreno.*610",
+      "socName": "Snapdragon 665,662,460",
+      "socRegex": "Snapdragon.*665|Snapdragon.*662|SDM.*665|SDM.*662|SM4250",
+      "centurionMark": 80
+    },
+    {
+      "gpuName": "Adreno 512",
+      "gpuRegex": "Adreno.*512",
+      "socName": "Snapdragon 660",
+      "socRegex": "Snapdragon.*660|SDM.*660",
+      "centurionMark": 79
+    },
+    {
+      "gpuName": "Mali-G72 MP3",
+      "gpuRegex": "Mali.*G72",
+      "socName": "Exynos 9611,9610,Helio P70,P60",
+      "socRegex": "Exynos.*9611|Exynos.*9610|Helio.*P70|Helio.*P60|MT6775|MT6771",
+      "centurionMark": 77
+    },
+    {
+      "gpuName": "Adreno 430",
+      "gpuRegex": "Adreno.*430",
+      "socName": "Snapdragon 810",
+      "socRegex": "Snapdragon.*810|SDM.*810",
+      "centurionMark": 76
+    },
+    {
+      "gpuName": "Mali-T760 MP8",
+      "gpuRegex": "Mali.*T760",
+      "socName": "Exynos 7420",
+      "socRegex": "Exynos.*7420",
+      "centurionMark": 72
+    },
+    {
+      "gpuName": "Mali-T860 MP4",
+      "gpuRegex": "Mali.*T860",
+      "socName": "Xiaomi Surge S1",
+      "socRegex": "Xiaomi|Surge",
+      "centurionMark": 71
+    },
+    {
+      "gpuName": "Mali-G52 MP1",
+      "gpuRegex": "Mali.*G52",
+      "socName": "Exynos 850",
+      "socRegex": "Exynos.*850",
+      "centurionMark": 70
+    },
+    {
+      "gpuName": "Adreno 510",
+      "gpuRegex": "Adreno.*510",
+      "socName": "Snapdragon 650,652,653",
+      "socRegex": "Snapdragon.*650|Snapdragon.*652|Snapdragon.*653|SDM.*650|SDM.*652|SDM.*653",
+      "centurionMark": 69
+    },
+    {
+      "gpuName": "Adreno 509",
+      "gpuRegex": "Adreno.*509",
+      "socName": "Snapdragon 636",
+      "socRegex": "Snapdragon.*636|SDM.*636",
+      "centurionMark": 69
+    },
+    {
+      "gpuName": "Adreno 508",
+      "gpuRegex": "Adreno.*508",
+      "socName": "Snapdragon 630",
+      "socRegex": "Snapdragon.*630|SDM.*630",
+      "centurionMark": 69
+    },
+    {
+      "gpuName": "Adreno 420",
+      "gpuRegex": "Adreno.*420",
+      "socName": "Snapdragon 805",
+      "socRegex": "Snapdragon.*805|SDM.*805",
+      "centurionMark": 69
+    },
+    {
+      "gpuName": "Adreno 418",
+      "gpuRegex": "Adreno.*418",
+      "socName": "Snapdragon 808",
+      "socRegex": "Snapdragon.*808|SDM.*808",
+      "centurionMark": 68
+    },
+    {
+      "gpuName": "Mali-G51 MP4",
+      "gpuRegex": "Mali.*G51",
+      "socName": "Kirin 710",
+      "socRegex": "Kirin.*710",
+      "centurionMark": 66
+    },
+    {
+      "gpuName": "PowerVR GX6450",
+      "gpuRegex": "PowerVR.*GX6450",
+      "socName": "Apple A8",
+      "socRegex": "Apple.*A8",
+      "centurionMark": 66
+    },
+    {
+      "gpuName": "Mali-T830 MP3",
+      "gpuRegex": "Mali.*T830",
+      "socName": "Exynos 7880",
+      "socRegex": "Exynos.*7880",
+      "centurionMark": 65
+    },
+    {
+      "gpuName": "Mali-T880 MP4",
+      "gpuRegex": "Mali.*T880",
+      "socName": "Kirin 955,950,Helio X27,X25,X23,X20",
+      "socRegex": "Kirin.*955|Kirin.*950|Helio.*X27|Helio.*X25|Helio.*X23|Helio.*X20|MT6797",
+      "centurionMark": 64
+    },
+    {
+      "gpuName": "Mali-G71 MP2",
+      "gpuRegex": "Mali.*G71",
+      "socName": "Exynos 7885,7884,7884A,7904,Helio P30,P23",
+      "socRegex": "Exynos.*7885|Exynos.*7884|Exynos.*7884A|Exynos.*7904|Helio.*P30|Helio.*P23|MT6758|MT6763",
+      "centurionMark": 62
+    },
+    {
+      "gpuName": "Mali-G71 MP1",
+      "gpuRegex": "Mali.*G71",
+      "socName": "Exynos 7872",
+      "socRegex": "Exynos.*7872",
+      "centurionMark": 62
+    },
+    {
+      "gpuName": "Mali-T880 MP2",
+      "gpuRegex": "Mali.*T880",
+      "socName": "Helio P25, P20",
+      "socRegex": "Helio.*P25|Helio.*P20|MT6757",
+      "centurionMark": 60
+    },
+    {
+      "gpuName": "Adreno 506",
+      "gpuRegex": "Adreno.*506",
+      "socName": "Snapdragon 632,626,625,450",
+      "socRegex": "Snapdragon.*632|Snapdragon.*626|Snapdragon.*625|Snapdragon.*450|SDM.*632|SDM.*626|SDM.*625|SDM.*450",
+      "centurionMark": 59
+    },
+    {
+      "gpuName": "Mali-T760 MP6",
+      "gpuRegex": "Mali.*T760",
+      "socName": "Exynos 5433",
+      "socRegex": "Exynos.*5433",
+      "centurionMark": 57
+    },
+    {
+      "gpuName": "Mali-T628 MP6",
+      "gpuRegex": "Mali.*T628",
+      "socName": "Exynos 5420,5422,5430,5800",
+      "socRegex": "Exynos.*5420|Exynos.*5422|Exynos.*5430|Exynos.*5800",
+      "centurionMark": 56
+    },
+    {
+      "gpuName": "PowerVR G6430",
+      "gpuRegex": "PowerVR.*G6430",
+      "socName": "Apple A7",
+      "socRegex": "Apple.*A7",
+      "centurionMark": 55
+    },
+    {
+      "gpuName": "Mali-T830 MP2",
+      "gpuRegex": "Mali.*T830",
+      "socName": "Kirin 659,658,655,650",
+      "socRegex": "Kirin.*659|Kirin.*658|Kirin.*655|Kirin.*650",
+      "centurionMark": 54
+    },
+    {
+      "gpuName": "Adreno 505",
+      "gpuRegex": "Adreno.*505",
+      "socName": "Snapdragon 439,435,430",
+      "socRegex": "Snapdragon.*439|Snapdragon.*435|Snapdragon.*430|SDM.*439|SDM.*435|SDM.*430",
+      "centurionMark": 52
+    },
+    {
+      "gpuName": "Mali-T860 MP2",
+      "gpuRegex": "Mali.*T860",
+      "socName": "Helio P10,P18,MT6738,MT6750T,MT6750",
+      "socRegex": "Helio.*P10|Helio.*P18|MT6755|MT6738|MT6750|MT6750T",
+      "centurionMark": 52
+    },
+    {
+      "gpuName": "Mali-T760 MP4",
+      "gpuRegex": "Mali.*T760",
+      "socName": "Rockchip RK3288",
+      "socRegex": "RK3288",
+      "centurionMark": 52
+    },
+    {
+      "gpuName": "PowerVR G6200",
+      "gpuRegex": "PowerVR.*G6200",
+      "socName": "Helio X10,MT8135",
+      "socRegex": "Helio.*X10|MT6795|MT8135",
+      "centurionMark": 51
+    },
+    {
+      "gpuName": "PowerVR Rogue GE8322",
+      "gpuRegex": "PowerVR.*GE8322",
+      "socName": "SC9863",
+      "socRegex": "SC9863",
+      "centurionMark": 51
+    },
+    {
+      "gpuName": "PowerVR GE8320",
+      "gpuRegex": "PowerVR.*GE8320",
+      "socName": "Helio P22,P35,A22,G35,G25,A25",
+      "socRegex": "Helio.*P22|Helio.*A22|Helio.*G35|Helio.*G25|Helio.*A25|MT6762|MT6761|MT6765",
+      "centurionMark": 51
+    },
+    {
+      "gpuName": "PowerVR GE8300",
+      "gpuRegex": "PowerVR.*GE8300",
+      "socName": "MT6761",
+      "socRegex": "MT6761",
+      "centurionMark": 50
+    },
+    {
+      "gpuName": "Adreno 405",
+      "gpuRegex": "Adreno.*405",
+      "socName": "Snapdragon 617,616,615,610,415",
+      "socRegex": "Snapdragon.*617|Snapdragon.*616|Snapdragon.*615|Snapdragon.*610|Snapdragon.*415|SDM.*617|SDM.*616|SDM.*615|SDM.*610|SDM.*415",
+      "centurionMark": 50
+    },
+    {
+      "gpuName": "Adreno 504",
+      "gpuRegex": "Adreno.*504",
+      "socName": "Snapdragon 429",
+      "socRegex": "Snapdragon.*429|SDM.*429",
+      "centurionMark": 47
+    },
+    {
+      "gpuName": "Mali-T628 MP4",
+      "gpuRegex": "Mali.*T628",
+      "socName": "Kirin 935,930",
+      "socRegex": "Kirin.*935|Kirin.*930",
+      "centurionMark": 46
+    },
+    {
+      "gpuName": "Mali-T830 MP1",
+      "gpuRegex": "Mali.*T830",
+      "socName": "Exynos 7870",
+      "socRegex": "Exynos.*7870",
+      "centurionMark": 45
+    },
+    {
+      "gpuName": "Mali-T720 MP2",
+      "gpuRegex": "Mali.*T720",
+      "socName": "Exynos 7580,MT6753,MT6737T,MT6737,MT6735",
+      "socRegex": "Exynos.*7580|MT6753|MT6737T|MT6737|MT6735",
+      "centurionMark": 42
+    },
+    {
+      "gpuName": "Mali-T604 MP4",
+      "gpuRegex": "Mali.*T604",
+      "socName": "Exynos 5250",
+      "socRegex": "Exynos.*5250",
+      "centurionMark": 41
+    },
+    {
+      "gpuName": "Mali-T760 MP2",
+      "gpuRegex": "Mali.*T760",
+      "socName": "MT6752",
+      "socRegex": "MT6752",
+      "centurionMark": 41
+    },
+    {
+      "gpuName": "Mali-T720 MP1",
+      "gpuRegex": "Mali.*T720",
+      "socName": "Exynos 7570",
+      "socRegex": "Exynos.*7570",
+      "centurionMark": 39
+    },
+    {
+      "gpuName": "Adreno 308",
+      "gpuRegex": "Adreno.*308",
+      "socName": "Snapdragon 427, 425,Qualcomm 215",
+      "socRegex": "Snapdragon.*427|Snapdragon.*425|Qualcomm.*215|SDM.*427|SDM.*425|SDM.*215",
+      "centurionMark": 38
+    },
+    {
+      "gpuName": "PowerVR GE8100",
+      "gpuRegex": "PowerVR.*GE8100",
+      "socName": "MT6739",
+      "socRegex": "MT6739",
+      "centurionMark": 32
+    },
+    {
+      "gpuName": "Adreno 306",
+      "gpuRegex": "Adreno.*306",
+      "socName": "Snapdragon 412,410",
+      "socRegex": "Snapdragon.*412|Snapdragon.*410|SDM.*412|SDM.*410",
+      "centurionMark": 31
+    },
+    {
+      "gpuName": "Mali-450 MP4",
+      "gpuRegex": "Mali.*450",
+      "socName": "Kirin 620",
+      "socRegex": "Kirin.*620",
+      "centurionMark": 27
+    }
+  ]
+}

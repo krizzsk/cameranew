@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:padding="12dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="296dp" android:layout_height="match_parent">
+        <ImageView android:id="@+id/tt_bu_img" android:background="@android:color/holo_blue_light" android:layout_width="296dp" android:layout_height="296dp" android:scaleType="fitXY"/>
+        <include android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" layout="@layout/tt_backup_ad"/>
+    </FrameLayout>
+    <FrameLayout android:layout_width="178dp" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="top|right" android:id="@+id/tt_bu_close" android:layout_width="15dp" android:layout_height="15dp" android:layout_marginRight="12dp" android:src="@drawable/tt_titlebar_close_press_for_dark" android:scaleType="fitXY"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/tt_bu_icon" android:background="@android:color/holo_blue_light" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="8dp" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <TextView android:layout_gravity="bottom|left" android:id="@+id/tt_bu_dislike" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/tt_reward_feedback"/>
+            <TextView android:textSize="18sp" android:textColor="#ff333333" android:ellipsize="end" android:id="@+id/tt_bu_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12.5dp" android:maxLines="1" android:layout_below="@+id/tt_bu_icon" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="12sp" android:textColor="#54000000" android:ellipsize="end" android:gravity="center" android:id="@+id/tt_bu_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginTop="5dp" android:layout_marginRight="4dp" android:maxLines="2" android:layout_below="@+id/tt_bu_title" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="32sp" android:id="@+id/tt_score_val" android:layout_width="45dp" android:layout_height="45dp" android:text="@string/star_4_8" android:layout_above="@+id/tt_pangle_ad_score" android:layout_centerHorizontal="true"/>
+            <com.bytedance.sdk.openadsdk.core.widget.TTRatingBar android:layout_gravity="center" android:id="@+id/tt_pangle_ad_score" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginTop="12dp" android:layout_marginBottom="14dp" android:layout_above="@+id/tt_bu_download" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="14sp" android:textColor="#fff" android:gravity="center" android:id="@+id/tt_bu_download" android:background="@drawable/tt_backup_btn_1" android:layout_width="103dp" android:layout_height="36dp" android:layout_marginBottom="8dp" android:text="@string/tt_video_download_apk" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </FrameLayout>
+</LinearLayout>

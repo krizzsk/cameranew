@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/popwindow_adv_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="70dp">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/adv_icon" android:tag="@string/icon_tag" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:src="@color/white" android:scaleType="centerCrop" android:layout_centerVertical="true" app:roundedCornerRadius="@dimen/roundedImg_corner_size" app:viewAspectRatio="1"/>
+        <com.pinguo.camera360.adv.widget.AdvClipArcLayout android:id="@+id/adv_icon_container" android:tag="@string/icon_layout_tag" android:visibility="gone" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:layout_centerVertical="true" app:advallRadius="@dimen/roundedImg_corner_size"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/adv_btn" android:layout_toRightOf="@+id/adv_icon" android:layout_centerVertical="true">
+            <TextView android:textStyle="bold" android:textColor="#3f3f3f" android:id="@+id/adv_title" android:tag="@string/title_tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="1"/>
+            <TextView android:textSize="8dp" android:textColor="#8f8f8f" android:id="@+id/adv_subtitle" android:tag="@string/desc_tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="2"/>
+        </LinearLayout>
+        <com.pinguo.camera360.adv.widget.SlideButtonView android:textSize="12dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/adv_btn" android:tag="@string/button_tag" android:background="@drawable/shape_corner_light_blue" android:clickable="false" android:layout_width="80dp" android:layout_height="30dp" android:layout_marginRight="10dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_alignParentEnd="true"/>
+        <TextView android:gravity="center" android:id="@+id/tvMark" android:background="@drawable/icon_ad_mark" android:layout_width="15dp" android:layout_height="8dp" android:layout_marginTop="5dp" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:id="@+id/adv_choice_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

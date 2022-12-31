@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/container_res_0x7d06006d" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="24dp" android:textColor="@color/white" android:id="@+id/tv_banner_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:shadowColor="@color/primary_black_54" android:shadowDy="2" android:shadowRadius="2" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/tv_banner_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:shadowColor="@color/primary_black_54" android:shadowDy="2" android:shadowRadius="2" android:layout_below="@+id/tv_banner_title" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

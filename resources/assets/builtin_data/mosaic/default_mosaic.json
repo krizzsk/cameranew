@@ -1,0 +1,166 @@
+{
+  "readme": "内置的基础马赛克数据，老版本就有的一批数据",
+  "data": {
+    "locale": "zh_cn",
+    "interval": 43200,
+    "packages": [
+      {
+        "pid": "mosaic_jingdian",
+        "name": "经典",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "0001"
+      },
+      {
+        "pid": "mosaic_fangao",
+        "name": "梵高",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1001"
+      },
+      {
+        "pid": "mosaic_fangao_old",
+        "name": "梵高_old",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1001_old"
+      },
+      {
+        "pid": "mosaic_fencai",
+        "name": "粉彩",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1002"
+      },
+      {
+        "pid": "mosaic_yeshoupai",
+        "name": "野兽派",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1005"
+      },
+      {
+        "pid": "mosaic_pomo",
+        "name": "泼墨",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1011"
+      },
+      {
+        "pid": "mosaic_yunduo",
+        "name": "云朵",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1010"
+      },
+      {
+        "pid": "mosaic_yumao",
+        "name": "羽毛",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1007"
+      },
+      {
+        "pid": "mosaic_xiaoyu",
+        "name": "小鱼",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1012"
+      },
+      {
+        "pid": "mosaic_siyecao",
+        "name": "四叶草",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1004"
+      },
+      {
+        "pid": "mosaic_yinghua",
+        "name": "樱花",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1006"
+      },
+      {
+        "pid": "mosaic_chunyin",
+        "name": "唇印",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1009"
+      },
+      {
+        "pid": "mosaic_mengzhua",
+        "name": "萌爪",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1003"
+      },
+      {
+        "pid": "mosaic_hudie",
+        "name": "蝴蝶",
+        "icon": "",
+        "type": 50,
+        "onsale_time": 0,
+        "off_time": 0,
+        "unlock_type": 1,
+        "vip": 0,
+        "down_url": "1008"
+      }
+    ]
+  },
+  "status": 200,
+  "message": "ok",
+  "serverTime": 1571053565.9158
+}

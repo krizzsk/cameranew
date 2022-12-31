@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="@dimen/publish_guide_left_margin" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/publish_guide_share_new" android:layout_weight="1" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/publish_guide_all_gallery" android:background="@drawable/ripple_common_oval_bg" android:paddingLeft="8dp" android:paddingTop="20dp" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+        <TextView android:textSize="12dp" android:textColor="#ff3c97ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/portal_publish_gallery_all"/>
+        <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_guide_arrow"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rate="http://schemas.android.com/apk/res-auto" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.pinguo.camera360.lib.ui.FixedRateRelativeLayout android:id="@+id/store_details_effect_icon_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" rate:frrl_ratio="0.78">
+        <us.pinguo.ui.widget.RoundRecImageView android:id="@+id/store_details_effect_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/store_details_effect_icon_new_flag" android:visibility="invisible" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_new_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="11dp" android:textColor="@android:color/white" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/store_details_effect_count_tv" android:paddingLeft="5dp" android:paddingTop="3dp" android:paddingRight="5dp" android:paddingBottom="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:shadowColor="@color/color_9f000000" android:shadowDx="5" android:shadowDy="5" android:shadowRadius="10" android:drawableLeft="@drawable/icon_store_count" android:drawablePadding="4dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+    </com.pinguo.camera360.lib.ui.FixedRateRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/text_area" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/store_details_effect_icon_container">
+        <TextView android:textSize="14dp" android:textColor="@color/primary_black_color" android:ellipsize="end" android:gravity="left" android:id="@+id/store_topic_details_name_tv" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+        <TextView android:textSize="13dp" android:ellipsize="end" android:gravity="left" android:id="@+id/store_topic_details_bt" android:paddingTop="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:lines="1"/>
+    </LinearLayout>
+</RelativeLayout>

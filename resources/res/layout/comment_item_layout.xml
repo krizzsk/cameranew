@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:civ="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+    <View android:id="@+id/comment_divider" android:background="@color/info_comment_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="62dp"/>
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+        <us.pinguo.widet.PortraitImageView android:id="@+id/comment_item_avatar" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:layout_marginRight="12dp" android:src="@drawable/default_avatar" civ:civ_border_color="#ffffff" civ:civ_border_width="0dp"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/comment_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="15dp" android:textColor="@color/text_white" android:id="@+id/user_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rebacca Soctt" android:textIsSelectable="true"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/text_white" android:id="@+id/comment_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"/>
+                </LinearLayout>
+                <ImageView android:id="@+id/iv_menu_comment_item_layout" android:paddingLeft="8dp" android:paddingRight="8dp" android:paddingBottom="8dp" android:layout_width="40dp" android:layout_height="32dp" android:src="@drawable/comment_item_menu"/>
+            </LinearLayout>
+            <TextView android:textSize="16dp" android:textColor="@color/text_white" android:id="@+id/comment_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="12dp" android:textIsSelectable="true"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/feeds_margin" android:layout_below="@+id/comment_content" layout="@layout/comment_header_translate_layout"/>
+            <us.pinguo.ui.uilview.GifImageView android:id="@+id/giv_emoticon_comment_item_layout" android:background="@color/inspire_loading_color" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="6dp"/>
+            <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_single_photo_comment_item_layout" android:visibility="gone" android:layout_width="105dp" android:layout_height="105dp" android:layout_marginTop="6dp"/>
+            <us.pinguo.inspire.widget.PhotoGridView android:id="@+id/pgv_photos_comment_item_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="60dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

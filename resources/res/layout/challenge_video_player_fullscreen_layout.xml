@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.inspire_proxy.media.FixedRateTextureView android:layout_gravity="center" android:id="@+id/dialog_video" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@+id/dialog_video_progress" android:visibility="visible" android:layout_width="48dp" android:layout_height="48dp" app:matProg_barColor="@color/progress_color" app:matProg_progressIndeterminate="true"/>
+    <TextView android:textSize="15dp" android:textColor="@color/text_white" android:gravity="center" android:layout_gravity="top|right" android:id="@+id/dialog_video_pass_res_0x7f09021b" android:background="@drawable/challenge_official_pass" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_margin="18dp" android:text="@string/guide_page_jump_text"/>
+</FrameLayout>

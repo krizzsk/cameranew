@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.ui.widget.AlphaPressedConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@null" android:layout_width="@dimen/home_page_functions_adv_item_width" android:layout_height="68dp">
+    <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/imgAdv" android:tag="a" android:layout_width="@dimen/home_page_functions_adv_item_width" android:layout_height="68dp" app:actualImageScaleType="6" app:layout_constraintTop_toTopOf="0" app:roundedCornerRadius="200dp"/>
+    <FrameLayout android:id="@+id/adContainer" android:tag="a" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.facebook.drawee.view.SimpleDraweeView android:id="@+id/adDefault" android:layout_width="@dimen/home_page_functions_adv_item_width" android:layout_height="68dp" app:actualImageScaleType="6" app:layout_constraintTop_toTopOf="0" app:roundedCornerRadius="200dp"/>
+    </FrameLayout>
+</us.pinguo.ui.widget.AlphaPressedConstraintLayout>

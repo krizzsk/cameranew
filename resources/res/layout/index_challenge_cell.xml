@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/ll_item_view_challenge_cell" android:background="@android:color/white" android:paddingLeft="@dimen/square_space" android:paddingRight="@dimen/square_space" android:paddingBottom="@dimen/square_space" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_container_more_challenge_cell" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp">
+        <ImageView android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="4dp" android:layout_marginRight="8dp" android:src="@drawable/challenge_icon"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hot_challenge" android:layout_weight="1"/>
+        <TextView android:gravity="center" android:id="@+id/view_more_challenge_cell" android:visibility="gone" android:text="@string/more" style="@style/AttentionMDButton"/>
+    </LinearLayout>
+    <include layout="@layout/challenge_common"/>
+</LinearLayout>

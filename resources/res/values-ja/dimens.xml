@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="info_camera_textsize">10sp</dimen>
+    <dimen name="padding_pen_or_eraser">6dp</dimen>
+    <dimen name="text_pen_or_eraser_size">6dp</dimen>
+</resources>

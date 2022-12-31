@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_container_message_comment_cell" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <us.pinguo.widet.PortraitImageView android:id="@+id/piv_sender_message_comment_cell" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginLeft="16dp" android:src="@drawable/default_avatar" app:civ_border_width="0dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="8dp" android:layout_weight="1">
+                <TextView android:textSize="16dp" android:textColor="#ff333333" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_sender_message_comment_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:textIsSelectable="true"/>
+                <TextView android:textSize="12dp" android:textColor="@color/text_lower" android:id="@+id/tv_date_and_loc_message_comment_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="1天前"/>
+                <us.pinguo.inspire.widget.SystemErrorTextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_content_message_comment_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:textIsSelectable="true"/>
+                <us.pinguo.ui.uilview.GifImageView android:id="@+id/giv_emoticon_message_comment_cell" android:background="@color/inspire_loading_color" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginTop="6dp"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/ll_imgs_message_comment_cell" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                    <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_first_pic_message_comment_cell" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp"/>
+                    <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_second_pic_message_comment_cell" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp"/>
+                    <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_third_pic_message_comment_cell" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginRight="4dp"/>
+                    <FrameLayout android:id="@+id/fl_forth_pic_message_comment_cell" android:layout_width="40dp" android:layout_height="40dp">
+                        <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_forth_pic_message_comment_cell" android:layout_width="40dp" android:layout_height="40dp"/>
+                        <View android:id="@+id/v_cover_forth_pic_message_comment_cell" android:background="@color/black_50" android:layout_width="40dp" android:layout_height="40dp"/>
+                        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@+id/tv_count_pic_message_comment_cell" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="16dp">
+                <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_photo_message_comment_cell" android:background="@color/inspire_loading_color" android:layout_width="60dp" android:layout_height="60dp"/>
+                <ImageView android:id="@+id/iv_media_type_message_comment_cell" android:layout_width="16dp" android:layout_height="16dp" android:layout_margin="4dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:orientation="vertical" android:background="@color/list_divider_color" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="64dp" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="adjust_choice_color_seekbar_width">240dp</dimen>
+    <dimen name="hsl_seekbar_width">250dp</dimen>
+    <dimen name="padding_pen_or_eraser">6dp</dimen>
+    <dimen name="scroll_common_edit_tab_padding">23dp</dimen>
+    <dimen name="text_pen_or_eraser_size">10dp</dimen>
+    <dimen name="text_preview_tips_size">17sp</dimen>
+    <dimen name="vip_fun_item_text_size">18dp</dimen>
+</resources>

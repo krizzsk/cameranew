@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="mtrl_badge_content_description">
+        <item quantity="one">%d new notification</item>
+        <item quantity="other">%d new notifications</item>
+    </plurals>
+    <plurals name="text_become_member_days">
+        <item quantity="one">@string/text_become_member_days_one</item>
+        <item quantity="other">@string/text_become_member_days_other</item>
+    </plurals>
+</resources>

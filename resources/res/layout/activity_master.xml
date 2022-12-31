@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/activity_master" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/master_title" android:background="@color/color_primary" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" android:elevation="@dimen/elevation_height"/>
+    <FrameLayout android:id="@+id/master_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/master_title"/>
+    <FrameLayout android:id="@+id/master_apply_for_fragment_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/master_title"/>
+</RelativeLayout>

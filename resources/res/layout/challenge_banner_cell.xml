@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:tag="challenge_banner" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/banner_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <ImageView android:gravity="center" android:id="@+id/challenge_banner_bottom_img" android:layout_width="match_parent" android:layout_height="85dp" android:scaleType="centerInside"/>
+</LinearLayout>

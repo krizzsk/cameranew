@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@+id/drawerView" android:layout_width="match_parent" android:layout_height="@dimen/drawer_panel_height" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llBottomSheetBehavior" android:layout_width="match_parent" android:layout_height="match_parent" app:behavior_peekHeight="@dimen/drawer_half_height" app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+            <androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/bg_mosaic_panel_adjust" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <us.pinguo.edit2020.view.RoundCornerRecyclerView android:id="@+id/rvCategory" android:background="@drawable/bg_sticker_panel_category" android:clipChildren="true" android:layout_width="0dp" android:layout_height="44dp" android:nestedScrollingEnabled="false" app:layout_constraintEnd_toStartOf="@+id/tvMoreSticker" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                <us.pinguo.ui.widget.AutofitTextView android:textSize="12dp" android:textColor="@color/color_camera_theme_dark" android:gravity="center" android:id="@+id/tvMoreSticker" android:background="@drawable/ripple_common_bg" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/more" android:drawablePadding="2dp" android:drawableStart="@drawable/selector_sticker_more" android:paddingStart="10dp" android:paddingEnd="10dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/rvCategory" app:layout_constraintTop_toTopOf="0"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <FrameLayout android:background="@color/color_camera_theme_light" android:clipChildren="true" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toBottomOf="@+id/rvCategory">
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvMaterial" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvTemplate" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clSkipEmptyHint" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/clSkipEmpty" android:layout_width="match_parent" android:layout_height="100dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+                        <TextView android:textSize="14dp" android:textColor="@color/color_camera_theme_dark" android:gravity="center" android:id="@+id/tvStickerEmptyHint" android:padding="12dp" android:layout_width="0dp" android:layout_height="0dp" android:text="@string/str_no_sticker_used" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0"/>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</FrameLayout>

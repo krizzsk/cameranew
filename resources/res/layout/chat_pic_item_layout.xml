@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="58dp" android:layout_height="58dp">
+    <us.pinguo.ui.uilview.PhotoImageView android:layout_gravity="bottom|left" android:id="@+id/chat_pic_item_img" android:layout_width="50dp" android:layout_height="50dp"/>
+    <FrameLayout android:layout_gravity="top|right" android:id="@+id/chat_pic_item_del" android:layout_width="24dp" android:layout_height="24dp">
+        <ImageView android:layout_gravity="top|right" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginTop="1dp" android:layout_marginRight="1dp" android:src="@drawable/chat_pic_delete"/>
+    </FrameLayout>
+</FrameLayout>

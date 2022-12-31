@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/login_form" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:theme="@style/LoginField" android:orientation="vertical" android:id="@+id/email_login_form" android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <us.pinguo.user.ui.view.EditTextWithPrompt android:id="@+id/login_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:inputType="textEmailAddress"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp">
+                <EditText android:id="@+id/login_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/login_password" android:maxLines="1" android:singleLine="true" android:inputType="textPassword" android:imeOptions="actionUnspecified" android:imeActionId="@+id/login"/>
+                <ImageView android:id="@+id/register_password_eye" android:background="?android:attr/selectableItemBackgroundBorderless" android:paddingLeft="8dp" android:paddingTop="6dp" android:paddingRight="8dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/pg_eye" android:scaleType="center" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="11dp" android:textColor="@color/light_error_text" android:ellipsize="end" android:id="@+id/login_error_tips" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@+id/login_forget_pwd" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="11dp" android:textColor="@color/login_hint_accent_color" android:id="@+id/login_forget_pwd" android:background="?android:attr/selectableItemBackgroundBorderless" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/id_photo_find_password" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <Button android:id="@+id/login_confirm_btn" android:layout_marginTop="16dp" android:text="@string/cs_login" style="@style/LoginConfirmButton"/>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/layout_register_agreement" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="48dp">
+                <androidx.appcompat.widget.AppCompatCheckBox android:theme="@style/MyCheckBox" android:gravity="center" android:id="@+id/login_agreement_checkbox" android:padding="12dp" android:layout_width="48dp" android:layout_height="48dp"/>
+                <TextView android:textSize="11dp" android:textColor="@color/login_hint_accent_color" android:gravity="center" android:id="@+id/login_register_agreement" android:layout_width="wrap_content" android:layout_height="48dp" android:text="@string/pg_login_auth_text" android:maxLines="2"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/third_site_msg_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/login_hint_color" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+            <TextView android:textSize="12dp" android:textColor="@color/login_hint_accent_color" android:gravity="center" android:id="@+id/third_part_login_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="27dp" android:layout_marginRight="27dp" android:text="@string/login_use_third_part"/>
+            <View android:background="@color/login_hint_color" android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <GridView android:gravity="center_horizontal" android:id="@+id/login_third_site_gridView" android:background="@null" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="16dp" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000"/>
+    </LinearLayout>
+</ScrollView>

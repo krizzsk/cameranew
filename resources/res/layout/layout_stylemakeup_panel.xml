@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="100dp">
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/ivColorPick" android:paddingTop="31dp" android:visibility="gone" android:layout_width="58dp" android:layout_height="63dp" android:src="@drawable/ic_edit_beauty_makeup_color" android:paddingStart="13dp" android:paddingEnd="12dp" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="@+id/flRecyclerView"/>
+    <TextView android:textSize="10dp" android:textColor="@color/color_camera_theme_black" android:gravity="center" android:id="@+id/tvColorPick" android:visibility="gone" android:layout_width="58dp" android:layout_height="16dp" android:layout_marginTop="2dp" app:layout_constraintEnd_toEndOf="@+id/ivColorPick" app:layout_constraintStart_toStartOf="@+id/ivColorPick" app:layout_constraintTop_toBottomOf="@+id/ivColorPick"/>
+    <View android:id="@+id/divider" android:background="#f3f3f3" android:visibility="gone" android:layout_width="1dp" android:layout_height="16dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintStart_toEndOf="@+id/ivColorPick" app:layout_constraintTop_toTopOf="0"/>
+    <FrameLayout android:id="@+id/flRecyclerView" android:clipChildren="true" android:layout_width="0dp" android:layout_height="100dp" android:layout_marginBottom="3dp" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toEndOf="@+id/divider" app:layout_constraintTop_toTopOf="0" app:layout_goneMarginStart="0dp">
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvStyleMakeup" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <us.pinguo.edit2020.view.WithFadingEdgeRecyclerView android:id="@+id/rvSelfDefMakeup" android:visibility="gone" android:fadingEdgeLength="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:requiresFadingEdge="horizontal" app:eliminateFadingDirection="1"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/llReset" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="0dp" app:layout_constraintBottom_toBottomOf="0" app:layout_constraintEnd_toEndOf="0" app:layout_constraintStart_toStartOf="0" app:layout_constraintTop_toTopOf="0">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/llFacePointReset" android:background="@drawable/ripple_common_oval_bg" android:layout_width="80dp" android:layout_height="80dp">
+            <ImageView android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ic_edit_elimination_reset" app:tint="@color/color_camera_theme_black"/>
+            <TextView android:textSize="12dp" android:textColor="@color/color_camera_theme_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/edit_reset"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

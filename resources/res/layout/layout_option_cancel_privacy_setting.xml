@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/title_bar_layout_res_0x7f090781" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/light_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="12dp" android:textColor="#37313c" android:id="@+id/txtCancelPrivacyContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/txt_cancel_privacy_setting_content" android:layout_marginStart="24dp" android:layout_marginEnd="24dp"/>
+        <Button android:textSize="12dp" android:textColor="#ff3535" android:autoLink="all" android:layout_gravity="center_horizontal" android:id="@+id/btnCancelPrivacy" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/btn_cancel_privacy_setting"/>
+    </LinearLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

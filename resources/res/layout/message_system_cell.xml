@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/md_item_click_selector" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_msg_system_cell" android:background="@color/inspire_loading_color" android:layout_width="64dp" android:layout_height="64dp" android:layout_marginRight="8dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <ImageView android:id="@+id/iv_media_type_msg_system_cell" android:padding="4dp" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/video_icon" android:layout_alignTop="@+id/piv_msg_system_cell" android:layout_alignRight="@+id/piv_msg_system_cell"/>
+        <TextView android:textSize="10dp" android:textColor="#999999" android:gravity="right" android:id="@+id/tv_date_msg_system_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:gravity="left" android:id="@+id/tv_title_msg_system_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/tv_date_msg_system_cell" android:layout_toRightOf="@+id/piv_msg_system_cell" android:layout_alignParentTop="true"/>
+        <us.pinguo.inspire.widget.SystemErrorTextView android:textSize="12dp" android:textColor="@color/text_primary" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tv_content_msg_system_cell" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:layout_toRightOf="@+id/piv_msg_system_cell" android:layout_below="@+id/tv_title_msg_system_cell" android:lineSpacingMultiplier="1.2"/>
+    </RelativeLayout>
+    <View android:id="@+id/view_divider_system_cell" android:background="#f1f1f1" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ImageView android:id="@+id/iv_shadow_system_cell" android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="5dp" android:layout_marginBottom="20dp"/>
+</LinearLayout>

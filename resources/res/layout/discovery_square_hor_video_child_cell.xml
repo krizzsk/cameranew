@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="wrap_content" android:layout_height="wrap_content" app:cardCornerRadius="2dp" app:cardElevation="0dp">
+    <com.zhy.android.percent.support.PercentFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="0dp" app:layout_heightPercent="47%sw" app:layout_widthPercent="28%sw">
+            <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_hor_video_child_cell" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <View android:background="@drawable/bg_topic_cover" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/piv_hor_video_child_cell" android:layout_alignBottom="@+id/piv_hor_video_child_cell"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="16dp" android:layout_alignParentBottom="true">
+                <TextView android:textSize="17dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_title__hor_video_child_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2"/>
+                <TextView android:textSize="14dp" android:textColor="@android:color/white" android:ellipsize="end" android:gravity="left" android:id="@+id/tv_desc_hor_video_child_cell" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:maxLines="2"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.zhy.android.percent.support.PercentFrameLayout>
+</androidx.cardview.widget.CardView>

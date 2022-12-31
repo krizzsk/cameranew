@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_marginStart="@dimen/feeds_margin" android:layout_marginEnd="@dimen/feeds_margin">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/find_friends_weibo"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/find_friends_facebook" android:layout_marginStart="5dp"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/find_friends_contacts" android:layout_marginStart="5dp"/>
+    <TextView android:textSize="14dp" android:textColor="@color/text_primary" android:ellipsize="end" android:gravity="end" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/feeds_interested_guide" android:singleLine="true" android:layout_weight="1" android:layout_marginStart="6dp"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/feeds_interest_more" android:layout_marginStart="8dp"/>
+</LinearLayout>

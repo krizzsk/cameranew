@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:clipChildren="false" android:layout_width="@dimen/graffiti_color_item_size" android:layout_height="@dimen/graffiti_color_item_size">
+    <us.pinguo.edit2020.view.CheckMarkCircleView android:layout_gravity="center" android:id="@+id/imgCircleColor" android:layout_width="24dp" android:layout_height="24dp"/>
+</FrameLayout>

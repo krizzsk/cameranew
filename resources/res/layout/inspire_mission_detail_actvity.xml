@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@color/portal_page_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@+id/srl_task_detail" android:layout_width="match_parent" android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView android:id="@+id/rv_task_detail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    </FrameLayout>
+    <View android:id="@+id/task_detail_header_shadow" android:background="@drawable/challenge_top_shadow" android:layout_width="match_parent" android:layout_height="@dimen/challenge_top_shadow_height" android:alpha="0"/>
+    <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/task_detail_toolbar" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="@dimen/inspire_title_height" app:theme="@style/ToolbarTheme"/>
+    <com.balysv.materialripple.MaterialRippleLayout android:id="@+id/mission_detail_bottom_layout" android:visibility="visible" android:layout_width="90dp" android:layout_height="90dp" android:layout_marginBottom="39dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true" app:mrl_rippleRoundedCorners="50dp">
+        <TextView android:textSize="15dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/mission_detail_particapate" android:background="@drawable/icon_details_join_video" android:paddingTop="32dp" android:layout_width="90dp" android:layout_height="90dp" android:text="@string/inspire_participate_short"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <ProgressBar android:id="@+id/challenge_upload_progress" android:visibility="gone" android:layout_width="match_parent" android:layout_height="4dp" android:max="100" android:progress="0" android:indeterminateOnly="false" android:progressDrawable="@drawable/challenge_upload_progress"/>
+</RelativeLayout>

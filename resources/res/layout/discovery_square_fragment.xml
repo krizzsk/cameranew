@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/base_list_layout_res_0x7d06001b" android:background="@color/portal_page_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.widet.FixBugSwipeRefreshLayout android:id="@+id/base_list_swipe_res_0x7d06001d" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="48dp">
+        <us.pinguo.inspire.module.challenge.ChallengeListRecyclerView android:id="@+id/base_list_recycle_view_res_0x7d06001c" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </us.pinguo.widet.FixBugSwipeRefreshLayout>
+</FrameLayout>

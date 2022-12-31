@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.inspire.widget.photopager.ExtendedViewPager android:layout_gravity="center" android:id="@+id/evp_apvp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-80dp"/>
+    <ProgressBar android:layout_gravity="center" android:id="@+id/pb_user_portrait_dialog" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-80dp"/>
+    <com.balysv.materialripple.MaterialRippleLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="64dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+        <TextView android:textColor="#93ffffff" android:gravity="center" android:id="@+id/tv_change_avatar_user_portrait_dialog" android:background="@drawable/shape_border_white" android:padding="16dp" android:visibility="gone" android:layout_width="192dp" android:layout_height="wrap_content" android:text="@string/change_avatar"/>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_apvp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

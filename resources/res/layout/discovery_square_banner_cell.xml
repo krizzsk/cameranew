@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.ui.uilview.PhotoImageView android:id="@+id/piv_discovery_square_banner_cell" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+    <us.pinguo.inspire.widget.videocell.InspireVideoView android:id="@+id/ivv_discovery_square_banner_cell" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

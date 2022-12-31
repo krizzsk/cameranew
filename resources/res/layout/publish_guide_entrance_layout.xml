@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/publish_guide_entrance" android:layout_width="match_parent" android:layout_height="114dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="84dp" android:layout_marginTop="30dp">
+        <com.balysv.materialripple.MaterialRippleLayout android:id="@+id/publish_guide_camera_parent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <LinearLayout android:orientation="vertical" android:id="@+id/publish_guide_camera" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/publish_guide_camera"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="4dp" android:text="@string/home_camera"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout android:id="@+id/publish_guide_selfie_parent" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/publish_guide_selfie" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/publish_guide_selfie"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/publish_guide_selfie"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <com.balysv.materialripple.MaterialRippleLayout android:id="@+id/publish_guide_video_parent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/publish_guide_video" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/publish_guide_video"/>
+                <TextView android:textSize="14dp" android:textColor="@color/text_primary" android:gravity="center_horizontal" android:paddingLeft="4dp" android:paddingRight="4dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/publish_take_video"/>
+            </LinearLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+</LinearLayout>

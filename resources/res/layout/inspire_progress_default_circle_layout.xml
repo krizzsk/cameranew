@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@drawable/inspire_progress_default_shape" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/inspire_progress_default_shape" android:layout_width="130dp" android:layout_height="130dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="@dimen/inspire_progress_size" android:layout_height="@dimen/inspire_progress_size">
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/baby_progress_default_circle_progress" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminate="false" android:indeterminateDrawable="@anim/inspire_progress_circle_anim" android:indeterminateBehavior="repeat"/>
+                <ImageView android:id="@+id/baby_progress_default_circle_success" android:background="@drawable/progress_done_white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <ImageView android:id="@+id/baby_progress_default_circle_error" android:background="@drawable/progress_cancel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </FrameLayout>
+            <TextView android:textSize="16dp" android:textColor="@color/text_white" android:layout_gravity="center_horizontal" android:id="@+id/baby_progress_default_circle_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text=""/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

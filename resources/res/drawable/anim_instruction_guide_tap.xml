@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/guide_click_preview_00"/>
+    <item android:duration="100" android:drawable="@drawable/guide_click_preview_01"/>
+    <item android:duration="100" android:drawable="@drawable/guide_click_preview_02"/>
+    <item android:duration="100" android:drawable="@drawable/guide_click_preview_03"/>
+    <item android:duration="100" android:drawable="@drawable/guide_click_preview_04"/>
+    <item android:duration="200" android:drawable="@drawable/guide_click_preview_05"/>
+</animation-list>

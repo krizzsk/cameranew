@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.appcompat.widget.Toolbar android:id="@+id/compatible_toolbar_res_0x7f0901d6" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="?attr/actionBarSize" app:titleTextColor="@color/light_main_title_text">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/toolbar_custom_view_res_0x7f090791" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <FrameLayout android:layout_gravity="end" android:id="@+id/toolbar_right_custom_view_res_0x7f090792" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ImageView android:layout_gravity="end" android:id="@+id/iv_right_toolbar" android:background="@drawable/ripple_common_oval_bg" android:padding="8dp" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginEnd="8dp"/>
+        <TextView android:textColor="#ffffff" android:layout_gravity="end" android:id="@+id/tv_right_toolbar" android:background="@drawable/ripple_common_oval_bg" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="8dp"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffff" android:ellipsize="end" android:layout_gravity="center" android:id="@+id/tv_center_title" android:padding="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+    </androidx.appcompat.widget.Toolbar>
+</LinearLayout>

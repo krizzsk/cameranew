@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <us.pinguo.ui.widget.FixedRateImageLoaderView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="wrap_content" app:ratio="1.8667"/>
+        <TextView android:textSize="16sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp"/>
+        <TextView android:gravity="center" android:id="@+id/msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="12dp">
+            <TextView android:textSize="14dp" android:textColor="@color/primary_gray_color" android:gravity="center_vertical" android:id="@+id/negative" android:background="@drawable/ripple_rect_background_selector" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="140dp" android:maxLines="2" android:layout_toLeftOf="@+id/positive"/>
+            <TextView android:textSize="14dp" android:textColor="@color/light_colorAccent" android:gravity="center_vertical" android:id="@+id/positive" android:background="@drawable/ripple_rect_background_selector" android:paddingLeft="18dp" android:paddingRight="18dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="140dp" android:maxLines="2" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</FrameLayout>

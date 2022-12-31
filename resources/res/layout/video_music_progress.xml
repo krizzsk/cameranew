@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp">
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/video_music_download_progress" android:layout_width="24dp" android:layout_height="24dp" app:matProg_barColor="#ff000000" app:matProg_progressIndeterminate="true"/>
+    <com.pnikosis.materialishprogress.ProgressWheel android:layout_gravity="center" android:id="@+id/video_music_play_progress" android:layout_width="24dp" android:layout_height="24dp" app:matProg_barColor="#ff000000" app:matProg_progressIndeterminate="true"/>
+</FrameLayout>

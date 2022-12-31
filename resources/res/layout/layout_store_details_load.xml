@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.camera360.shop.view.details.DetailsLoadView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:wheel="http://schemas.android.com/apk/res-auto" android:background="@color/primary_white_color" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/store_details_progress_wheel" android:layout_width="100dp" android:layout_height="100dp" android:layout_centerInParent="true" wheel:matProg_barColor="@color/light_colorAccent" wheel:matProg_progressIndeterminate="true"/>
+    <ImageView android:id="@+id/store_details_network_error_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/common_load_error" android:layout_centerInParent="true"/>
+    <TextView android:textColor="@color/primary_black_24" android:id="@+id/store_details_network_error_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/store_pkg_network_error" android:layout_below="@+id/store_details_network_error_iv" android:layout_centerHorizontal="true"/>
+</us.pinguo.camera360.shop.view.details.DetailsLoadView>

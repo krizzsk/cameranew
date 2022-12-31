@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@color/video_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <us.pinguo.inspire.widget.videocell.InspireVideoView android:id="@+id/ivv_hot_video_cell" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <FrameLayout android:id="@+id/fl_alpha_hot_video_cell" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/ivv_hot_video_cell" android:layout_alignBottom="@+id/ivv_hot_video_cell"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ll_header_hot_video_cell" android:paddingTop="80dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <us.pinguo.widet.PortraitImageView android:id="@+id/piv_portrait_hot_video_cell" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:layout_marginRight="16dp" android:src="@drawable/default_avatar" app:civ_border_width="0dp"/>
+        <TextView android:textSize="14dp" android:textColor="@android:color/white" android:gravity="left" android:id="@+id/tv_name_hot_video_cell" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <us.pinguo.inspire.widget.like.LikeImageView android:id="@+id/liv_like_hot_video_cell" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="8dp" android:paddingBottom="4dp" android:layout_width="40dp" android:layout_height="32dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:src="@drawable/icon_square_unlike"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/iv_like_anim_hot_video_cell" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/like_anim" android:layout_centerInParent="true"/>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@color/primary_white_color" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <us.pinguo.foundation.ui.mddialog.ProgressBarDeterminate android:id="@+id/progress_d" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:layout_marginBottom="3dp" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="10dp" android:textColor="@color/primary_black_54" android:id="@+id/progress_percent" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/progress_d" android:layout_alignParentLeft="true"/>
+    <TextView android:textSize="10dp" android:textColor="@color/primary_black_54" android:id="@+id/progress_number" android:paddingBottom="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_below="@+id/progress_d" android:layout_alignParentRight="true"/>
+</RelativeLayout>

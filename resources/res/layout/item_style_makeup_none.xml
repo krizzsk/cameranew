@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:tag="layout/item_style_makeup_none_0" android:layout_width="60dp" android:layout_height="wrap_content" android:layout_marginEnd="8dp">
+    <FrameLayout android:id="@+id/fl_bg" android:tag="binding_1" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="12dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/ivBg" android:tag="binding_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center"/>
+    </FrameLayout>
+    <us.pinguo.ui.widget.LanFitTextView android:textSize="10dp" android:gravity="center" android:tag="binding_3" android:layout_width="match_parent" android:layout_height="16dp" android:text="@string/str_none"/>
+</LinearLayout>

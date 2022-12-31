@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/push_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="标题" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/push_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="内容" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText android:id="@+id/publish_goto" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="协议" android:maxLines="1" android:singleLine="true"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <CheckBox android:id="@+id/cb_add_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="添加按钮"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/btn_config_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/publish_text_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="按钮文字" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/publish_text_corlor" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="按钮颜色" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:id="@+id/publish_icon_url" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="图片链接(5.0以上才能显示)" android:maxLines="1" android:singleLine="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+    <Button android:layout_width="match_parent" android:layout_height="60dp" android:text="开始简单推送" android:onClick="actionPush"/>
+</LinearLayout>

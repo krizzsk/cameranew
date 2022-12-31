@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp" android:paddingStart="10dp">
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/store_manager_icon" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_store_filter_nav" android:scaleType="fitCenter"/>
+    <TextView android:textSize="16dp" android:textColor="#333333" android:gravity="start|center_vertical" android:layout_gravity="center_vertical" android:id="@+id/store_manager_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginStart="7dp"/>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="@dimen/hsl_color_item_size" android:layout_height="@dimen/hsl_color_item_size">
+    <us.pinguo.edit2020.view.CircleColorItemView android:id="@+id/imgCircleColor" android:background="?android:attr/selectableItemBackgroundBorderless" android:layout_width="@dimen/hsl_color_item_size" android:layout_height="@dimen/hsl_color_item_size"/>
+</FrameLayout>

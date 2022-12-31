@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.user.ui.view.CompatibleToolbar android:id="@+id/toolbar_common" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/inspire_title_height"/>
+    <EditText android:textSize="15dp" android:textColor="#ff666666" android:textColorHint="#ff999999" android:gravity="top" android:id="@+id/edit_introduction" android:background="@null" android:padding="15dp" android:layout_width="match_parent" android:layout_height="200dp" android:maxLength="40" android:imeOptions="actionDone"/>
+</LinearLayout>

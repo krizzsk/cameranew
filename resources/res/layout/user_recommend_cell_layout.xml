@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@+id/rec_parent_view" android:background="@android:color/white" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <include layout="@layout/include_user"/>
+    <us.pinguo.inspire.module.contact.RecommendPhotoView android:id="@+id/rec_photo" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

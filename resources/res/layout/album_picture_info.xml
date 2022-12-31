@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_vertical" android:orientation="vertical" android:background="@color/pic_info_dialog_bg_color" android:paddingTop="2dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+    <LinearLayout android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/camera"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp">
+            <TextView android:textSize="24dp" android:textColor="@android:color/white" android:id="@+id/phone_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none"/>
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_edited_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/str_none"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/info_photo"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp">
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@+id/pic_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:maxLines="1" android:singleLine="true"/>
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/str_none"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <ImageView android:layout_gravity="center" android:layout_width="24dp" android:layout_height="24dp" android:src="@drawable/pic_info_time"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp">
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none"/>
+            <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/str_none"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/line" android:background="@android:color/darker_gray" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="32dp" android:layout_marginTop="20dp" android:layout_marginRight="32dp"/>
+    <RelativeLayout android:id="@+id/first_info_line" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:layout_below="@+id/line">
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_aperture" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/aperture" android:drawablePadding="16dp" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_camera_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/camera_length" android:drawablePadding="16dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_wb" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/wb" android:drawablePadding="16dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/second_info_line" android:paddingLeft="32dp" android:paddingRight="32dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:layout_below="@+id/first_info_line">
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_light_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/facal_length" android:drawablePadding="16dp" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:id="@+id/pic_iso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/iso" android:drawablePadding="16dp" android:layout_weight="1" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="right" android:id="@+id/pic_flash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/str_none" android:drawableLeft="@drawable/flash" android:drawablePadding="16dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/go_to_google_maps" android:background="@color/photo_page_location_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="48dp" android:layout_marginRight="30dp">
+        <ImageView android:id="@+id/location_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/info_location" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@android:color/white" android:gravity="center" android:layout_width="wrap_content" android:layout_height="40dp" android:layout_marginLeft="12dp" android:text="Google Maps" android:drawablePadding="2dp" android:layout_toRightOf="@+id/location_icon"/>
+    </RelativeLayout>
+</LinearLayout>

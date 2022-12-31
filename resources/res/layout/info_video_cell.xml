@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.inspire.module.comment.widget.FullScreenLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.inspire.module.comment.widget.InfoVideoView android:id="@+id/info_video_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <include android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/cell_content_info"/>
+    <View android:layout_gravity="bottom" android:id="@+id/iv_progress_video_view" android:background="@drawable/info_video_loading" android:visibility="gone" android:layout_width="match_parent" android:layout_height="2dp"/>
+</us.pinguo.inspire.module.comment.widget.FullScreenLayout>

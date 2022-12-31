@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/dialog_radius_shape" android:layout_width="290dp" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/inspire_challenge_guide_top_shape" android:layout_width="match_parent" android:layout_height="180dp">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:src="@drawable/inspire_guide_ic"/>
+            <TextView android:textSize="20dp" android:textColor="@color/text_white" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/challenge_guide_title"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="11dp" android:textColor="@color/text_deeper" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/challenge_guide_what"/>
+            <TextView android:textSize="11dp" android:textColor="@color/text_primary" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/challenge_guide_what_intro" android:lineSpacingMultiplier="1.3"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="12dp" android:layout_marginRight="16dp">
+            <TextView android:textSize="11dp" android:textColor="@color/text_deeper" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/challenge_guide_award"/>
+            <TextView android:textSize="11dp" android:textColor="@color/text_primary" android:layout_gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/challenge_guide_award_intro" android:lineSpacingMultiplier="1.3"/>
+        </LinearLayout>
+        <TextView android:textSize="17dp" android:textColor="@color/text_accent" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/challenge_guide_ok" android:background="@drawable/accent_btn_full_selector" android:layout_width="190dp" android:layout_height="40dp" android:layout_marginTop="20dp" android:layout_marginBottom="16dp" android:text="@string/challenge_guide_start"/>
+    </LinearLayout>
+</RelativeLayout>

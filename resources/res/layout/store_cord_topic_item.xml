@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:rate="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.pinguo.camera360.lib.ui.FixedRateRelativeLayout android:id="@+id/store_topic_banner_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" rate:frrl_ratio="2.1562">
+        <us.pinguo.ui.widget.RoundRecImageView android:id="@+id/store_topic_item_banner_ilv" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <ImageView android:id="@+id/store_topic_item_new_iv" android:visibility="invisible" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/icon_new_label" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </com.pinguo.camera360.lib.ui.FixedRateRelativeLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/primary_black_color" android:ellipsize="marquee" android:layout_gravity="center" android:id="@+id/store_topic_item_name_tv" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="18dp" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever"/>
+</LinearLayout>

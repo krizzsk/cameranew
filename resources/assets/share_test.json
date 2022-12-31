@@ -1,0 +1,47 @@
+{
+  "ShareAppKey": "ef6bf6123890",
+  "DevInfor": {
+    "WECHAT_FRIENDS": {
+      "Enable": "true",
+      "Id": "1",
+      "SortId": "1"
+    },
+    "WECHAT_MOMENTS": {
+      "Enable": "true",
+      "Id": "2",
+      "SortId": "2"
+    },
+    "SINAWEIBO": {
+      "Id": "3",
+      "ClientOnly":true,
+      "ShareByAppClient": "true",
+      "SortId": "3"
+    },
+    "QZONE": {
+      "Enable": "true",
+      "Id": "4",
+      "ShareByAppClient": "true",
+      "SortId": "4"
+    },
+    "QQ": {
+      "Enable": "true",
+      "Id": "5",
+      "ShareByAppClient": "true",
+      "SortId": "5"
+    },
+    "FACEBOOK": {
+      "Id": "6",
+      "ClientOnly":true,
+      "SortId": "6"
+    },
+    "INSTAGRAM": {
+      "Id": "7",
+      "SortId": "7"
+    },
+    "TWITTER": {
+      "Enable": "true",
+      "Id": "8",
+      "SortId": "8"
+    }
+  }
+}

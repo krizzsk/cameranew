@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "pid": "5e6a360fa35dde3d3e028c2d",
+      "descript": "Rainbow clouds",
+      "name": "Rainbow clouds",
+      "icon": "https://store-bsy.c360dn.com/68d4653b768630b294148523028ea9c6.png",
+      "origin_pic": "",
+      "effect_pic_info": [
+        {
+          "name": "Rainbow clouds",
+          "item_id": "5e6a360fa35dde3d3e028c2c",
+          "pic": "https://store-bsy.c360dn.com/68d4653b768630b294148523028ea9c6.png"
+        }
+      ],
+      "package_zip": "https://store-bsy.c360dn.com/5e6a363227100_5e6a360fa35dde3d3e028c2d.zip",
+      "package_zip_md5": "dc27755b89de1e36ae8c8b8339c6d442",
+      "display_zip_url": "https://store-bsy.c360dn.com/5e6a3632eec21_display_5e6a360fa35dde3d3e028c2d.zip",
+      "display_zip_md5": "08359a02ca005dd15f01c74a87cce532",
+      "file_size": 159059,
+      "items": [
+        {
+          "id": "5e6a360fa35dde3d3e028c2c",
+          "sub_type": "ust",
+          "is_cloud_effect": true,
+          "zip_url": "https://store-bsy.c360dn.com/f82bae36b936047afe58d895b5b6ea98.zip",
+          "zip_md5": "f82bae36b936047afe58d895b5b6ea98",
+          "display_zip_url": "https://store-bsy.c360dn.com/5d5e4bbf4fe71_5d5e4ba0d741bf0b0ae7f0b5.zip",
+          "display_zip_md5": "2a7aae21eda1952dd2c936c488460ad4"
+        }
+      ],
+      "type": 31,
+      "onsale_time": 1566489600,
+      "off_time": 1924962900,
+      "unlock_type": 1,
+      "typeCountInfo": {
+        "ust": 1
+      },
+      "vip": 0,
+      "vip_banner": ""
+    }
+  ],
+  "status": 200,
+  "message": "ok",
+  "serverTime": 1584099800.0933
+}

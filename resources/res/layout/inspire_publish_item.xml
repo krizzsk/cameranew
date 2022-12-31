@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/ripple_style">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/container_res_0x7f0901da" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="11dp" android:textColor="#666666" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

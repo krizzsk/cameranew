@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/base_title_container_res_0x7d06001e" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:elevation="@dimen/elevation_height">
+        <include layout="@layout/md_common_title"/>
+    </FrameLayout>
+    <us.pinguo.widet.FixBugSwipeRefreshLayout android:orientation="vertical" android:id="@+id/base_list_layout_res_0x7d06001b" android:tag="follow_fragment_layout" android:background="@color/feeds_item_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/base_title_container_res_0x7d06001e">
+        <us.pinguo.user.recycler.FlingFilterRecyclerView android:id="@+id/base_list_recycle_view_res_0x7d06001c" android:tag="feeds_follow_recyclerview" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </us.pinguo.widet.FixBugSwipeRefreshLayout>
+    <View android:id="@+id/feeds_title_shadow" android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="4dp" android:layout_below="@+id/base_title_container_res_0x7d06001e"/>
+</RelativeLayout>

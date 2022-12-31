@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textColor="@color/create_album_add_to_color" android:id="@+id/exist_album_title" android:paddingLeft="16dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/add_pic_to_exist_album" android:background="@drawable/settings_item_click_selector" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/exist_album_icon" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/new_album"/>
+        <TextView android:textSize="16dp" android:textColor="@color/create_album_text_color" android:layout_gravity="center_vertical" android:id="@+id/exist_album_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:text="@string/exist_album"/>
+    </LinearLayout>
+    <View android:background="@color/title_home_box_bg_pressed" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="16dp" android:textColor="@color/create_album_add_to_color" android:paddingLeft="16dp" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_to_create_album"/>
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/add_pic_to_new_album" android:background="@drawable/settings_item_click_selector" android:paddingLeft="16dp" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/create_album_icon"/>
+        <TextView android:textSize="16dp" android:textColor="@color/create_album_text_color" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="32dp" android:text="@string/story"/>
+    </LinearLayout>
+</LinearLayout>

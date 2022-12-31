@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <ImageView android:id="@+id/vipIcon" android:layout_width="16dp" android:layout_height="16dp" android:src="@drawable/icon_vip_round_label" android:scaleType="centerInside" android:layout_marginEnd="2dp"/>
+    <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="@color/selector_edit_sec_tab_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_elimination"/>
+    <ImageView android:id="@+id/tip" android:background="?android:attr/selectableItemBackgroundBorderless" android:padding="2dp" android:layout_width="20dp" android:layout_height="20dp" android:src="@drawable/ic_function_tip"/>
+</LinearLayout>

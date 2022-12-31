@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="7dp">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <RelativeLayout android:id="@+id/rl_at_message_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_at_message_main" android:paddingTop="1dp" android:layout_width="24dp" android:layout_height="25dp" android:src="@drawable/icon_message_at" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_at_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/at_mine" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_at_message_main"/>
+                <us.pinguo.ui.widget.RedDotTextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_at_count_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <include layout="@layout/message_divider_layout"/>
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <RelativeLayout android:id="@+id/rl_flower_message_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_flower_message_main" android:paddingTop="1dp" android:layout_width="24dp" android:layout_height="25dp" android:src="@drawable/icon_mine_news_flower" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_flower_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/flower" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_flower_message_main"/>
+                <us.pinguo.ui.widget.RedDotTextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/flower_count_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <include layout="@layout/message_divider_layout"/>
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <RelativeLayout android:id="@+id/rl_comment_message_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_comment_message_main" android:paddingTop="2dp" android:layout_width="24dp" android:layout_height="26dp" android:src="@drawable/icon_message_comment" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_comment_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_comment" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_comment_message_main"/>
+                <us.pinguo.ui.widget.RedDotTextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_comment_count_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <include layout="@layout/message_divider_layout"/>
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <RelativeLayout android:id="@+id/rl_like_message_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_like_message_main" android:paddingTop="1dp" android:layout_width="24dp" android:layout_height="25dp" android:src="@drawable/icon_message_like" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_like_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_like" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_like_message_main"/>
+                <us.pinguo.ui.widget.RedDotTextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_like_count_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <include layout="@layout/message_divider_layout"/>
+        <com.balysv.materialripple.MaterialRippleLayout android:layout_width="match_parent" android:layout_height="wrap_content" app:mrl_rippleColor="@color/ripple_color" app:mrl_rippleDelayClick="true" app:mrl_rippleDuration="200" app:mrl_rippleOverlay="true">
+            <RelativeLayout android:id="@+id/rl_fans_message_main" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:id="@+id/iv_fans_message_main" android:paddingTop="1dp" android:layout_width="24dp" android:layout_height="25dp" android:src="@drawable/icon_message_fans" android:layout_centerVertical="true" android:layout_marginStart="16dp" android:layout_marginEnd="16dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/text_deeper" android:id="@+id/tv_fans_message_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/msg_fans" android:layout_centerVertical="true" android:layout_toEndOf="@+id/iv_fans_message_main"/>
+                <us.pinguo.ui.widget.RedDotTextView android:textSize="12dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/tv_fans_count_message_main" android:background="@drawable/red_oval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerVertical="true" android:layout_marginStart="4dp" android:layout_marginEnd="16dp" android:layout_alignParentEnd="true"/>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_toStartOf="@+id/tv_fans_count_message_main">
+                    <us.pinguo.ui.uilview.CircleImageView android:id="@+id/civ_first_message_main_header_cell" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/default_avatar"/>
+                    <us.pinguo.ui.uilview.CircleImageView android:id="@+id/civ_second_message_main_header_cell" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/default_avatar" android:layout_marginStart="-9dp"/>
+                    <us.pinguo.ui.uilview.CircleImageView android:id="@+id/civ_third_message_main_header_cell" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/default_avatar" android:layout_marginStart="-9dp"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+    </LinearLayout>
+    <ImageView android:background="@drawable/feeds_divider_shadow_top" android:layout_width="match_parent" android:layout_height="5dp"/>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:padding="8dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <us.pinguo.ui.widget.AlphaImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/publish_guide_empty"/>
+    <TextView android:textSize="20dp" android:textColor="@color/text_lower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/publish_guide_empty"/>
+    <TextView android:textSize="13dp" android:textColor="@color/text_lower" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/publish_guide_empty_desc"/>
+</LinearLayout>

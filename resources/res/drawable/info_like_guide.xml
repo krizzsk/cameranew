@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="60" android:drawable="@drawable/guide_like_00000"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00001"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00002"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00003"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00004"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00005"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00006"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00007"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00008"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00009"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00010"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00011"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00012"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00013"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00014"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00015"/>
+    <item android:duration="60" android:drawable="@drawable/guide_like_00016"/>
+</animation-list>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.pinguo.camera360.ui.TitleBarLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/title_bar_layout_res_0x7f090781" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:id="@+id/btnFindAlbumBack" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_find_album_photo_back" android:layout_alignParentBottom="true" style="@style/CustomButton"/>
+        <ScrollView android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btnFindAlbumBack">
+            <com.zhy.android.percent.support.PercentLinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/btnFindAlbumBack">
+                <us.pinguo.ui.widget.FixedRateImageLoaderView android:id="@+id/ivAlbumServicePauseHint" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_activity_album_service_pause" android:scaleType="centerCrop" app:layout_marginLeftPercent="10%" app:layout_marginRightPercent="10%" app:layout_marginTopPercent="3%" app:ratio="1.8667"/>
+                <us.pinguo.ui.widget.AutofitTextView android:textSize="@dimen/text_size_16" android:textColor="@color/color_333333" android:id="@+id/tvAlbumServicePauseHint" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/text_album_service_pause_hint" android:maxLines="10" android:layout_below="@+id/ivAlbumServicePauseHint" app:layout_marginLeftPercent="5.3%" app:layout_marginRightPercent="5.3%" app:layout_marginTopPercent="3%"/>
+            </com.zhy.android.percent.support.PercentLinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+</com.pinguo.camera360.ui.TitleBarLayout>

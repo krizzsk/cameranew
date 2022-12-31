@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="vertical" android:id="@+id/layout_login" android:background="@drawable/settings_item_click_selector" android:layout_width="match_parent" android:layout_height="130dp">
+            <ImageView android:id="@+id/avatar" android:layout_width="72dp" android:layout_height="72dp" android:src="@drawable/my_avatar" android:layout_centerVertical="true" android:layout_marginStart="16dp"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:id="@+id/reg_and_login" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login" android:layout_centerVertical="true" android:layout_marginStart="24dp" android:layout_toEndOf="@+id/avatar"/>
+        </RelativeLayout>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/subscription_vip_layout" android:background="@color/primary_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <us.pinguo.foundation.ui.view.CommonItemView android:textSize="12dp" android:textColor="@color/primary_gray_color" android:id="@+id/subscriptionVip" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/icon_mine_vip" app:leftIconHeight="32dp" app:leftIconMargin="12dp" app:leftIconWidth="32dp" app:leftTextMargin="6dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llVipRedeemCodeLayout" android:background="@color/primary_white_color" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <us.pinguo.foundation.ui.view.CommonItemView android:textSize="12dp" android:textColor="@color/primary_gray_color" android:id="@+id/vipRedeemCode" android:layout_width="match_parent" android:layout_height="wrap_content" app:leftIcon="@drawable/icon_mine_vip_redeem_code" app:leftIconHeight="24dp" app:leftIconMargin="15dp" app:leftIconWidth="24dp" app:leftTextMargin="15dp" app:text="@string/text_vip_redeem_code"/>
+    </LinearLayout>
+    <us.pinguo.foundation.ui.view.CommonItemView android:id="@+id/messageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" app:leftIcon="@drawable/icon_mine_news" app:leftIconHeight="24dp" app:leftIconWidth="24dp" app:text="@string/msg_title"/>
+</LinearLayout>

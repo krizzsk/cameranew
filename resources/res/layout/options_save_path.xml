@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.foundation.ui.RotateLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@+id/lay_options_save_path" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/light_common_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textColor="@android:color/black" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/tv_options_save_path" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="26.7dp"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <Button android:textSize="18dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btn_save_path_select" android:background="@drawable/btn_picture_path_select_confirm" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/pic_save_path_custom_ok" android:layout_alignParentBottom="true"/>
+            <FrameLayout android:id="@+id/lay_save_path_list_body" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/btn_save_path_select"/>
+        </RelativeLayout>
+    </LinearLayout>
+</us.pinguo.foundation.ui.RotateLayout>

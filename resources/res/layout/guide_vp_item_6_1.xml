@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:gravity="center" android:id="@+id/guide_vp_item_start_iv" android:padding="12dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="69dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="20dp" android:textColor="@color/white" android:gravity="center" android:background="@drawable/guide_vp_btn" android:layout_width="180dp" android:layout_height="40dp" android:text="S T A R T" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom|center_horizontal" android:orientation="horizontal" android:id="@+id/guide_vp_item_progress" android:layout_width="200dp" android:layout_height="48dp" android:layout_marginBottom="69dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#b499ee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/guide_page_loading_text"/>
+        <vStudio.Android.Camera360.guide.DotProgressBar android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" app:dotColor="#b499ee"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<us.pinguo.foundation.ui.RotateLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_gravity="bottom|center_horizontal" android:id="@+id/rotate_toast" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="24dp" android:layout_marginBottom="200dp">
+    <TextView android:textColor="@color/toast_text_color" android:id="@+id/message" style="@style/PgToastTips"/>
+</us.pinguo.foundation.ui.RotateLayout>

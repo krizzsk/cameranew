@@ -1,0 +1,30 @@
+package us.pinguo.edit2020.model.editgoto;
+/* compiled from: GotoType.kt */
+/* loaded from: classes4.dex */
+public enum EditGotoType {
+    HOME,
+    ONE_KEY_BEAUTY,
+    SKIN_REFRESH,
+    FACIAL_FEATURES,
+    BODY_SHAPE,
+    MAKEUP,
+    FILTER,
+    ADJUST,
+    MOSAIC,
+    GRAFFITI,
+    VACUITY,
+    ERASING_PEN,
+    SELECTIVE_COLOR,
+    SKIN_REFRESH_MANUAL,
+    SKIN_REFRESH_MANUAL_MOPI,
+    SKIN_REFRESH_MANUAL_XIJIE,
+    SKIN_REFRESH_MANUAL_TILIANG,
+    SKIN_REFRESH_AUTO_FUSE,
+    SKIN_REFRESH_AUTO_YUNFU,
+    SKIN_REFRESH_AUTO_QUBAN,
+    FACIAL3D,
+    STATIC_STICKER,
+    BACKGROUND_BLUR,
+    LONG_LEG,
+    IMAGE_RESTORARION
+}

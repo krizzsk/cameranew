@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatEditText xmlns:android="http://schemas.android.com/apk/res/android" android:theme="@style/Gallery_MD_Dialog" android:textColorHint="@android:color/darker_gray" android:ellipsize="end" android:id="@+id/md_dialog_edit_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/input_new_album_name" android:singleLine="true" android:maxLength="30"/>
